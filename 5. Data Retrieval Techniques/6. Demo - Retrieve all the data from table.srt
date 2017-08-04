@@ -1,0 +1,64 @@
+1
+00:00:03,000 --> 00:00:08,000
+Now we will see how we can use star and retrieve all the data from the table.
+
+2
+00:00:08,000 --> 00:00:15,000
+Here is an example, ‘SELECT * FROM sakila.actor'. When we use a star and do not provide any filter condition
+
+3
+00:00:15,000 --> 00:00:22,000
+using WHERE, this statement will retrieve every single column and every single row from sakila.actor table.
+
+4
+00:00:22,000 --> 00:00:29,000
+Select the statement and click on Execute. You can see it is retrieving all the four columns and all the 200 rows
+
+5
+00:00:29,000 --> 00:00:37,000
+from sakila.actor table. Let's take another example. We can also retrieve all the rows and all the columns from
+
+6
+00:00:37,000 --> 00:00:45,000
+sakila.city table. Select the statement and click on Execute. Well if you noticed, we are using sakila.city name.
+
+7
+00:00:45,000 --> 00:00:53,000
+This naming convention is database.tablename. If you don't want to keep on using sakila in a name of this table,
+
+8
+00:00:53,000 --> 00:00:59,000
+you can use another technique. For example, here I'm using ‘USE sakila'. When we execute this statement,
+
+9
+00:00:59,000 --> 00:01:07,000
+it will by default sakila database as a database for every subsequent execution of statement.
+
+10
+00:01:07,000 --> 00:01:11,000
+Let's see that into action, but first, pay attention on the left side in Object Browser.
+
+11
+00:01:11,000 --> 00:01:18,000
+You can see sakila, test, and world, all three have similar fonts. Now, let's execute ‘USE sakila'.
+
+12
+00:01:18,000 --> 00:01:24,000
+When you execute this one, at that time, now sakila is highlighted or bold. What it means is that now sakila
+
+13
+00:01:24,000 --> 00:01:31,000
+is default context for every single execution after this statement. When we execute this one, it will retrieve as
+
+14
+00:01:31,000 --> 00:01:39,000
+same data, which we got from ‘SELECT * FROM sakila.city'. USE database name is a good idea to execute if you know
+
+15
+00:01:39,000 --> 00:01:46,000
+every subsequent execution you are going to do from same database. Let's close this and now in the next clip,
+
+16
+00:01:46,000 --> 00:59:00,000
+we will retrieve all of the data ordered by single column. (Typing)
+

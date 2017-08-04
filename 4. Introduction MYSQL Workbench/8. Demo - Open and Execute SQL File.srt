@@ -1,0 +1,64 @@
+1
+00:00:02,000 --> 00:00:10,000
+Now we will see how we can edit SQL Script in SQL Editor. Go to MySQL Workbench home screen.
+
+2
+00:00:10,000 --> 00:00:17,000
+Click on Edit SQL Script. Let's select SQLAuthority as your Stored Connection and click on Next.
+
+3
+00:00:17,000 --> 00:00:24,000
+Over here it will ask us ‘Please select SQL file you want to open'. I already created a SQL file, which I'll
+
+4
+00:00:24,000 --> 00:00:31,000
+select from this Browse menu. I selected the file ‘Test1.sql'. There is an option if I want to execute this file
+
+5
+00:00:31,000 --> 00:00:40,000
+upon opening. I'll select this one as I know this one is safe to execute. I strongly recommend that don't select
+
+6
+00:00:40,000 --> 00:00:47,000
+this checkbox if you are not sure about the content of the file, which you are opening. Now click on Finish.
+
+7
+00:00:47,000 --> 00:00:54,000
+It has executed the SQL, which was part of TEST1.sql. In the TEST1.sql, I had a very simple SELECT statement.
+
+8
+00:00:54,000 --> 00:01:02,000
+It was SELECT * FROM sakila.actor. It will list us all the actors. Let's write another SELECT over here
+
+9
+00:01:02,000 --> 00:01:08,000
+and now we will save this file. Let's close TEST1 and now we will open the same file once again.
+
+10
+00:01:08,000 --> 00:01:17,000
+Go to ‘Open a SQL script file in a new query tab' with a second option in Menu over here and open TEST1 once again.
+
+11
+00:01:17,000 --> 00:01:23,000
+You can see that TEST1.sql now has two SELECT statements. Let's execute them together.
+
+12
+00:01:23,000 --> 00:01:29,000
+Select these two statements and click on Execute. Now let's look at our Visual Pane. On Visual Pane, you can see
+
+13
+00:01:29,000 --> 00:01:37,000
+there are two tabs also over here. One is actor 1 and second one is city 2. One and two is just indicating the
+
+14
+00:01:37,000 --> 00:01:45,000
+order of the query, how they're executed. They are just an indication. You can reorder them as well.
+
+15
+00:01:45,000 --> 00:01:53,000
+Actor is now listing all the actors and city is now listing all the cities. Working with SQL Editor is indeed
+
+16
+00:01:53,000 --> 00:59:00,000
+very easy.
+

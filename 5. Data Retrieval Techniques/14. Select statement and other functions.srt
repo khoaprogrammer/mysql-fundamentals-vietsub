@@ -1,0 +1,20 @@
+1
+00:00:04,000 --> 00:00:10,000
+So far we have seen SELECT with aggregate functions, as well as doing some static operations.
+
+2
+00:00:10,000 --> 00:00:17,000
+Now, we will see how we can use SELECT clause with various other functions. For example, we will see functions
+
+3
+00:00:17,000 --> 00:00:24,000
+related to numbers, strings, and dates. One of the interesting challengers we developers have is to eliminate
+
+4
+00:00:24,000 --> 00:00:31,000
+duplicate rows from our resultset. We will see how easy it is to eliminate duplicate rows by adding simple
+
+5
+00:00:31,000 --> 00:59:00,000
+key word, distinct. Now let's go to MySQL Workbench and we will see each of these into action.
+

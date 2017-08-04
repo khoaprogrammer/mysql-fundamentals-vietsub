@@ -1,0 +1,16 @@
+1
+00:00:02,000 --> 00:00:08,000
+MySQL Workbench is a very powerful graphical user interface for MySQL. In this course, we'll be using MySQL
+
+2
+00:00:08,000 --> 00:00:16,000
+Workbench for all of our tasks. There are three major workspaces in MySQL Workbench - SQL Development,
+
+3
+00:00:16,000 --> 00:00:22,000
+Data Modeling, and Server Administrator. Each of them performs very essential tasks for MySQL.
+
+4
+00:00:22,000 --> 00:59:00,000
+Let us see a couple of functionalities of MySQL Workbench in action right now.
+

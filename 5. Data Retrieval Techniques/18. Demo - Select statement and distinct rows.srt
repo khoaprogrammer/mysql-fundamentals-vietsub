@@ -1,0 +1,64 @@
+1
+00:00:02,000 --> 00:00:08,000
+Now in this demonstration, we will understand how DISTINCT keyword impacts query resultset.
+
+2
+00:00:08,000 --> 00:00:14,000
+Before we execute query, let's look at the Output Window. Go over here in MySQL Workbench and click it here to
+
+3
+00:00:14,000 --> 00:00:20,000
+display Output Window. We'll first execute SELECT first_name FROM sakila.actor. Select the statement and click
+
+4
+00:00:20,000 --> 00:00:28,000
+on Execute. You can see the resultset over here, as well as can notice there are 200 rows returned from this query.
+
+5
+00:00:28,000 --> 00:00:34,000
+Now we will execute second query. The only difference between first query and second query is DISTINCT keyword.
+
+6
+00:00:34,000 --> 00:00:41,000
+We have additionally added DISTINCT keyword because now we want unique first_name from sakila.actor.
+
+7
+00:00:41,000 --> 00:00:46,000
+Let's execute this one and this time, you can notice that we only receive 130 rows. What it means is that there
+
+8
+00:00:46,000 --> 00:00:54,000
+were 70 records, which were duplicate. Now duplicate records are eliminated and we can only see DISTINCT resultsets.
+
+9
+00:00:54,000 --> 00:01:01,000
+Let's run it again for last_name. Select last_name from sakila.actor and click on Execute.
+
+10
+00:01:01,000 --> 00:01:07,000
+From resultset, you can clearly see that ALLEN last_name is there multiple times, as well as BERRY.
+
+11
+00:01:07,000 --> 00:01:13,000
+Now we will learn another SELECT statement where we have DISTINCT keyword right before the last_name.
+
+12
+00:01:13,000 --> 00:01:20,000
+Select the query and click on Execute. Now ALLEN is only displayed once, so is BERRY. If you look at the
+
+13
+00:01:20,000 --> 00:01:27,000
+Output Window, we can see that when we selected last_name from sakila.actor, at that time MySQL returned 200 rows.
+
+14
+00:01:27,000 --> 00:01:34,000
+However, as soon as we added DISTINCT keyword, it has returned us only 123 rows. We can use DISTINCT with multiple
+
+15
+00:01:34,000 --> 00:01:40,000
+columns, as well as with star. The purpose of the DISTINCT is to return unique rows based on the column used
+
+16
+00:01:40,000 --> 00:59:00,000
+in a SELECT statement.
+

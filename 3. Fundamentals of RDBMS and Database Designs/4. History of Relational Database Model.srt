@@ -1,0 +1,40 @@
+1
+00:00:04,000 --> 00:00:10,000
+We noticed that Database Management System plays a very important role in any application.
+
+2
+00:00:10,000 --> 00:00:17,000
+There are two kinds of database models -- Relational Database Model and Non-Relational Database Model.
+
+3
+00:00:17,000 --> 00:00:23,000
+MySQL is a Relational Database Model. Let's quickly see a couple of history bites before we move to
+
+4
+00:00:23,000 --> 00:00:27,000
+understanding relational database management system concept in depth.
+
+5
+00:00:27,000 --> 00:00:33,000
+In 1970, Dr. E.F. Code has developed the concepts of relational database.
+
+6
+00:00:33,000 --> 00:00:39,000
+Any relational database will help following three most important properties.
+
+7
+00:00:39,000 --> 00:00:45,000
+There will be less redundancy between the data, retrieval of the data will be very efficient, and
+
+8
+00:00:45,000 --> 00:00:52,000
+the data modification should be intuitive. Though relational database can get complex, the basic three
+
+9
+00:00:52,000 --> 00:00:59,000
+properties of less redundancy, efficient data retrieval, and intuitive data modification usually stays the same
+
+10
+00:00:59,000 --> 00:59:00,000
+because relational database concepts enforces them. Let's see what are the relational database concepts in depth.
+

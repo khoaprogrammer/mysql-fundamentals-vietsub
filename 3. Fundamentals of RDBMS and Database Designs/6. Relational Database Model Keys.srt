@@ -1,0 +1,168 @@
+1
+00:00:03,000 --> 00:00:10,000
+The most important part of any relational database model is relations. In relational database, there are always
+
+2
+00:00:10,000 --> 00:00:18,000
+relations between various tables, as well as columns of different tables. They are associated with each other
+
+3
+00:00:18,000 --> 00:00:26,000
+with Primary Key, as well as Foreign Key. Primary Key: Primary Key uniquely identifies each row of the table.
+
+4
+00:00:26,000 --> 00:00:33,000
+There can't be more than one Primary Key per table. The most important property for Primary Key is that it
+
+5
+00:00:33,000 --> 00:00:40,000
+cannot allow any NULL. It's not necessarily that Primary Key has only one column, there can be more than column
+
+6
+00:00:40,000 --> 00:00:48,000
+for Primary Key as well. When there are more than one column builds of Primary Key, they are called composite columns.
+
+7
+00:00:48,000 --> 00:00:54,000
+Let's try to understand what can be a good candidate for Primary Key. Let's assume that you have a table called Student.
+
+8
+00:00:54,000 --> 00:01:01,000
+In a table Student, Student ID will be a good candidate for Primary Key. If you have a table called Supplier,
+
+9
+00:01:01,000 --> 00:01:07,000
+in that case, you can also go with Supply Name as a Primary Key as well. In your system, you don't want
+
+10
+00:01:07,000 --> 00:01:13,000
+two suppliers with the same name; however, you have any reason you have two supplied with same name and
+
+11
+00:01:13,000 --> 00:01:18,000
+your system requirement is to allow that, you might have to add another column, which we call Supplier ID.
+
+12
+00:01:18,000 --> 00:01:24,000
+Instead of identifying each row with Supplier Name, now you have identified each row with Supplier ID.
+
+13
+00:01:24,000 --> 00:01:30,000
+Now think of it, what could be the reason that you have a same name for two different suppliers?
+
+14
+00:01:30,000 --> 00:01:36,000
+It's quite possible both of them are supplying different things; one is supplying pencils and another one is
+
+15
+00:01:36,000 --> 00:01:42,000
+supplying erasers. In that case, you have two options. Either you add Supplier ID, which I would prefer or
+
+16
+00:01:42,000 --> 00:01:49,000
+you can create a composite column as a Primary Key. You can use Supplier Name and Supplier Item as a composite
+
+17
+00:01:49,000 --> 00:01:56,000
+Primary Key. Personally, I would add Supplier ID. The same Primary Key will be also another column in another
+
+18
+00:01:56,000 --> 00:02:02,000
+table where we will have Foreign Key relationship. A narrow Primary Key translates to less random data and
+
+19
+00:02:02,000 --> 00:02:09,000
+eventually leads to higher performance. Well, we'll talk about this thing with an example in our advanced course,
+
+20
+00:02:09,000 --> 00:02:17,000
+but for a moment let's assume that you have created Supplier ID as a Primary Key; however, you still want every
+
+21
+00:02:17,000 --> 00:02:22,000
+supplier's name unique in the system. What should be the workaround for that? Well, the workaround is to create
+
+22
+00:02:22,000 --> 00:02:30,000
+Unique Key or Supplier Name. Unique Key is not a Primary Key; however, it still ensures the data is not duplicated.
+
+23
+00:02:30,000 --> 00:02:37,000
+You can have multiple Unique Keys in one table. Unique Key also allows one NULL, whereas Primary Key does
+
+24
+00:02:37,000 --> 00:02:43,000
+not allow any NULL. We talked about Foreign Key a little bit earlier. Foreign Key: Foreign Keys are the columns
+
+25
+00:02:43,000 --> 00:02:49,000
+in a table that refers to Primary Key of another table. Let's assume that we have a table called Purchase Order.
+
+26
+00:02:49,000 --> 00:02:55,000
+In the Purchase Order table, we will have Supplier ID. Supplier ID will have a Foreign Key relationship with the
+
+27
+00:02:55,000 --> 00:03:02,000
+Primary Key of Supplier table. The primary responsibility of Foreign Key is to enforce referential integrity
+
+28
+00:03:02,000 --> 00:03:07,000
+throughout the database. There can be different kinds of relationships between Primary Key and Foreign Key.
+
+29
+00:03:07,000 --> 00:03:12,000
+There can be one-to-one, one-to-many or many-to-many relationship.
+
+30
+00:03:12,000 --> 00:03:19,000
+Let's understand one-to-one relationship. Here, we have Person and Address. One person has one address and
+
+31
+00:03:19,000 --> 00:03:25,000
+one address has one person. This is a one-to-one relationship. However, it can go complex.
+
+32
+00:03:25,000 --> 00:03:32,000
+One person might have multiple addresses. He might have billing address and mailing address, as well as his
+
+33
+00:03:32,000 --> 00:03:38,000
+office address. Now, a person has multiple addresses, that is a one-to-many relationship.
+
+34
+00:03:38,000 --> 00:03:44,000
+Let's look at the same example a little differently, one-to-many again. This time, there is one address and
+
+35
+00:03:44,000 --> 00:03:50,000
+there are multiple persons staying at that one address. Isn't that the case in our home too?
+
+36
+00:03:50,000 --> 00:03:58,000
+We have multiple people staying at one single address. Let's go a little bit more real, many-to-many.
+
+37
+00:03:58,000 --> 00:04:04,000
+Some might have a one-to-one relationship with one address and it's quite possible that certain place,
+
+38
+00:04:04,000 --> 00:04:11,000
+one address might have multiple people staying there, and it's also possible that all three of them working
+
+39
+00:04:11,000 --> 00:04:17,000
+at the same place. This is a great example of many-to-many relationship. Here, the office address has a
+
+40
+00:04:17,000 --> 00:04:24,000
+three-relationship, whereas one home address has a one-relationship, and another home has a two-relationship.
+
+41
+00:04:24,000 --> 00:04:32,000
+The primary task of relational database is to retrieve data efficiently from this various relationship and have
+
+42
+00:04:32,000 --> 00:59:00,000
+less redundant data stored in database.
+

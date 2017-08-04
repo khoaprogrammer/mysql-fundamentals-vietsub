@@ -1,0 +1,32 @@
+1
+00:00:01,000 --> 00:00:10,000
+Hi, this is Pinal Dave for Pluralsight. In this module, we will understand how MySQL Workbench works and
+
+2
+00:00:10,000 --> 00:00:12,000
+various features of it.
+
+3
+00:00:12,000 --> 00:00:18,000
+In an earlier module, we had a little bit introduction to MySQL Workbench. In this module, we will understand
+
+4
+00:00:18,000 --> 00:00:25,000
+MySQL Workbench a little bit more in depth. Now, the next logical step is to learn about coding and building
+
+5
+00:00:25,000 --> 00:00:34,000
+the database. However, before we move to that one, we need to learn about how we can use MySQL Workbench efficiently
+
+6
+00:00:34,000 --> 00:00:40,000
+to build a work database. MySQL Workbench is a Visual Database Design Tool. It is a three main workspace.
+
+7
+00:00:40,000 --> 00:00:46,000
+One is Development, second is Design, and third is Administration. In this module, we will understand each
+
+8
+00:00:46,000 --> 00:59:00,000
+of them a little bit; however, we will spend more time on development-related features of MySQL Workbench.
+

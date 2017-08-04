@@ -1,0 +1,32 @@
+1
+00:00:01,000 --> 00:00:10,000
+This is Pinal Dave for Pluralsight. In this module we'll get started with MySQL and GUI Tool.
+
+2
+00:00:10,000 --> 00:00:17,000
+This is Fundamentals of MySQL Course so we are assuming that we are all beginners. The biggest issue with any
+
+3
+00:00:17,000 --> 00:00:23,000
+beginner is to start and get going. Similarly, the biggest issue with any developer is to install
+
+4
+00:00:23,000 --> 00:00:30,000
+the product, configure it, and get started with it. MySQL installation is very simple and if any developer is
+
+5
+00:00:30,000 --> 00:00:38,000
+not starting learning MySQL because he or she thinks that installation is very complicated or difficult,
+
+6
+00:00:38,000 --> 00:00:44,000
+I personally do not agree with it. In this course, we will install MySQL and all related tools live.
+
+7
+00:00:44,000 --> 00:00:51,000
+We will see how easy and fast the entire process is. Additionally, we will also install and get started
+
+8
+00:00:51,000 --> 00:59:00,000
+using MySQL Workbench. It is the most popular GUI Tool to work with MySQL.
+

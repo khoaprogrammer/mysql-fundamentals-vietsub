@@ -1,0 +1,72 @@
+1
+00:00:03,000 --> 00:00:08,000
+Here we are in MySQL Workbench in SQL Editor and we are going to see how LIMIT keyword works.
+
+2
+00:00:08,000 --> 00:00:14,000
+As mentioned earlier, LIMIT keyword is a pretty straightforward keyword. Let's first retrieve data from
+
+3
+00:00:14,000 --> 00:00:21,000
+sakila.actor, where we have ORDER BY clause on actor_id. Let's go and apply LIMIT 10. What it does is that when
+
+4
+00:00:21,000 --> 00:00:28,000
+we execute this statement, it will only retrieve 10 rows; however, what happens if you want to retrieve data,
+
+5
+00:00:28,000 --> 00:00:37,000
+which is somewhere in-between the table? What it means is that you want to retrieve row #30 to 35 or row #50 to 65.
+
+6
+00:00:37,000 --> 00:00:44,000
+At that time, you can additionally specify offset to the LIMIT clause. This is how it works. Look at this example
+
+7
+00:00:44,000 --> 00:00:50,000
+where we have LIMIT 15 and 10. Well, these have two parameters. Let's execute them and understand what each of
+
+8
+00:00:50,000 --> 00:00:56,000
+these parameters do. When you execute this query, you can see that the first record is no more actor_id 1,
+
+9
+00:00:56,000 --> 00:01:02,000
+it is now actor_id 16. The first parameter, which we provided to LIMIT keyword, is offset. What it means is that
+
+10
+00:01:02,000 --> 00:01:09,000
+if you specify you had 15, MySQL would skip first 15 lines and would start reading the lines after that.
+
+11
+00:01:09,000 --> 00:01:14,000
+Here, if I specify 10, what it means is that is only going to retrieve 10 rows. Let's change this number and see
+
+12
+00:01:14,000 --> 00:01:20,000
+one more example. For that, I'm going to put here 25 and number of the rows I'm going to put 5.
+
+13
+00:01:20,000 --> 00:01:27,000
+What it will do is that it will start retrieving rows from row #26 and will retrieve till row #30 because we are
+
+14
+00:01:27,000 --> 00:01:33,000
+going to retrieve only five rows. Now, let's select this one and click on Execute. As we expected, it is
+
+15
+00:01:33,000 --> 00:01:40,000
+retrieving us five rows from the actor_id 26 and onwards. As LIMIT clause limits the number of the rows it
+
+16
+00:01:40,000 --> 00:01:47,000
+retrieves from the offset, it also helps with performance of overall server health. Well, with this we end our
+
+17
+00:01:47,000 --> 00:01:54,000
+understanding of data retrieval and it's various clauses, phrase, and operators. In the next module, we will see
+
+18
+00:01:54,000 --> 00:59:00,000
+data modification techniques and now we end this module with summary in sixty seconds.
+

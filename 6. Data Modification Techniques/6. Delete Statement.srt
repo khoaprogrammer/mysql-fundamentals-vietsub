@@ -1,0 +1,20 @@
+1
+00:00:06,000 --> 00:00:10,000
+DELETE statement is one of the most powerful statements. It can delete every single row in your table pretty
+
+2
+00:00:10,000 --> 00:00:16,000
+much with one line of syntax. However, we should make sure that we are using a WHERE clause with DELETE statement
+
+3
+00:00:16,000 --> 00:00:23,000
+so we delete one or more rows from table instead of deleting every single row. We can also use subquery and
+
+4
+00:00:23,000 --> 00:00:29,000
+SELECT statement to qualify row to delete in DELETE statement. If we forget the WHERE clause, we'll pretty much
+
+5
+00:00:29,000 --> 00:59:00,000
+delete every single row from the table. Let's see all of this concept into action next.
+

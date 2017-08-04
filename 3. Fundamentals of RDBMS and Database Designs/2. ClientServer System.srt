@@ -1,0 +1,56 @@
+1
+00:00:03,000 --> 00:00:11,000
+We will be using SQL to access MySQL Database. At that time, the system is often called Client/Server System.
+
+2
+00:00:11,000 --> 00:00:18,000
+Let's understand Client/Server System. There are three important components for any Client/Server System.
+
+3
+00:00:18,000 --> 00:00:25,000
+Clients: Clients are like PCs, Macs, laptops, tablets, smartphones, etc.
+
+4
+00:00:25,000 --> 00:00:33,000
+Server: Server usually stores files. When Server stores database along with files, it is called Database Server.
+
+5
+00:00:33,000 --> 00:00:36,000
+MySQL is Database Server application.
+
+6
+00:00:36,000 --> 00:00:43,000
+Networks: Networks are communication links between Client and Server. Beside including lines and cables,
+
+7
+00:00:43,000 --> 00:00:51,000
+Network also includes hubs, router, and other interface components. In many enterprises, large database files
+
+8
+00:00:51,000 --> 00:00:57,000
+are also stored on a network storage. Networking components connect server with network storage.
+
+9
+00:00:57,000 --> 00:01:06,000
+In simple topology, client and server are both on a same network. They are often known as land or local area network.
+
+10
+00:01:06,000 --> 00:01:12,000
+If there are more than two lands located in a separate geographic location, that's called WAN, which is
+
+11
+00:01:12,000 --> 00:01:20,000
+wide area network. If we assume there is a database on this Client/Server System, we can say that client sends
+
+12
+00:01:20,000 --> 00:01:27,000
+a request in terms of the SQL query to the server. Server, in turn, passes the same SQL query to the database
+
+13
+00:01:27,000 --> 00:01:34,000
+and database query returns the results back to the client and then the client, which can be PC, Mac,
+
+14
+00:01:34,000 --> 00:59:00,000
+audio handheld devices, will display the result.
+

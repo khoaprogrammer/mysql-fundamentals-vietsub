@@ -1,0 +1,272 @@
+1
+00:00:03,000 --> 00:00:10,000
+Here, we are in MySQL Workbench in SQL Editor. Let's first see how AND operator works. Here is a simple example.
+
+2
+00:00:10,000 --> 00:00:16,000
+From sakila.actor table, we are going to retrieve all the records ‘WHERE first_name = ‘KENNETH'.
+
+3
+00:00:16,000 --> 00:00:21,000
+Select the statement, click on Execute, and you can see there are four rows retrieved over here.
+
+4
+00:00:21,000 --> 00:00:27,000
+Let's make it a little bit more complicated. In WHERE clause, we add one more condition and the condition is that
+
+5
+00:00:27,000 --> 00:00:32,000
+actor_id should be less than 100. Now if you carefully observe our resultset, you can see there are three records,
+
+6
+00:00:32,000 --> 00:00:39,000
+which are ‘actor_id &lt; 100', and one record, which has ‘actor_id &gt; 100'. Now, because of this new addition in the
+
+7
+00:00:39,000 --> 00:00:45,000
+WHERE clause, our resultset will not have four rows, but it should have three rows. Let's execute this and check
+
+8
+00:00:45,000 --> 00:00:51,000
+the resultset. Now it's very clear that in our resultset we don't have actor_id, which is greater than 100,
+
+9
+00:00:51,000 --> 00:00:56,000
+even though the first_name is KENNETH. Besides having ‘first_name = ‘KENNETH' AND ‘actor_id &lt; 100',
+
+10
+00:00:56,000 --> 00:01:01,000
+we have added one more condition where ‘last_name = ‘TORN'. Let's execute this and check the resultset.
+
+11
+00:01:01,000 --> 00:01:07,000
+In our entire table, this is the only row which satisfies all three conditions, which is specified in WHERE clause.
+
+12
+00:01:07,000 --> 00:01:12,000
+Now we will see how OR logic works. First, we will see a simple example and we will retrieve all the
+
+13
+00:01:12,000 --> 00:01:18,000
+records ‘first_name = ‘KENNETH'. Now you can see we have retrieved four rows. Let's make it a little bit more
+
+14
+00:01:18,000 --> 00:01:25,000
+complicated and we add one more OR into our WHERE clause. Right now, OR suggests ‘actor_id &lt; 100'.
+
+15
+00:01:25,000 --> 00:01:31,000
+What it means is that now our query should return everybody who has a ‘first_name = ‘KENNETH', as well
+
+16
+00:01:31,000 --> 00:01:38,000
+any ‘actor_id &lt; 100'. For example, looking at this condition, we know that following four rows will be part of
+
+17
+00:01:38,000 --> 00:01:43,000
+the resultset. When we look at this condition independently, we also understand that there will be additionally
+
+18
+00:01:43,000 --> 00:01:49,000
+99 rows also part of our resultset and there is always a chance of overlay. What it means is that we'll definitely
+
+19
+00:01:49,000 --> 00:01:58,000
+get all the record where ‘actor_id &lt; 100', as well as one additional row where ‘actor_id &gt; 100' and is 169 because
+
+20
+00:01:58,000 --> 00:02:05,000
+it qualifies for condition ‘WHERE first_name = ‘KENNETH'. Let's validate our assumption by executing this query
+
+21
+00:02:05,000 --> 00:02:11,000
+and let's scroll down. At the bottom of our resultset, we can see that we have retrieved every row,
+
+22
+00:02:11,000 --> 00:02:18,000
+which has ‘actor_id &lt; 99', as well retrieved row 169 because it has ‘first_name = ‘KENNETH' and that is also
+
+23
+00:02:18,000 --> 00:02:23,000
+one of OR condition. Now you can see in the WHERE clause we have added ‘last_name = ‘TEMPLE'.
+
+24
+00:02:23,000 --> 00:02:31,000
+What it means is that any row which has first_name as KENNETH or last_name as TEMPLE or ‘actor_id &lt; 100' will be
+
+25
+00:02:31,000 --> 00:02:37,000
+qualified for our resultset. Let's execute that and scroll all the way to the bottom. Now you can see that we
+
+26
+00:02:37,000 --> 00:02:43,000
+have additional rows where ‘last_name = ‘TEMPLE' and all of these rows have ‘actor_id &gt; 100'.
+
+27
+00:02:43,000 --> 00:02:49,000
+Well, now let's move to our next logical operator, which is NOT. Well, NOT conditions are very simple conditions.
+
+28
+00:02:49,000 --> 00:02:54,000
+They just negate the logic, which we have used in the WHERE clause. Let's see this example. Here, we will specify
+
+29
+00:02:54,000 --> 00:03:00,000
+‘actor_id = 50'. If we do not have a NOT, what it means is that this query will return as result
+
+30
+00:03:00,000 --> 00:03:07,000
+‘WHERE actor_id = 5'; however, because we have used NOT just right before our condition, what it means is that
+
+31
+00:03:07,000 --> 00:03:13,000
+this query will return us every single result where we don't have ‘actor_id = 5'. Let's exhibit this query and
+
+32
+00:03:13,000 --> 00:03:19,000
+relate it to our assumption. Well, in resultset, pay attention to actor_id column. There is no row between
+
+33
+00:03:19,000 --> 00:03:26,000
+actor_id 4 and actor_id 6. What it means is that this query does not return us any result where ‘actor_id = 5'.
+
+34
+00:03:26,000 --> 00:03:32,000
+Remember what I mentioned earlier? NOT sometimes confuses the user or developer if there is very
+
+35
+00:03:32,000 --> 00:03:36,000
+complicated logic. You can relate this query without using NOT as well. Look at this example.
+
+36
+00:03:36,000 --> 00:03:42,000
+Here, instead of using NOT, I have just changed the condition from ‘equal to' to ‘not equal to' and this query
+
+37
+00:03:42,000 --> 00:03:47,000
+will also return as absolutely same result. Now we have understood all three of our logical operators.
+
+38
+00:03:47,000 --> 00:03:53,000
+Now let's put all of them together and understand with much more complex examples. Here is our first example.
+
+39
+00:03:53,000 --> 00:03:58,000
+We will use AND and OR together. Let's execute this query and we have retrieved seven rows.
+
+40
+00:03:58,000 --> 00:04:05,000
+You can see this query has returned us everybody with the first_name as KENNETH and ‘actor_id &lt; 100'.
+
+41
+00:04:05,000 --> 00:04:11,000
+Additionally, it has also retrieved all the record where ‘last_name = ‘TEMPLE'. Remember, one more thing, which
+
+42
+00:04:11,000 --> 00:04:16,000
+we just discussed a few minutes ago, which is logical operator precedence. Logical operator precedence is NOT,
+
+43
+00:04:16,000 --> 00:04:22,000
+AND, and OR. What it means is that AND is evaluated first and OR is evaluated right after it.
+
+44
+00:04:22,000 --> 00:04:27,000
+In this case, two conditions were evaluated first and later, they were ordered with this condition.
+
+45
+00:04:27,000 --> 00:04:32,000
+Let's change this order of condition and we will see that we will get absolutely different result than what we
+
+46
+00:04:32,000 --> 00:04:38,000
+have just got over here. Now here is the second query. What we have done here is that we just took this OR and
+
+47
+00:04:38,000 --> 00:04:44,000
+moved it a little bit before AND and ‘AND actor_id' is now right after OR CONDITION. As for the precedence of
+
+48
+00:04:44,000 --> 00:04:50,000
+operator, AND will be evaluated first. What it means is that these two conditions will be evaluated first.
+
+49
+00:04:50,000 --> 00:04:55,000
+These two conditions will be evaluated first and later they will be ordered with ‘first_name = ‘KENNETH'.
+
+50
+00:04:55,000 --> 00:05:01,000
+Even though both the queries have almost similar conditions, they have very different meaning.
+
+51
+00:05:01,000 --> 00:05:07,000
+I selected the query and click on Execute. Now this query has returned as every record where ‘last_name = name'
+
+52
+00:05:07,000 --> 00:05:15,000
+and ‘actor_id &lt; 100'. What it means is that anybody who has a last name equal to TEMPLE, but actor_id is greater
+
+53
+00:05:15,000 --> 00:05:21,000
+than 100, is not part of this resultset. KENNETH is an OR condition so anybody who has a first name equal to
+
+54
+00:05:21,000 --> 00:05:27,000
+KENNETH will be always part of this resultset and, hence, we are able to see actor_id, which is 169, with
+
+55
+00:05:27,000 --> 00:05:33,000
+first_name as KENNETH also part of this resultset. The concept, which we have just discussed, is a very, very
+
+56
+00:05:33,000 --> 00:05:39,000
+important concept and I strongly encourage all of you to execute this query on a sakila Sample Database.
+
+57
+00:05:39,000 --> 00:05:43,000
+Now let's make it a little bit more complicated and take this example to the next level.
+
+58
+00:05:43,000 --> 00:05:48,000
+We'll start using parentheses to our logic, which we have just seen. Here are two examples.
+
+59
+00:05:48,000 --> 00:05:53,000
+Let's execute this first query first and you can notice this query is very similar to the OR initial query.
+
+60
+00:05:53,000 --> 00:05:59,000
+If you do not use parentheses in this logic, it will still give us same result. However, it's not true in this case.
+
+61
+00:05:59,000 --> 00:06:04,000
+You can notice over here we have parentheses around ‘(actor_id &lt; 100' OR ‘last_name = ‘TEMPLE')'.
+
+62
+00:06:04,000 --> 00:06:08,000
+When you select everything together and execute, you can see that we'll now only get the result
+
+63
+00:06:08,000 --> 00:06:14,000
+‘WHERE first_name = ‘KENNETH'. Funny enough, you want to build the condition ‘WHERE last_name = ‘TEMPLE',
+
+64
+00:06:14,000 --> 00:06:19,000
+none of the rows qualify because now we have additional conditions to our original resultset, which states
+
+65
+00:06:19,000 --> 00:06:25,000
+‘first_name = ‘KENNETH'. There is not a single actor who has last_name TEMPLE and first_name KENNETH.
+
+66
+00:06:25,000 --> 00:06:30,000
+Now you can see the power of parentheses and order of precedence, how they play together, and keep on changing
+
+67
+00:06:30,000 --> 00:06:37,000
+our result. Well, with this we end our logical operator section and let's move to the various other operators
+
+68
+00:06:37,000 --> 00:59:00,000
+related to WHERE condition.
+

@@ -1,0 +1,156 @@
+1
+00:00:01,000 --> 00:00:07,000
+Now we will see some of the functions related to DATE.
+
+2
+00:00:07,000 --> 00:00:12,000
+One of the most used function is DATE_FORMAT function. Every country and every geographic region has their
+
+3
+00:00:12,000 --> 00:00:18,000
+own format. When we are dealing with an application which is using a multiple country, we are to carefully pay
+
+4
+00:00:18,000 --> 00:00:24,000
+attention to the date and time. In our daily routine and in our application, we need a different part of the date.
+
+5
+00:00:24,000 --> 00:00:30,000
+Sometimes we need to know date part and sometimes we just need time part. Let's see some of the date and time
+
+6
+00:00:30,000 --> 00:00:36,000
+functions right now. Let's see this very first script. Select the statement and click on Execute and here,
+
+7
+00:00:36,000 --> 00:00:41,000
+you can see the date is first and the month is in the middle. Also, one of the other differences between these
+
+8
+00:00:41,000 --> 00:00:47,000
+two columns is how year is spelled. If you look at the last column, it's also very differently formatted.
+
+9
+00:00:47,000 --> 00:00:53,000
+Even the date and time are the same, the way it is displayed are different. In my circle, we have a different
+
+10
+00:00:53,000 --> 00:01:02,000
+marks for date and time. For example, when we have m, d, and y in the smaller letters, they're each mapped
+
+11
+00:01:02,000 --> 00:01:09,000
+to month, day, and two digit year. If we just capitalize Y, it means now four digit year.
+
+12
+00:01:09,000 --> 00:01:15,000
+Similar way, if you want your month to represent with three-character string, you can just use small b.
+
+13
+00:01:15,000 --> 00:01:22,000
+Capital T stands for the time and F stands for precision of the time. If you search for function date-format
+
+14
+00:01:22,000 --> 00:01:30,000
+in my SQL documentation, you can find details of each and every mask available for DATE_FORMAT.
+
+15
+00:01:30,000 --> 00:01:37,000
+For example, A stands for abbreviated weekday name, whereas small h stands for hour. Capital H stands for now Hour
+
+16
+00:01:37,000 --> 00:01:45,000
+as well, but in 24 hour system. If you want day of the week, you can just use small w and if you want weekday name,
+
+17
+00:01:45,000 --> 00:01:52,000
+you can just use capital W and if you go further up in the MySQL documentation, the 12th section is dedicated to
+
+18
+00:01:52,000 --> 00:01:59,000
+Functions and Operators and over here, you can find out various numeric functions and operators, as well as
+
+19
+00:01:59,000 --> 00:02:06,000
+string functions. Here is the entire list of string functions and operators, which you can practice out each one
+
+20
+00:02:06,000 --> 00:02:14,000
+at a time. Similar way, here is the list of string functions. Let's go to next script. Now we can see that we can
+
+21
+00:02:14,000 --> 00:02:20,000
+change this mask and build the date and time format as we want. Let's go to next script.
+
+22
+00:02:20,000 --> 00:02:25,000
+Here is the DATE_FORMAT. It's quite possible that we are not familiar with each country or each zones.
+
+23
+00:02:25,000 --> 00:02:31,000
+At that time, we can use a very interesting function, which is GET_FORMAT. What GET_FORMAT does is that instead
+
+24
+00:02:31,000 --> 00:02:36,000
+of specifically mask, it will automatically get the format based on your date and time from the zone which
+
+25
+00:02:36,000 --> 00:02:41,000
+you specify. For example, let's execute this. Select the statement and click on Execute.
+
+26
+00:02:41,000 --> 00:02:47,000
+Now we have four columns and you can see on the very first column, if you carefully pay attention to each of these
+
+27
+00:02:47,000 --> 00:02:53,000
+columns, you can notice that they have a same value. The reason is very simple, that GET_FORMAT when we use with
+
+28
+00:02:53,000 --> 00:03:00,000
+the DATETIME for EUR, ISO or USA, it gives us the same time format. Now I replace DATETIME with TIME and let's
+
+29
+00:03:00,000 --> 00:03:05,000
+execute the script again. When you execute the script again, now we can clearly see that all the column has a
+
+30
+00:03:05,000 --> 00:03:12,000
+different information. You can see over here the column #1 and last has pretty much the same information;
+
+31
+00:03:12,000 --> 00:03:20,000
+however, date and month are swapped. In Europe, the date is always first and in USA, month is always first and
+
+32
+00:03:20,000 --> 00:03:26,000
+in ISO format, year in the four digit month and date. Let's first execute this script and later we will
+
+33
+00:03:26,000 --> 00:03:32,000
+understand the output. In our result time, we have five columns. First, is rental_date, which is the original
+
+34
+00:03:32,000 --> 00:03:40,000
+date time and other four columns. The date is 2005-05-24, it was the third week of the day, and it was in the
+
+35
+00:03:40,000 --> 00:03:48,000
+second quarter, as month is May. This particular month was 21st week of the year. Well, MySQL has a default
+
+36
+00:03:48,000 --> 00:03:55,000
+function where it will give you day of the week, quarter of the year, week of the year, and name of the month.
+
+37
+00:03:55,000 --> 00:04:01,000
+You can just use any of these functions and pass your DATETIME as one of the parameters, it will give you the output,
+
+38
+00:04:01,000 --> 00:04:07,000
+which you are expecting. With this, we end our clip, but you can notice that how easy it is to use various
+
+39
+00:04:07,000 --> 00:59:00,000
+function in a SELECT statement and can get desired output.
+

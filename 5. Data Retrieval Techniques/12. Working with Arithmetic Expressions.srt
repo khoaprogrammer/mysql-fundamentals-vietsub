@@ -1,0 +1,56 @@
+1
+00:00:04,000 --> 00:00:09,000
+Now we will see a demonstration of how we use Arithmetic Expressions, as well as column aliases.
+
+2
+00:00:09,000 --> 00:00:16,000
+By default, MySQL gives column in the resultset the same name as the column in a base table; however, for
+
+3
+00:00:16,000 --> 00:00:23,000
+business needs, we can specify a different name known as column alias. If a column is based on calculated values,
+
+4
+00:00:23,000 --> 00:00:29,000
+by default the name of the column is the complete expression. This automatically assigned expression is usually
+
+5
+00:00:29,000 --> 00:00:36,000
+very difficult to read, as well as write. It's always a good idea to assign the column alias to a column,
+
+6
+00:00:36,000 --> 00:00:44,000
+which either has a calculated value or very complicated name. We will see that in a demonstration later this clip.
+
+7
+00:00:44,000 --> 00:00:53,000
+MySQL values any arithmetic expression from left to right. The order of precedence is as follows: Multiplication,
+
+8
+00:00:53,000 --> 00:01:01,000
+Division, Integer Division, Modulo, Addition, and Subtraction. If you have multiplication and addition in the
+
+9
+00:01:01,000 --> 00:01:07,000
+same expression, MySQL will first perform multiplication and later, addition. When we are reading from left
+
+10
+00:01:07,000 --> 00:01:13,000
+to right, we forget the importance of order of precedence. If you want to avoid confusion, it's always a good
+
+11
+00:01:13,000 --> 00:01:20,000
+idea to use parentheses. Parentheses avoids confusion, as well as gives you expected results.
+
+12
+00:01:20,000 --> 00:01:27,000
+Arithmetic expressions involving multiplication, division, addition, and subtraction are very common.
+
+13
+00:01:27,000 --> 00:01:34,000
+Modulo or remainder or integer division are not commonly used arithmetic expressions.
+
+14
+00:01:34,000 --> 00:59:00,000
+You will see in the next demo, how we can use these various arithmetic expressions in MySQL queries.
+

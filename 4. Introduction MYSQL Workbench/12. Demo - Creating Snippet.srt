@@ -1,0 +1,56 @@
+1
+00:00:03,000 --> 00:00:11,000
+Now we will see how we can use Snippet in MySQL Workbench. Snippets are nothing but a library of SQL Syntax.
+
+2
+00:00:11,000 --> 00:00:17,000
+No matter how expert you are writing SQL queries, there are always moments when we don't remember what was
+
+3
+00:00:17,000 --> 00:00:24,000
+the exit syntax of a particular feature. To enter the Snippet Area, go onto MySQL Workbench on the further
+
+4
+00:00:24,000 --> 00:00:31,000
+right-most icon over here. Click here and it will open up Snippet Area. Let's see a few of the Snippets.
+
+5
+00:00:31,000 --> 00:00:38,000
+Double-click on SELECT Syntax and you can see the SELECT Syntax is given over here. You can either edit this one
+
+6
+00:00:38,000 --> 00:00:46,000
+and write new syntax over here and click on Done. Similar way, we have a JOIN, INSERT, UPDATE, DELETE, and
+
+7
+00:00:46,000 --> 00:00:54,000
+REPLACE Syntax. Let's try to create a Snippet for selecting data from a table. I'll write down syntax over here,
+
+8
+00:00:54,000 --> 00:00:58,000
+which is SELECT * FROM. Now I will select this one and click on Add snippet. When I click on this one, you can
+
+9
+00:00:58,000 --> 00:01:07,000
+see there is a new entry over here. Now double-click on it and you can see the selected text is visible here,
+
+10
+00:01:07,000 --> 00:01:13,000
+which is SELECT * FROM. Now click on Done again and now type any schema name followed by a table name.
+
+11
+00:01:13,000 --> 00:01:21,000
+For example, sakila.actor. Now right-click over the snippet and select ‘Insert snippet text' at the cursor
+
+12
+00:01:21,000 --> 00:01:27,000
+and you can see it automatically populated SELECT * FROM and table name, which we had already written.
+
+13
+00:01:27,000 --> 00:01:32,000
+You can just click on SELECT and now it will display the data. This is how you can use snippet to expedite
+
+14
+00:01:32,000 --> 00:59:00,000
+writing your SQL queries.
+

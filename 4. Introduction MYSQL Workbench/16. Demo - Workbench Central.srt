@@ -1,0 +1,72 @@
+1
+00:00:02,000 --> 00:00:08,000
+Now we understand the three major sections of MySQL Workbench -- SQL Development, Data Modeling,
+
+2
+00:00:08,000 --> 00:00:13,000
+and Server Administration. Now we will understand Workbench Central. Click over here and you can see there are
+
+3
+00:00:13,000 --> 00:00:20,000
+various links for Workbench Central. The first one is MySQL Doc Library. Click over here and it will open
+
+4
+00:00:20,000 --> 00:00:26,000
+MySQL Documentation. You can pretty much search anything over here and this is a great reference.
+
+5
+00:00:26,000 --> 00:00:34,000
+For example, let's search for ‘alter index' and when we search for alter index, it gives us 24 matches and all of them
+
+6
+00:00:34,000 --> 00:00:40,000
+showed up instantaneously. Let's do another search. Let's search for ‘create database'. There are more than 50
+
+7
+00:00:40,000 --> 00:00:47,000
+results for ‘create database'. If you are doing MySQL code and if you're stuck, I strongly encourage you to
+
+8
+00:00:47,000 --> 00:00:54,000
+refer to MySQL Workbench Reference Manual. There is a good chance that it will solve all of your problems.
+
+9
+00:00:54,000 --> 00:00:56,000
+Let's close this and go to Home Page.
+
+10
+00:00:56,000 --> 00:01:05,000
+The second link over here is MySQL Utility. When we click over here, it displays us a list of MySQL Utilities.
+
+11
+00:01:05,000 --> 00:01:12,000
+They are very important. For example, there are utilities for identifying difference, auditing administration
+
+12
+00:01:12,000 --> 00:01:19,000
+or doing import or export. Let's close it and here is the link for Database Migration.
+
+13
+00:01:19,000 --> 00:01:26,000
+When you click over here, it opens MySQL Workbench Migration Wizard. This wizard assists us in migrating table
+
+14
+00:01:26,000 --> 00:01:33,000
+and data from supported database system to MySQL. You can also use this one to copy database from one
+
+15
+00:01:33,000 --> 00:01:39,000
+MySQL instance to another MySQL instance. Let's close this one.
+
+16
+00:01:39,000 --> 00:01:47,000
+Similarly, we can submit MySQL Bug from MySQL Workbench itself, as well as for additional tips and tricks,
+
+17
+00:01:47,000 --> 00:01:54,000
+we can read Workbench blogs. Now we are back on the main screen of MySQL Workbench. With this, we conclude this
+
+18
+00:01:54,000 --> 00:59:00,000
+module and move to Summary.
+

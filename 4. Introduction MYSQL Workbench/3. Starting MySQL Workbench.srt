@@ -1,0 +1,56 @@
+1
+00:00:04,000 --> 00:00:11,000
+Now for the rest of the module, we will see demonstration of MySQL Workbench features, which will be useful to us
+
+2
+00:00:11,000 --> 00:00:18,000
+in performing of a daily task with MySQL. You can start MySQL Workbench on Windows platform by going to
+
+3
+00:00:18,000 --> 00:00:26,000
+Start &gt;&gt; All Programs &gt;&gt; MySQL &gt;&gt; (and clicking on) MySQL Workbench application. Upon launching MySQL Workbench,
+
+4
+00:00:26,000 --> 00:00:33,000
+you will see following screen. This is the home screen of MySQL Workbench. On the home screen of MySQL Workbench,
+
+5
+00:00:33,000 --> 00:00:39,000
+we have three major workspaces or sections - First is SQL Development, second Data Modeling, and third is
+
+6
+00:00:39,000 --> 00:00:45,000
+Server Administration. SQL Development is the section where we'll be spending most of our time as this is
+
+7
+00:00:45,000 --> 00:00:52,000
+a SQL Development course. In the SQL Development Area, we can create databases and run SQL queries.
+
+8
+00:00:52,000 --> 00:00:59,000
+In Data Modeling, we will create and manage models. Additionally, we also reverse engineer database.
+
+9
+00:00:59,000 --> 00:01:05,000
+In the Server Administration Area, we can set up various user accounts, browse status variables and server logs.
+
+10
+00:01:05,000 --> 00:01:13,000
+We can also do important export of the data over here. You will also see how we can start and shut down Server
+
+11
+00:01:13,000 --> 00:01:20,000
+in this section. On the top part, you can see Workbench Central. Click on the arrow and it will expand.
+
+12
+00:01:20,000 --> 00:01:27,000
+We have few of the very important links in Workbench Central Area, like MySQL Document Library, MySQL Utilities,
+
+13
+00:01:27,000 --> 00:01:35,000
+Database Migration, MySQL Bug Reporter, as well as Workbench Blogs. Let's start first with SQL
+
+14
+00:01:35,000 --> 00:59:00,000
+Development Workspace.
+

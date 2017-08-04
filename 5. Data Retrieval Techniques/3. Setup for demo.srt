@@ -1,0 +1,28 @@
+1
+00:00:03,000 --> 00:00:10,000
+Before we start with our demonstration, let's understand the setup required. You will need MySQL Server,
+
+2
+00:00:10,000 --> 00:00:18,000
+MySQL Workbench, and Sample Database sakila. In my case, I'll use MySQL installer for Windows and in this case,
+
+3
+00:00:18,000 --> 00:00:24,000
+by default, install MySQL Server, Workbench, and all the necessary Sample Database. You can use either of the
+
+4
+00:00:24,000 --> 00:00:31,000
+method, but make sure you do practice all the demos, which you see in this course. Now, open MySQL Workbench,
+
+5
+00:00:31,000 --> 00:00:38,000
+click on your server name, and it will open SQL Editor. This is the screen where we'll be starting most of the demos.
+
+6
+00:00:38,000 --> 00:00:43,000
+On the left side on Object Browser, you can see we have sakila Sample Database installed.
+
+7
+00:00:43,000 --> 00:59:00,000
+Most of the demos of this course will begin with this screen.
+

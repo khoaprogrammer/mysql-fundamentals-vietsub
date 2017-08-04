@@ -1,0 +1,132 @@
+1
+00:00:03,000 --> 00:00:10,000
+Now you open MySQL Workbench and SQL Editor. We will be seeing examples of how ORDER BY works.
+
+2
+00:00:10,000 --> 00:00:15,000
+Let's start with a very simple example, here it is, ‘SELECT * FROM sakila.address ORDER BY district'.
+
+3
+00:00:15,000 --> 00:00:20,000
+Select the statement and click on Execute. In the resultset, pay attention to the distinct column.
+
+4
+00:00:20,000 --> 00:00:24,000
+You can notice that the distinct column is now ordered alphabetically in ascending order.
+
+5
+00:00:24,000 --> 00:00:31,000
+Abu Chabi is on the top and Zulia at the end. Now, if you want to reverse the order of this column, what it means
+
+6
+00:00:31,000 --> 00:00:37,000
+is that you want Zulia on the top and Abu Chabi on the bottom. You can easily do it if you just specify
+
+7
+00:00:37,000 --> 00:00:43,000
+descending keyword in an ORDER BY clause. Here is the example. Let's select the statement and click on Execute.
+
+8
+00:00:43,000 --> 00:00:49,000
+You can see that now Zulia is on the top and if you scroll all the way to bottom, Abu Chabi is at the end.
+
+9
+00:00:49,000 --> 00:00:56,000
+Now let's see another example where we have more than one column in ORDER BY clause. Let's select this one and Execute.
+
+10
+00:00:56,000 --> 00:01:02,000
+Let's take the example of Abu Chabi itself. You can see that Abu Chabi is on the top. It is ordered in ascending
+
+11
+00:01:02,000 --> 00:01:07,000
+sequence by column distinct. If you pay attention to the postal_code, you can see that the higher number is on
+
+12
+00:01:07,000 --> 00:01:14,000
+the top and lower number is on the bottom. What it means is that in this window of Abu Chabi, MySQL has once
+
+13
+00:01:14,000 --> 00:01:19,000
+again sorted postal_codes. However, the order of the postal_code is descending, hence, you can see the value,
+
+14
+00:01:19,000 --> 00:01:26,000
+which is higher on the top and the value, which is lower on the bottom. Similar example is also here in Adna.
+
+15
+00:01:26,000 --> 00:01:32,000
+You can see that higher number is on the top, where lower number in the postal_code column is on the bottom.
+
+16
+00:01:32,000 --> 00:01:37,000
+Now, let's see a different example. Here it is, where we have our expression in a SELECT statement.
+
+17
+00:01:37,000 --> 00:01:43,000
+You can see that here we have actor_id from sakila.actor table and we are concatenating first_name and last_name
+
+18
+00:01:43,000 --> 00:01:49,000
+and we are aliasing first_name and last_name as FullName. We can order this complete table by expression using
+
+19
+00:01:49,000 --> 00:01:54,000
+the SELECT statement. For example, we can use this concat in our ORDER BY clause as well.
+
+20
+00:01:54,000 --> 00:02:00,000
+Let's select this complete statement and Execute. You can see that now complete table is now ORDER BY expression,
+
+21
+00:02:00,000 --> 00:02:07,000
+which you have specified in ORDER BY clause. To make things simple, we can also use alias in ORDER BY clause as well.
+
+22
+00:02:07,000 --> 00:02:13,000
+You can see here that instead of using expression, we are using the alias, which we have given in SELECT statement
+
+23
+00:02:13,000 --> 00:02:18,000
+in ORDER BY clause. Let's select this one and click on Execute. The resultset is very similar to the one we
+
+24
+00:02:18,000 --> 00:02:24,000
+called; however, it's very easy to read and easy to write as, instead of writing complete expression, we can
+
+25
+00:02:24,000 --> 00:02:30,000
+just replace it with alias. Well, there is one more trick I want to show you. Here, in ORDER BY, we have
+
+26
+00:02:30,000 --> 00:02:38,000
+used digit 2. Digit 2 stands for column #2, which is in a SELECT statement. What it means is that actor_id is
+
+27
+00:02:38,000 --> 00:02:45,000
+column 1 and concat expression is column 2. Let's exhibit this one. You can see that our resultset is ORDER BY
+
+28
+00:02:45,000 --> 00:02:51,000
+second column, which is concatenating of first_name and last_name. If we remove these two and put over here 1,
+
+29
+00:02:51,000 --> 00:02:57,000
+it will be ORDER BY actor_id. Let's see that. Select the statement, click on Execute, and you can see that now
+
+30
+00:02:57,000 --> 00:03:03,000
+complete resultset is ORDER BY actor_id column. Well, personally I do not like this method because this method
+
+31
+00:03:03,000 --> 00:03:10,000
+can create ambiguity when we are using the * or when we have a schema change or some developer adds column in
+
+32
+00:03:10,000 --> 00:03:17,000
+a SELECT clause. I personally prefer to use complete expression or alias of the column in ORDER BY clause.
+
+33
+00:03:17,000 --> 00:59:00,000
+Well with this, we finish our understanding of ORDER BY clause.
+

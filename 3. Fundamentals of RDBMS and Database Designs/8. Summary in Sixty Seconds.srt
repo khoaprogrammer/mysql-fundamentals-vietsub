@@ -1,0 +1,20 @@
+1
+00:00:03,000 --> 00:00:05,000
+Summary in Sixty Seconds
+
+2
+00:00:05,000 --> 00:00:11,000
+A relational database consists of tables. A table consists of Rows and Columns.
+
+3
+00:00:11,000 --> 00:00:19,000
+The intersection of Rows and Columns is called cell. Primary Keys uniquely identifies each row of the table.
+
+4
+00:00:19,000 --> 00:00:27,000
+Foreign Key enforces referential integrity. Defining data type of the column is one of the most crucial tasks
+
+5
+00:00:27,000 --> 00:59:00,000
+of database modeling. Check out other database designing courses on Pluralsight.
+

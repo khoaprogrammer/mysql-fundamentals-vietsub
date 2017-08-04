@@ -1,0 +1,140 @@
+1
+00:00:01,000 --> 00:00:08,000
+In this demo, we will see how we can do some of the very common string operations
+
+2
+00:00:08,000 --> 00:00:16,000
+with string functions. For example, joining two string and making it a single string. One of the most common tasks
+
+3
+00:00:16,000 --> 00:00:21,000
+every developer faces is to concat two strings. For example, if you have first_name and last_name, if you want
+
+4
+00:00:21,000 --> 00:00:27,000
+to display a full name, you just have to concat two strings. MySQL is in BUILD function, which we can use to just
+
+5
+00:00:27,000 --> 00:00:34,000
+concat string. For example, here we have concat function. We can pass multiple parameters over here.
+
+6
+00:00:34,000 --> 00:00:41,000
+I will pass three parameters. First is first_name ‘ ‘ and last_name. Now, let's execute this one.
+
+7
+00:00:41,000 --> 00:00:47,000
+Select the statement and click on Execute. I have aliased the column ‘AS FullName'. Under the FullName column,
+
+8
+00:00:47,000 --> 00:00:54,000
+you can see now first name and last name are displayed together with the space between them.
+
+9
+00:00:54,000 --> 00:01:01,000
+You can see how easy MySQL makes it to join two or more strings. If your need is to just display initial of the person,
+
+10
+00:01:01,000 --> 00:01:07,000
+you can do that using MySQL as well. Here is our second example where I'll use function code LEFT.
+
+11
+00:01:07,000 --> 00:01:12,000
+LEFT takes two parameters, first is a string and second one is how many characters you want to select from
+
+12
+00:01:12,000 --> 00:01:18,000
+the left side. Here I'm applying LEFT function on the first_name, as well as on the last_name, and both the times
+
+13
+00:01:18,000 --> 00:01:24,000
+I'm just selecting one character. When we run this complete SELECT statement, you can see that, along with the
+
+14
+00:01:24,000 --> 00:01:30,000
+FullName, now we are able to see the initials. Currently, initials has a space between them because I have left
+
+15
+00:01:30,000 --> 00:01:37,000
+space over here. If you remove this space and comma and execute it again, you can see that now initial does not
+
+16
+00:01:37,000 --> 00:01:43,000
+have a space between them. Similarly there is a function called RIGHT, which will just select the right-most rows.
+
+17
+00:01:43,000 --> 00:01:48,000
+Currently, we are selecting only one character. Let's make it two for first_name and last_name.
+
+18
+00:01:48,000 --> 00:01:54,000
+Now let's execute it one more time. You can see this time that we are getting first two characters, first_name
+
+19
+00:01:54,000 --> 00:02:01,000
+and last_name. For example, we are selecting PE from PENELOPE and GU for GUINESS. Similar thing is for NICK,
+
+20
+00:02:01,000 --> 00:02:08,000
+we are selecting NI and for WAHLBERG, we are taking WA. As we know, we are selecting only two rows from first initial
+
+21
+00:02:08,000 --> 00:02:14,000
+and last initial, the string which is built for initial has a fixed length. However, in case of the ordering of
+
+22
+00:02:14,000 --> 00:02:20,000
+first_name and last_name, we really do not know what is the length of this string. We can use function LENGTH and
+
+23
+00:02:20,000 --> 00:02:27,000
+can figure it out, LENGTH of our first_name and last_name together. For example, here I'm concatenating
+
+24
+00:02:27,000 --> 00:02:33,000
+first_name and last_name and applying LENGTH function over it. Let's execute this complete statement and here it is.
+
+25
+00:02:33,000 --> 00:02:40,000
+For example, NICK WAHLBERG has 13 characters and JENNIFER DAVIS has now 14 characters.
+
+26
+00:02:40,000 --> 00:02:45,000
+One of the functions is REVERSE. What it will do is that it will take the complete string and display as in
+
+27
+00:02:45,000 --> 00:02:50,000
+the REVERSE order. We can use this function to figure it out while in (inaudible). Let's execute this one.
+
+28
+00:02:50,000 --> 00:02:55,000
+Now in the resultset, the first column is FullName, which is the origin of FullName. You can see NICK WAHLBERG
+
+29
+00:02:55,000 --> 00:03:02,000
+is over, but when we see the reverse FullName, it is now spelled backwards. For example, last character's G is
+
+30
+00:03:02,000 --> 00:03:08,000
+the first character over here and second to last character, which is R, is now second character over here.
+
+31
+00:03:08,000 --> 00:03:15,000
+Let's examine our REPLACE function. For example, in JENNIFER DAVIS, we have S as the last character.
+
+32
+00:03:15,000 --> 00:03:22,000
+When we see the replaced example, we can find DAVI and $ because our S is now replaced with $.
+
+33
+00:03:22,000 --> 00:03:27,000
+Similar thing is also there with GRACE MOSTEL. In this case, S is once again replaced with $.
+
+34
+00:03:27,000 --> 00:03:33,000
+You can use this REVERSE and REPLACE function and can do a lot of different things. Next, we will see function
+
+35
+00:03:33,000 --> 00:59:00,000
+related to date and time.
+

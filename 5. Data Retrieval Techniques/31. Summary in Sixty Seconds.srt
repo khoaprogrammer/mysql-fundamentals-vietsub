@@ -1,0 +1,28 @@
+1
+00:00:03,000 --> 00:00:05,000
+Summary in Sixty Seconds
+
+2
+00:00:05,000 --> 00:00:10,000
+SELECT clause describes the column lists in the resultset. FROM clause describes the table names from which
+
+3
+00:00:10,000 --> 00:00:17,000
+the query retrieves the data. WHERE clause describes the condition to match for rows to qualify for resultset.
+
+4
+00:00:17,000 --> 00:00:22,000
+ORDER BY clause describes the sort order and sequence for resultset. LIMIT clause describes the number of the
+
+5
+00:00:22,000 --> 00:00:29,000
+rows resultset returns and offset of it. Use column names in SELECT statement instead of * to reduce ambiguity
+
+6
+00:00:29,000 --> 00:00:35,000
+and impact performance. Using aliases improves readability. Use various comparisons and logical operators in
+
+7
+00:00:35,000 --> 00:59:00,000
+WHERE clause to retrieve rows relevant to application. Always use ORDER BY clause if you want your resultset ordered.
+

@@ -1,0 +1,356 @@
+1
+00:00:04,000 --> 00:00:11,000
+Let's open MySQL Workbench and SQL Editor and now we will see a few of the examples of how INSERT works.
+
+2
+00:00:11,000 --> 00:00:16,000
+We'll start with creating a sample table and we'll be inserting all the data into this sample table.
+
+3
+00:00:16,000 --> 00:00:22,000
+This is how we make sure that we do not upset live data. We'll be using Database sakila. We'll create a table,
+
+4
+00:00:22,000 --> 00:00:29,000
+which is ActorSample. It has actor_id, first_name, last_name, and last_update. Actor_id is small integer and
+
+5
+00:00:29,000 --> 00:00:35,000
+it's unsigned; however, it's NOT NULL and it's AUTO_INCREMENTING. As we are not specifying any other properties
+
+6
+00:00:35,000 --> 00:00:42,000
+of AUTO_INCREMENT, it will start with 1 and will increment the value of the column by 1 as well.
+
+7
+00:00:42,000 --> 00:00:49,000
+The first_name is varchar and it's NOT NULL, last_name is NULL, and last_update is timestamp data type and it's
+
+8
+00:00:49,000 --> 00:00:55,000
+also NOT NULL; however, there is an important property defined here, which is DEFAULT. The default value of this
+
+9
+00:00:55,000 --> 00:01:02,000
+column is CURRENT_TIMESTAMP. What it means is that if you do not specify any value to be inserted for last_update
+
+10
+00:01:02,000 --> 00:01:09,000
+column, it will be automatically populated by CURRENT_TIMESTAMP. Let's start with our very first example of INSERT.
+
+11
+00:01:09,000 --> 00:01:14,000
+Let's execute this one and you can see in Output, it has already created a table for us.
+
+12
+00:01:14,000 --> 00:01:19,000
+Now we'll start with a very simple example where we will insert a single row into the table.
+
+13
+00:01:19,000 --> 00:01:25,000
+The script is ‘INSERT INTO table name sakila.actorsample'. Here, specified here three of our column --
+
+14
+00:01:25,000 --> 00:01:31,000
+those are first_name, last_name, and last_update. Please note that we are not specifying here column actor_id.
+
+15
+00:01:31,000 --> 00:01:36,000
+The reason of that is very simple. It's going to be AUTO_INCREMENT. What it means is that we do not have to
+
+16
+00:01:36,000 --> 00:01:43,000
+explicitly enter data into this column. As and when we insert data, this will be auto-populated by AUTO_INCREMENT
+
+17
+00:01:43,000 --> 00:01:49,000
+property of a column. Let's see example of that as well. We are going to use VALUE clause right after the
+
+18
+00:01:49,000 --> 00:01:54,000
+INSERT Statement. In the VALUE clause, we are going to specify the property, first_name I'm specifying Pinal,
+
+19
+00:01:54,000 --> 00:02:00,000
+last_name as Dave, and last_update as any date. Let's select this one and click on Execute.
+
+20
+00:02:00,000 --> 00:02:06,000
+You can see in OUTPUT clause, the message is ‘1 row affected'. Now let's check the data into this table.
+
+21
+00:02:06,000 --> 00:02:12,000
+Select ‘SELECT * FROM' table and click on Execute. You can see that has inserted one row, which is actor_id 1 because
+
+22
+00:02:12,000 --> 00:02:18,000
+it's the first value, first_name Pinal, last_name Dave, and last_update date, which we have just specified.
+
+23
+00:02:18,000 --> 00:02:26,000
+As in our INSERT, we did not specify any of the time component, it has by default assumed time component of 00-00.
+
+24
+00:02:26,000 --> 00:02:31,000
+Now let's go to second script. Here is the second script. Let's compare this one with the first one.
+
+25
+00:02:31,000 --> 00:02:36,000
+You can see there are two major differences. First is there are no column lists in the second script and
+
+26
+00:02:36,000 --> 00:02:42,000
+the second is default specified over here. Let's first execute this one and we'll talk about that afterwards.
+
+27
+00:02:42,000 --> 00:02:49,000
+Click on Execute and now check the data. We have successfully inserted the second row and it states Nupur Dave
+
+28
+00:02:49,000 --> 00:02:55,000
+in the date. If you notice, it's the same data which we have just inserted; however, in earlier one, we did not
+
+29
+00:02:55,000 --> 00:03:01,000
+specify actor_id because actor_id was auto-populated. However, when we are inserting data into table and
+
+30
+00:03:01,000 --> 00:03:06,000
+not specifying the list of the column, at that time we will have to specify every single column's value in the
+
+31
+00:03:06,000 --> 00:03:12,000
+value list, as well as it has to be in the same order as the original table. What it means is that this default
+
+32
+00:03:12,000 --> 00:03:18,000
+stands for actor_id, Nupur for first_name and Dave for last_name, as well as the date, which we have specified
+
+33
+00:03:18,000 --> 00:03:24,000
+is for the fourth column. Column order has to match to the original order. If I change the order of Dave in the
+
+34
+00:03:24,000 --> 00:03:30,000
+date, it's not going to insert the data properly and it may give us Error. If we do not specify default,
+
+35
+00:03:30,000 --> 00:03:37,000
+MySQL will also give an Error. When we specify the default, it will go and take the default value for this column.
+
+36
+00:03:37,000 --> 00:03:43,000
+In this case, the default value will be AUTO_INCREMENTED and AUTO-INCREMENT will be adding 1 to the original value
+
+37
+00:03:43,000 --> 00:03:50,000
+as we have not specified any other AUTO_INCREMENT data. That means we will have value 2 over here.
+
+38
+00:03:50,000 --> 00:03:54,000
+Well, let's continue with our next example. In this example, you can see that now we have only two columns
+
+39
+00:03:54,000 --> 00:03:59,000
+where we are inserting data -- one is first_name and second one is last_name -- and the data, which we are inserting,
+
+40
+00:03:59,000 --> 00:04:05,000
+is Pinal Dave. Let's think for a moment what would happen in this case. In case of the first_name, the value
+
+41
+00:04:05,000 --> 00:04:10,000
+Pinal will go; in case of the last_name, the value Dave will go. What will be the value of last_update?
+
+42
+00:04:10,000 --> 00:04:16,000
+Let's go and check the value in our table definition. In table definition, we have specified the last value is
+
+43
+00:04:16,000 --> 00:04:22,000
+of data type timestamp and will have a default value of CURRENT_TIMESTAMP. What it means is that if you do not
+
+44
+00:04:22,000 --> 00:04:29,000
+specify the last_update, it will automatically take the current date/time of the Server where MySQL is installed.
+
+45
+00:04:29,000 --> 00:04:35,000
+Let's exhibit this and relate it to our assumption. Select the statement, click on Execute, and now select
+
+46
+00:04:35,000 --> 00:04:42,000
+the data from table. You can see over here that third record is inserted with first_name Pinal, last_name Dave,
+
+47
+00:04:42,000 --> 00:04:48,000
+and the date is current date/time from my system. Now, let's go to next script and understand that.
+
+48
+00:04:48,000 --> 00:04:54,000
+In our next script, we have only one column specified in our INSERT Statement and the value is Pinal.
+
+49
+00:04:54,000 --> 00:05:00,000
+There is no value for last_name, as well as last_update and actor_id. Let's try to guess what will be the value
+
+50
+00:05:00,000 --> 00:05:05,000
+in each of these columns? Well, in case of the actor_id, once again we will have AUTO_INCREMENT value and
+
+51
+00:05:05,000 --> 00:05:11,000
+we will see 4. In case of the last_update, as we have noticed, we will have the current date/time of Server,
+
+52
+00:05:11,000 --> 00:05:17,000
+but what will be the value of the last_name. Let's go to our column definition one more time and see what it will be.
+
+53
+00:05:17,000 --> 00:05:22,000
+You can see last_name column is defined as NULL. What it means is that if you pass any value to this column,
+
+54
+00:05:22,000 --> 00:05:27,000
+it will take that value, but if you do not pass any value to this column, it will just take that as a NULL.
+
+55
+00:05:27,000 --> 00:05:34,000
+Well, let's execute this and validate that. Select the statement and click on Execute. As we have expected,
+
+56
+00:05:34,000 --> 00:05:41,000
+actor_id is 4, first_name is Pinal, last_update is current date/time of the Server, but the value of the
+
+57
+00:05:41,000 --> 00:05:46,000
+last_name column is NULL. Isn't this interesting? That sometimes we feel that we are to specify every single
+
+58
+00:05:46,000 --> 00:05:51,000
+column, but as we start narrowing down, we learn that there are so many things, which are dependent on the
+
+59
+00:05:51,000 --> 00:05:57,000
+definition of table, which we have defined earlier. That is why Data Modeling is considered as one of the most
+
+60
+00:05:57,000 --> 00:06:03,000
+challenging tasks. Now, let's try to do the same thing with last_name Dave. Here, we have not specified the
+
+61
+00:06:03,000 --> 00:06:09,000
+first_name, but we are only specifying the last_name. What do you think will happen? Let's go all the way up and
+
+62
+00:06:09,000 --> 00:06:14,000
+see here the first_name only states it's NOT NULL. There is no default value specified. What is means is that
+
+63
+00:06:14,000 --> 00:06:22,000
+this column has to have a value. If we do not specify what to be inserted into this column, MySQL will not let
+
+64
+00:06:22,000 --> 00:06:28,000
+the entire row to be inserted into this table. Let's see that into action. Now we select the statement and click
+
+65
+00:06:28,000 --> 00:06:34,000
+on Execute and on the bottom over here, you can see that there is an Error. Error states first row does not have
+
+66
+00:06:34,000 --> 00:06:40,000
+a default value. What it means is that if you do not have a default value, you will have to insert some data in it.
+
+67
+00:06:40,000 --> 00:06:46,000
+You cannot just walk away without specifying any value for the column, which is marked as NOT NULL and does not
+
+68
+00:06:46,000 --> 00:06:52,000
+have a default. Well, let's see one more example. Insert into table name, column's first_name, last_name,
+
+69
+00:06:52,000 --> 00:06:59,000
+and last_update. The value Pinal will go into first_name and NULL will go into last_name and default value will
+
+70
+00:06:59,000 --> 00:07:05,000
+go into last_update. What will happen over here is that we will see in the first_name column value Pinal,
+
+71
+00:07:05,000 --> 00:07:11,000
+in last_name NULL, and last_update current date/time of the system. Let's select the statement and execute it.
+
+72
+00:07:11,000 --> 00:07:18,000
+Now, we'll go and check the data into the table. You can see actor_id 5 is over here and first_name is Pinal,
+
+73
+00:07:18,000 --> 00:07:24,000
+last_name is NULL, our Server's default date/time is in last_update column. Now, let's go a little bit more
+
+74
+00:07:24,000 --> 00:07:29,000
+advanced and see how we can insert multiple rows. So, here is the example where we will see how we can set
+
+75
+00:07:29,000 --> 00:07:36,000
+multiple values into table. The first method is very simple and very easy to increment. We have INSERT INTO table name
+
+76
+00:07:36,000 --> 00:07:43,000
+and column name listed over here. In VALUE clause, we have first column and comma and second column and a comma
+
+77
+00:07:43,000 --> 00:07:50,000
+and we have third column. We can have more than three columns over here as well. With this kind of syntax,
+
+78
+00:07:50,000 --> 00:07:55,000
+we do not have to specify INSERT Statement again and again. Let's execute this one and now select the data.
+
+79
+00:07:55,000 --> 00:08:02,000
+Scroll down and you can see now we have three records inserted, which is Pinal Dave with date 17, Nupur Dave with
+
+80
+00:08:02,000 --> 00:08:09,000
+date 18, Shaivi Dave with date 19. There is one more method where we can use SELECT statement to insert data.
+
+81
+00:08:09,000 --> 00:08:15,000
+For example, if you want to insert all the data where the actor's first_name is Nick into this table,
+
+82
+00:08:15,000 --> 00:08:20,000
+we can use this kind of syntax. Let's see the SELECT statement first. There you can see we have three names with
+
+83
+00:08:20,000 --> 00:08:26,000
+actor's first_name is Nick. Now, we will just write INSERT statement just on the top of this SELECT statement.
+
+84
+00:08:26,000 --> 00:08:32,000
+In INSERT, we have three columns -- first_name, last_name, and last_updated. In case of the SELECT statement,
+
+85
+00:08:32,000 --> 00:08:38,000
+let's select everything and click on Execute. When we execute, we can see there are three rows, which are returned.
+
+86
+00:08:38,000 --> 00:08:44,000
+Let's go and check the data. SELECT * FROM ActorSample and click on Select. Let's scroll down all the way to
+
+87
+00:08:44,000 --> 00:08:50,000
+the bottom and you can see that there are three new records, which are inserted, which is NICK WAHLBERG,
+
+88
+00:08:50,000 --> 00:08:56,000
+NICK STALLONE, and NICK DEGENERES. Well, you can see how easy it is to insert data into table by using
+
+89
+00:08:56,000 --> 00:59:00,000
+SELECT statement. Let's clean up and drop this table. Now, in the next clip we will learn about UPDATE statement.
+

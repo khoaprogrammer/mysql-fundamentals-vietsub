@@ -1,0 +1,36 @@
+1
+00:00:02,000 --> 00:00:08,000
+Performance is a very crucial dimension for any application. So far, we have seen in most of the cases, we are
+
+2
+00:00:08,000 --> 00:00:15,000
+retrieving pretty much entire table for our purpose. For that, we use SELECT * FROM table syntax.
+
+3
+00:00:15,000 --> 00:00:21,000
+We also learned that we should not retrieve columns, which we are not using in our application and use
+
+4
+00:00:21,000 --> 00:00:28,000
+column names in the SELECT statement instead of using SELECT *. There should not be a need of all the rows of
+
+5
+00:00:28,000 --> 00:00:34,000
+the table. Most of the application in most of the cases needs only subset of the rows from the table.
+
+6
+00:00:34,000 --> 00:00:40,000
+We can limit the number of rows, retrieve by query by using WHERE condition. It is important that we understand
+
+7
+00:00:40,000 --> 00:00:46,000
+how to use WHERE condition very carefully as it will help us tremendously when we are dealing with very last table
+
+8
+00:00:46,000 --> 00:00:52,000
+and we want to retrieve only rows, which are required. Let's understand a few of the conditions, which we can use
+
+9
+00:00:52,000 --> 00:59:00,000
+in our WHERE clause.
+

@@ -1,0 +1,64 @@
+1
+00:00:03,000 --> 00:00:09,000
+Developers use SELECT statement for various purposes. Here is a list of few of the examples where we use
+
+2
+00:00:09,000 --> 00:00:16,000
+SELECT statement: Retrieve static value, retrieve all the data from table, retrieve all the data ordered
+
+3
+00:00:16,000 --> 00:00:22,000
+by single column, retrieve selected columns from table, retrieve data with filter condition, retrieve the data
+
+4
+00:00:22,000 --> 00:00:28,000
+with filter condition and ordered by multiple columns, retrieve empty resultset.
+
+5
+00:00:28,000 --> 00:00:33,000
+In this module, we will see examples of this, as well as a few real-world scenarios.
+
+6
+00:00:33,000 --> 00:00:37,000
+Let's start with understanding basic syntax of SELECT statement.
+
+7
+00:00:37,000 --> 00:00:43,000
+A basic SELECT statement has five clauses. SELECT clause: It describes the column in resultset.
+
+8
+00:00:43,000 --> 00:00:50,000
+FROM clause: Names the base table from which the query retrieves data. We can also use views here, but that's
+
+9
+00:00:50,000 --> 00:00:56,000
+advanced concept. WHERE clause: It specifies the condition that must be met for any row to be retrieved in
+
+10
+00:00:56,000 --> 00:01:03,000
+resultset. ORDER BY clause: It specifies how to sort the rows in resultset. We can have one column or multiple
+
+11
+00:01:03,000 --> 00:01:10,000
+columns, by which we can order resultset. LIMIT clause: It specifies the number of the rows to return.
+
+12
+00:01:10,000 --> 00:01:15,000
+Sometimes tables are very huge and it's important that we retrieve only a limited number of the rows for
+
+13
+00:01:15,000 --> 00:01:21,000
+various reasons. In Basic Syntax of SELECT statement, we have not included all the clauses in this Basic Syntax of
+
+14
+00:01:21,000 --> 00:01:27,000
+SELECT statement. For example, HAVING clause: HAVING clause filters data based on aggregate functions.
+
+15
+00:01:27,000 --> 00:01:33,000
+In our advanced course, we will be talking about aggregate function. At the same time we will explore HAVING clause
+
+16
+00:01:33,000 --> 00:59:00,000
+and also understand difference between WHERE clause and HAVING clause. Now let's see SELECT statement in action.
+

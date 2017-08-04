@@ -1,0 +1,104 @@
+1
+00:00:01,000 --> 00:00:08,000
+Now let's understand a couple of important features of MySQL Server Administration.
+
+2
+00:00:08,000 --> 00:00:14,000
+Double-click on the connection, which we have already created, and it will open Server Administration Area.
+
+3
+00:00:14,000 --> 00:00:21,000
+On the top of the screen, it displays Server Status. You can see in this INFO section that the name of our Server
+
+4
+00:00:21,000 --> 00:00:29,000
+is SQLAuthority and it is running on a Local Host. Additionally, resin of the Server is also 5.6.10.
+
+5
+00:00:29,000 --> 00:00:35,000
+The status of our Server is Running. On the very right side, you can see the system has both CPU and memory.
+
+6
+00:00:35,000 --> 00:00:42,000
+MySQL Server Health is also displayed right beside it. Connection, Traffic, Query Cache Hit Ratio,
+
+7
+00:00:42,000 --> 00:00:50,000
+and Key Efficiency are displayed here. We can quickly see them and get an idea of how Server Health is.
+
+8
+00:00:50,000 --> 00:00:54,000
+Also, you can see there are four different connections and each connection has a different state.
+
+9
+00:00:54,000 --> 00:01:00,000
+One connection has a Query and the other three connections are right now in the sleeping state.
+
+10
+00:01:00,000 --> 00:01:06,000
+If there is Query, which is taking a lot of resources, you can either kill the query or can kill the complete
+
+11
+00:01:06,000 --> 00:01:11,000
+connection as well. Right below Server Status, there is Startup and Shut Down option.
+
+12
+00:01:11,000 --> 00:01:18,000
+You can stop your MySQL Server from here, as well as start it. Let's stop our server and start again.
+
+13
+00:01:18,000 --> 00:01:26,000
+Currently, the Server Status is Running. Click on Stop Server and now you can see the server instance is stopped.
+
+14
+00:01:26,000 --> 00:01:31,000
+If you want to start the server instance back, you can just click on Start Server and it will turn on
+
+15
+00:01:31,000 --> 00:01:38,000
+MySQL Server instance. You can use this administration screen to do a lot of other tasks as well.
+
+16
+00:01:38,000 --> 00:01:44,000
+For example, you can collect Status and System Variables or you can see Server Logs. If there are any errors,
+
+17
+00:01:44,000 --> 00:01:52,000
+you can find them over here. Additionally, you can configure MySQL Administration's lots of variable over here.
+
+18
+00:01:52,000 --> 00:01:58,000
+There are many important settings in this Configuration Area. In MySQL Administration course, we'll go over each
+
+19
+00:01:58,000 --> 00:02:06,000
+of these options and their significance. We'll discuss about Logging, InnoDB, Networking, Advanced settings,
+
+20
+00:02:06,000 --> 00:02:14,000
+Other settings, Security-related settings, Application, MyISAM, and Performance-related settings.
+
+21
+00:02:14,000 --> 00:02:20,000
+I often see developers working hard to tune the SQL queries; however, they absolutely ignored this
+
+22
+00:02:20,000 --> 00:02:26,000
+Performance Tab in MySQL Administration. There are many options available in this Configuration Area,
+
+23
+00:02:26,000 --> 00:02:33,000
+which can immediately impact performance very positively. This Server Administration Area also gives you
+
+24
+00:02:33,000 --> 00:02:40,000
+fine control on your Users and their Privilege. You can take a backup and export to database or import your
+
+25
+00:02:40,000 --> 00:02:47,000
+database and restore your MySQL Database from this Data Export/Restore section. Let's click on Home Tab and go
+
+26
+00:02:47,000 --> 00:59:00,000
+to the main screen of MySQL Workbench. Well, with this, we'll finish our introduction to MySQL Workbench.
+

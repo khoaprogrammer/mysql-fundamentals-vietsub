@@ -1,0 +1,32 @@
+1
+00:00:04,000 --> 00:00:09,000
+Let's see a tricky example. I've seen a lot of developer writing SELECT * FROM table name where they just want
+
+2
+00:00:09,000 --> 00:00:15,000
+to see what kind of column table has. When you run SELECT * FROM table, it will pretty much retrieve every single
+
+3
+00:00:15,000 --> 00:00:20,000
+row and every single data from the complete table. This is not a good idea if you just want to know what are the
+
+4
+00:00:20,000 --> 00:00:26,000
+names of the column. The very quick trick would be, over here, is to just write ‘WHERE 1 = 2'.
+
+5
+00:00:26,000 --> 00:00:34,000
+When you write ‘WHERE 1 = 2' at that time, MySQL will not return you any data because 1 = 2 is always a false condition.
+
+6
+00:00:34,000 --> 00:00:39,000
+It's good to understand that you can write this kind of query and get empty resultset.
+
+7
+00:00:39,000 --> 00:00:45,000
+With this tip, we complete our learning of Fundamentals of SELECT statement. In next clip, you will understand
+
+8
+00:00:45,000 --> 00:59:00,000
+advanced concepts related to SELECT statement.
+

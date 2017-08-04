@@ -1,0 +1,44 @@
+1
+00:00:04,000 --> 00:00:12,000
+In this demonstration, we will download MySQL and install it live. In your browser, go to MySQL.com/downloads.
+
+2
+00:00:12,000 --> 00:00:21,000
+Over here, you will be able to see various MySQL downloads, MySQL Community Server, MySQL Enterprise Edition,
+
+3
+00:00:21,000 --> 00:00:31,000
+my MySQL Cluster, MySQL Cluster CGE, MySQL Workbench, GUI Tool, and various other MySQL connectors,
+
+4
+00:00:31,000 --> 00:00:42,000
+ODBC, .Net, Java platform, Python, C++, C, and PHP. You can download each of these things and install as
+
+5
+00:00:42,000 --> 00:00:48,000
+they're needed. If you're in a Windows platform, I suggest you download MySQL Installer.
+
+6
+00:00:48,000 --> 00:00:54,000
+MySQL Installer for Windows contains all of the MySQL products in a single package.
+
+7
+00:00:54,000 --> 00:00:59,000
+Let's click on Download and it will bring us to the page where we can download MySQL Installer.
+
+8
+00:00:59,000 --> 00:01:07,000
+MySQL Installer will contain all the MySQL-related products. MySQL Installer provides an easy to use
+
+9
+00:01:07,000 --> 00:01:14,000
+wizard-based installation experience for all of the MySQL software needs.
+
+10
+00:01:14,000 --> 00:01:20,000
+You can click over here and download MySQL Installer. In interest of the time, I have already downloaded
+
+11
+00:01:20,000 --> 00:59:00,000
+MySQL Installer on my local drive. Next, we'll install MySQL using MySQL Installer.
+

@@ -1,0 +1,32 @@
+1
+00:00:02,000 --> 00:00:08,000
+The ORDER BY clause specifies sort order of the resultset. The sort order can be ascending or descending.
+
+2
+00:00:08,000 --> 00:00:15,000
+Additionally, we can sort the resultset by one column or multiple columns. We can also use various expressions
+
+3
+00:00:15,000 --> 00:00:22,000
+in ORDER BY clause as well. ORDER BY clause is the only clause where we can use alias to sort columns as well.
+
+4
+00:00:22,000 --> 00:00:28,000
+Additionally, we can use column number to specify sort order as well. ORDER BY clause has a very special behavior
+
+5
+00:00:28,000 --> 00:00:34,000
+with NULL values. NULL values always appear first in the sort sequence. It does not matter if you specify
+
+6
+00:00:34,000 --> 00:00:41,000
+sort sequence, ascending or descending. Additionally, remember that you can sort any column in the base table
+
+7
+00:00:41,000 --> 00:00:47,000
+regardless if you have used that one in the SELECT statement or not. Let's see some of the interesting examples of
+
+8
+00:00:47,000 --> 00:59:00,000
+how ORDER BY clause works in the next demonstration.
+

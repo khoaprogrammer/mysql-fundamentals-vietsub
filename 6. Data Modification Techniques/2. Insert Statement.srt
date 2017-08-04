@@ -1,0 +1,28 @@
+1
+00:00:03,000 --> 00:00:10,000
+We use INSERT Statement when we are to add one or more rows to a table. To insert a single row, we can specify
+
+2
+00:00:10,000 --> 00:00:16,000
+INSERT command with table name and column list followed by the data, which we want to insert.
+
+3
+00:00:16,000 --> 00:00:22,000
+Also, we can use SELECT statement to populate another table as well. When we want to insert multiple rows,
+
+4
+00:00:22,000 --> 00:00:29,000
+at the same time, same logic applies. We can use one insert in multiple VALUE clause or SELECT statement,
+
+5
+00:00:29,000 --> 00:00:35,000
+which returns us multiple rows. There are two important things to keep into focus while learning about
+
+6
+00:00:35,000 --> 00:00:41,000
+INSERT Statement -- one is Default Values and second is NULL Values. We will understand all of these things
+
+7
+00:00:41,000 --> 00:59:00,000
+in demonstration next.
+

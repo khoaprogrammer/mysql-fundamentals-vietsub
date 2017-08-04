@@ -1,0 +1,36 @@
+1
+00:00:01,000 --> 00:00:12,000
+Hi, this is Pinal Dave for Pluralsight. In this module, we will discuss about various Data Retrieval Techniques.
+
+2
+00:00:12,000 --> 00:00:18,000
+For any IDBMS, data retrieval is the most essential task. In an earlier module, we learned we can use MySQL
+
+3
+00:00:18,000 --> 00:00:25,000
+Workbench to retrieve and modify data. MySQL Workbench is a great tool for developers who have to deal
+
+4
+00:00:25,000 --> 00:00:31,000
+with the data. For any application, you have to write scripts in SQL to retrieve or modify data.
+
+5
+00:00:31,000 --> 00:00:38,000
+SQL stands for Structure Query Language. In this module, we will learn how to code SELECT statement and
+
+6
+00:00:38,000 --> 00:00:44,000
+retrieve data. It is very important to have proper understanding of how SELECT statement works and
+
+7
+00:00:44,000 --> 00:00:50,000
+its building blocks. All the concepts, which we learn about SELECT statement, applies to update and delete
+
+8
+00:00:50,000 --> 00:00:56,000
+statements, which we will explore in the next module of data modification. Let's start to understand the basics
+
+9
+00:00:56,000 --> 00:59:00,000
+of SELECT statement and it's most essential building blocks -- WHERE, ORDER BY, and LIMIT.
+

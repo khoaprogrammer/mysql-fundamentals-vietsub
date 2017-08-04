@@ -1,0 +1,76 @@
+1
+00:00:01,000 --> 00:00:08,000
+In the SQL Development Area, first we will learn about how to open a new connection and
+
+2
+00:00:08,000 --> 00:00:15,000
+start creating a database. Go to the Open Connection screen, click over here. On this Connect to Database screen,
+
+3
+00:00:15,000 --> 00:00:21,000
+we'll be providing a few of the information so we can connect to the database. First, we will give a Host name.
+
+4
+00:00:21,000 --> 00:00:32,000
+I have provided 127.0.0.1 because this is my local host and MySQL Server is installed here on a local host with
+
+5
+00:00:32,000 --> 00:00:40,000
+default Port of 3306. The Username is Root. Now click here for Password. On the Password page, enter the
+
+6
+00:00:40,000 --> 00:00:48,000
+password which you provided and then we install MySQL. Click OK. Now click on OK again.
+
+7
+00:00:48,000 --> 00:00:55,000
+You can see that it has opened SQL Editor for us. Let's go back to home screen before we continue with SQL Editor.
+
+8
+00:00:55,000 --> 00:01:01,000
+Now you've seen here how we can open a connection and start querying, but we are all developers and we know that.
+
+9
+00:01:01,000 --> 00:01:06,000
+There are a few connections, which we like to save and keep on using it again and again.
+
+10
+00:01:06,000 --> 00:01:13,000
+We can also save connections in the SQL Development Area. Let's see that how we can do that.
+
+11
+00:01:13,000 --> 00:01:19,000
+Click on New Connection and it will bring up this screen. Go right over here, Connection Name, and provide
+
+12
+00:01:19,000 --> 00:01:27,000
+information for Host Name, Port, Username, and Password. Click OK and now on this screen, you can also
+
+13
+00:01:27,000 --> 00:01:34,000
+paste connection. Click on Paste Connection and it will show us the status of our connection and click on
+
+14
+00:01:34,000 --> 00:01:41,000
+OK one more time. Now over here you can see the SQLAuthority is a new connection, it is saved.
+
+15
+00:01:41,000 --> 00:01:49,000
+You can double-click over here and it will also open SQL Query Editor. Now we have two tabs in our SQL Editor.
+
+16
+00:01:49,000 --> 00:01:54,000
+First tab, which we opened a few minutes ago and second tab, which we just opened.
+
+17
+00:01:54,000 --> 00:02:01,000
+On the second tab, you can clearly see it is marked with SQLAuthority label. These labels are very important.
+
+18
+00:02:01,000 --> 00:02:08,000
+I've seen an industry that Developer has executed incorrect SQL on a wrong server with the wrong connection.
+
+19
+00:02:08,000 --> 00:59:00,000
+Well, before you execute anything, always make sure the label of the connection is correct.
+

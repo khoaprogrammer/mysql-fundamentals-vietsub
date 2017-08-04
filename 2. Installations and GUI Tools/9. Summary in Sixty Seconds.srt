@@ -1,0 +1,16 @@
+1
+00:00:01,000 --> 00:00:03,000
+Summary in Sixty Seconds
+
+2
+00:00:03,000 --> 00:00:10,000
+My SQL installation is very easy and efficient on Windows platform while using MySQL Installer.
+
+3
+00:00:10,000 --> 00:00:17,000
+MySQL Workbench is a key tool for SQL Development, Data Modeling, and Server Administration.
+
+4
+00:00:17,000 --> 00:59:00,000
+You can use MySQL Command Line Editor when MySQL Workbench is not available.
+

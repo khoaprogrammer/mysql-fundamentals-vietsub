@@ -1,0 +1,100 @@
+1
+00:00:03,000 --> 00:00:09,000
+Here, we are back in MySQL Workbench and we will see a demonstration related to integer, string, and
+
+2
+00:00:09,000 --> 00:00:15,000
+date functions. If you see the list of all the functions in MySQL, the list is extremely large.
+
+3
+00:00:15,000 --> 00:00:21,000
+It's just impossible to cover each and every function and explain them in a single clause; however,
+
+4
+00:00:21,000 --> 00:00:27,000
+we'll see a few of the important functions in this demonstration. Once you know how to use one function in
+
+5
+00:00:27,000 --> 00:00:32,000
+SELECT statement, you can go and use any other function in SELECT statement as easily.
+
+6
+00:00:32,000 --> 00:00:39,000
+We'll very first see how integer works. Here is the statement where I'm retrieving data from payments table.
+
+7
+00:00:39,000 --> 00:00:44,000
+Let's first select the data and later we will understand what each of these functions do.
+
+8
+00:00:44,000 --> 00:00:51,000
+Select the statement and click on Execute. Now we can see we have five different columns displayed in our resultset.
+
+9
+00:00:51,000 --> 00:00:57,000
+The very first column is amount. You can see amount is directly retrieved as it is from payment table.
+
+10
+00:00:57,000 --> 00:01:03,000
+We have not modified or applied any function over it. The second column over here is using round function.
+
+11
+00:01:03,000 --> 00:01:10,000
+Round function rounds up or rounds down any of the decimal value to nearest integer. You can see 2.99 is
+
+12
+00:01:10,000 --> 00:01:17,000
+converted to 3 and .99 is converted to 1. If you scroll down, you will see the similar examples over here.
+
+13
+00:01:17,000 --> 00:01:23,000
+In the third column, once again we have used round function; however, this time we are specifying second parameter
+
+14
+00:01:23,000 --> 00:01:28,000
+over here. Second parameter we have passed as 1. What it means is that when you round up or round down,
+
+15
+00:01:28,000 --> 00:01:37,000
+at that time display information to first decimal. For example, over here you can see now 1 is 1.0.
+
+16
+00:01:37,000 --> 00:01:42,000
+To see them further into action, let's take one more example where we will not use any FROM clause,
+
+17
+00:01:42,000 --> 00:01:48,000
+but right of it take integer will do and try to apply round over it. Let's write SELECT ROUND and function.
+
+18
+00:01:48,000 --> 00:01:54,000
+Now let's pass here value 4.5 and let's execute it. You can see it's now rounded up to value 5.
+
+19
+00:01:54,000 --> 00:02:04,000
+If you pass 4.99, it would still round up to 5; however, if you pass 4.49, it will round it down to the 4.
+
+20
+00:02:04,000 --> 00:02:08,000
+Let's go back to our statement and execute it again. Now we'll do one function to look at it.
+
+21
+00:02:08,000 --> 00:02:16,000
+FLOOR rounds down any of the value to the nearest lowest integer, whereas CEILING rounds up any value to nearest
+
+22
+00:02:16,000 --> 00:02:22,000
+high integer. Let's see an example over here. Here, we have a value of 2.99. Then we applied function FLOOR over here.
+
+23
+00:02:22,000 --> 00:02:28,000
+It has rounded it down to 2 and when we apply CEILING function over here, it is rounded up to the 3.
+
+24
+00:02:28,000 --> 00:02:33,000
+Though they look very simple, these are very important functions and comes very handy when we are dealing
+
+25
+00:02:33,000 --> 00:59:00,000
+with numbers.
+

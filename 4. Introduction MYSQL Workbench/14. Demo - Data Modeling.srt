@@ -1,0 +1,56 @@
+1
+00:00:02,000 --> 00:00:09,000
+So far we have been seeing features from SQL Development section. Let us see how Data Modeling section works.
+
+2
+00:00:09,000 --> 00:00:17,000
+We'll create an EER Model from existing database. Let's click over here and select our preferred connection.
+
+3
+00:00:17,000 --> 00:00:25,000
+I'll select SQLAuthority, click on Next, and it has successfully connected to DBMS. Additionally, it has also
+
+4
+00:00:25,000 --> 00:00:34,000
+retrieved schema lists from database. Click on Next and you can see all the schema which exists in MySQL Database.
+
+5
+00:00:34,000 --> 00:00:40,000
+Let's select sakila and click on Next. You can see on this screen that it has successfully retrieved all the
+
+6
+00:00:40,000 --> 00:00:47,000
+object from sakila schema. Click on Next. On this page, it is asking us, what are the objects which we want to
+
+7
+00:00:47,000 --> 00:00:54,000
+use for reverse engineering? We can select Tables, Views, Routines, and Trigger. Just for this example, I will
+
+8
+00:00:54,000 --> 00:01:00,000
+leave all of them checked and click on Execute. You can see that it has successfully executed
+
+9
+00:01:00,000 --> 00:01:08,000
+reverse engineering task. Click on Next and we can see the Success Message. Now, for last time, click on Finish.
+
+10
+00:01:08,000 --> 00:01:15,000
+Here is our EER diagram. Well, currently all the objects are over each other. Let's select all of them by
+
+11
+00:01:15,000 --> 00:01:23,000
+typing CTRL A. Now go to Arrange and click on Autolayout. It will automatically layout each of these tables,
+
+12
+00:01:23,000 --> 00:01:30,000
+along with their relationships. Let's go to city table and click on Indexes. Click on Indexes and you can see
+
+13
+00:01:30,000 --> 00:01:39,000
+there is only a Primary Key over here. EER diagrams are very interesting to read. Let's go back to the main screen
+
+14
+00:01:39,000 --> 00:59:00,000
+of MySQL Workbench.
+

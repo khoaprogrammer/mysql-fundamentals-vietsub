@@ -1,0 +1,76 @@
+1
+00:00:01,000 --> 00:00:07,000
+Làm quen với MySQL phần 1
+
+2
+00:00:07,000 --> 00:00:14,000
+Chào, tôi là Pinal Dave. Đây là phần 1 của khóa làm quen MySQL. Chúng ta sẽ cùng nhau đi
+
+3
+00:00:14,000 --> 00:00:21,000
+qua suốt chặng đường này. Đầu tiên hãy cùng trả lời 1 câu hỏi quan trọng -- Tại sao nên
+
+4
+00:00:21,000 --> 00:00:27,000
+học MySQL? Câu trả lời rất đơn giản. MySQL là một trong những hệ quản trị CSDL quan hệ
+
+5
+00:00:27,000 --> 00:00:35,000
+phổ biến nhất từ 2008. Cơ hội việc làm với MySQL rất tuyệt vời và rất nhiều công ty
+
+6
+00:00:35,000 --> 00:00:45,000
+dẫn đầu sử dụng MySQL. Ví dụ, WordPress, NASA, US Navy, Bank of Finland, và nhiều nữa.
+
+7
+00:00:45,000 --> 00:00:50,000
+Có rất nhiều các khác niệm phải hiểu. Đầu tiên, cơ sở dữ liệu quan hệ.
+
+8
+00:00:50,000 --> 00:00:56,000
+Một CSDL quan hệ là tập hợp các dữ liệu được tổ chức dưới dạng các bảng và khóa.
+
+9
+00:00:56,000 --> 00:01:05,000
+Mô hình này được đề xuất vào 1970 bởi Edgar Cold. Tiếp đến là mã nguồn mở. MySQL được cấp phép GNU
+
+10
+00:01:05,000 --> 00:01:12,000
+General Public License. Giấy phép này là một trong những giấy phép thông dụng nhất,
+
+11
+00:01:12,000 --> 00:01:18,000
+cho phép người sử dụng được toàn quyền, học, chia sẻ và thay đổi phần mềm.
+
+12
+00:01:18,000 --> 00:01:25,000
+Trong khóa học phần 1 này, chúng ta sẽ mau chóng làm quen với MySQL và hiểu rõ nhiều
+
+13
+00:01:25,000 --> 00:01:32,000
+công cụ. Sau đó, chúng ta sẽ học về RDBMS và thiết kế DB. Bạn sẽ được học
+
+14
+00:01:32,000 --> 00:01:40,000
+các sử dụng MySQL Workbench hiệu quả. Sau đó bạn sẽ học về truy vấn dữ liệu và các kỹ thuật tùy chỉnh dữ liệu.
+
+15
+00:01:40,000 --> 00:01:43,000
+Chúng ta sẽ kết thúc chương này với một số tài nguyên quan trọng.
+
+16
+00:01:43,000 --> 00:01:50,000
+Bây giờ chúng ta sẽ xem khóa tiếp theo sẽ học gì. Trong khóa tiếp theo, chúng ta sẽ nói về Join, Function,
+
+17
+00:01:50,000 --> 00:01:57,000
+View, Transaction, Stored Procedure, Store Function, Trigger và Event.
+
+18
+00:01:57,000 --> 00:02:03,000
+Trước khi bắt đầu khóa học, một câu hỏi nhanh dành cho bạn. từ "My" trong MySQL nghĩa là gì?
+
+19
+00:02:03,000 --> 00:59:00,000
+MySQL được đặt tên theo con gái của đồng sáng lập, My. Giờ hãy bắt đầu hành trình tìm hiểu MySQL nhé.
+

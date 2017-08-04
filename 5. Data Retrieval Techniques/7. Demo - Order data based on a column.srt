@@ -1,0 +1,64 @@
+1
+00:00:03,000 --> 00:00:08,000
+Now we will see how we can retrieve all the data ordered by single column.
+
+2
+00:00:08,000 --> 00:00:14,000
+For example, here is ‘SELECT * FROM sakila.actor', which we have just sent. It has four columns -- actor_id,
+
+3
+00:00:14,000 --> 00:00:21,000
+first_name, last_name, and last_update. Quickly glancing at resultset, we can see that first_name column is not
+
+4
+00:00:21,000 --> 00:00:28,000
+ordered alphabetically, so is last_name. We can quickly order first_name in alphabetical, chronological order if
+
+5
+00:00:28,000 --> 00:00:34,000
+we write ‘ORDER BY first_name' right after SELECT statement. Let's select this statement and execute it.
+
+6
+00:00:34,000 --> 00:00:41,000
+Now we can see that first_name is chronologically ordered, ADAM is first, ZERO is at last.
+
+7
+00:00:41,000 --> 00:00:47,000
+Interesting enough, the name of actor is ZERO. Similar way, we can order the same table with last_name.
+
+8
+00:00:47,000 --> 00:00:53,000
+Let's execute this statement. Now you can see that the complete table is ordered by last_name column.
+
+9
+00:00:53,000 --> 00:01:01,000
+A is on the top and C is at the bottom. Well, currently we had just seen them in alphabetical order; however,
+
+10
+00:01:01,000 --> 00:01:08,000
+the order is ascending. We can also change this sequence order by just adding DESC clause.
+
+11
+00:01:08,000 --> 00:01:14,000
+Let's execute this first statement where we have first_name as descending in ORDER BY clause.
+
+12
+00:01:14,000 --> 00:01:22,000
+When we execute that, we can see now ZERO is on the top and ADAM is on the bottom. What happens here is that
+
+13
+00:01:22,000 --> 00:01:30,000
+by adding ORDER BY, column name, and DESC clause, now entire table is ordered descending by first_name column.
+
+14
+00:01:30,000 --> 00:01:37,000
+We can do similar thing with last_name as well. Let's execute this statement and now, entire table is
+
+15
+00:01:37,000 --> 00:01:45,000
+‘ORDER BY last_name DESC'. ORDER BY clause is very handy and very easy to use. Now in the next clip, we will see how we
+
+16
+00:01:45,000 --> 00:59:00,000
+can retrieve selected columns from table.
+

@@ -1,0 +1,24 @@
+1
+00:00:02,000 --> 00:00:07,000
+There are a few essential downloads for MySQL installation. You can download MySQL from the link
+
+2
+00:00:07,000 --> 00:00:15,000
+displayed over here. Make sure to minimum download MySQL Community Server and MySQL Workbench.
+
+3
+00:00:15,000 --> 00:00:21,000
+If you're using Windows platform, I suggest that you download MySQL Installer.
+
+4
+00:00:21,000 --> 00:00:29,000
+It contains almost everything you will ever need related to MySQL, for example, MySQL Server, all of the
+
+5
+00:00:29,000 --> 00:00:37,000
+supported connectors, Workbench and sample models, MySQL Notifier, MySQL for Excel, MySQL for Visual Studio,
+
+6
+00:00:37,000 --> 00:59:00,000
+sample databases, and documentation. Now, let us quickly download and install MySQL Server.
+

@@ -1,0 +1,60 @@
+1
+00:00:01,000 --> 00:00:05,000
+So far we have been retrieving all of the  columns and all the rows from the table.
+
+2
+00:00:05,000 --> 00:00:12,000
+Now we will see how we can retrieve only selected columns instead of retrieving all the columns.
+
+3
+00:00:12,000 --> 00:00:19,000
+For example, let's see ‘SELECT * FROM sakila.actor'. There are four columns -- first is actor_id, second is
+
+4
+00:00:19,000 --> 00:00:26,000
+first_name, last_name, and last one is last_update. Now it's quite possible not everybody needs last_update data.
+
+5
+00:00:26,000 --> 00:00:33,000
+Some people may only want to see first_name and last_name. Well, we can do that very easily, instead of writing *,
+
+6
+00:00:33,000 --> 00:00:37,000
+we can just write first_name and last_name and select data from this table.
+
+7
+00:00:37,000 --> 00:00:46,000
+We will write SELECT first_name, last_name FROM table name, which is sakila.actor. Let's select this and execute.
+
+8
+00:00:46,000 --> 00:00:51,000
+Now you can see we are getting data from only two columns, which first_name and last_name.
+
+9
+00:00:51,000 --> 00:00:57,000
+There are many reasons to spell column names instead of writing *; however, the primary reason for that
+
+10
+00:00:57,000 --> 00:01:03,000
+is performance. Additionally note, the data which we retrieve for first_name and last_name is not in order.
+
+11
+00:01:03,000 --> 00:01:07,000
+If you want to order them, we can just specify ORDER BY clause over here.
+
+12
+00:01:07,000 --> 00:01:14,000
+In this case, I'm specifying ‘ORDER BY first_name DESC'. Let's select this statement and execute it.
+
+13
+00:01:14,000 --> 00:01:21,000
+Now we have first_name and last_name column, ORDER BY first_name DESC. In this example, we have seen how we can
+
+14
+00:01:21,000 --> 00:01:29,000
+filter columns and retrieve only the columns which we need. In next demonstration, we will see how we can further
+
+15
+00:01:29,000 --> 00:59:00,000
+filter rows as well.
+

@@ -1,0 +1,44 @@
+1
+00:00:03,000 --> 00:00:09,000
+So far we have seen in the WHERE condition that we are using simple such condition. What it means is that
+
+2
+00:00:09,000 --> 00:00:13,000
+we take one column name and try to compare it with string or integer literal.
+
+3
+00:00:13,000 --> 00:00:19,000
+However, the real world scenario is much more complex than this. We sometimes have more than one condition to
+
+4
+00:00:19,000 --> 00:00:26,000
+compare and validate. At that time, we need logical operators. Logical operators help WHERE condition to become
+
+5
+00:00:26,000 --> 00:00:31,000
+a compound condition. We can use multiple logical operators and can build a complex WHERE condition.
+
+6
+00:00:31,000 --> 00:00:38,000
+For example, here is the list of popular logical operators -- AND, OR, and NOT. AND operator is true if all the
+
+7
+00:00:38,000 --> 00:00:45,000
+conditions in WHERE clause are True. OR operator is True if any one of the conditions in WHERE clause is True,
+
+8
+00:00:45,000 --> 00:00:52,000
+whereas NOT is Negate Logic. What it means is that it will give us the logic, which we have used previously.
+
+9
+00:00:52,000 --> 00:00:58,000
+Sometimes NOT operators tend to confuse developers because of the issue. I suggest you write your logic
+
+10
+00:00:58,000 --> 00:01:04,000
+in such a way that you don't have to use NOT condition. Well, to understand this, we have to see a demo.
+
+11
+00:01:04,000 --> 00:59:00,000
+Let's open MySQL Workbench and see them into action.
+

@@ -1,0 +1,184 @@
+1
+00:00:04,000 --> 00:00:11,000
+Here we are in MySQL Workbench in SQL Query Editor. Let's see some of the examples how WHERE clause works with
+
+2
+00:00:11,000 --> 00:00:16,000
+comparison operators. First, we will see how equal operator works with integer and string.
+
+3
+00:00:16,000 --> 00:00:22,000
+We will be using sakila.actor table for this demonstration. Let's not select the WHERE clause and select
+
+4
+00:00:22,000 --> 00:00:28,000
+SELECT column name FROM sakila.actor. Click on Execute. We can see that it has returned us entire table.
+
+5
+00:00:28,000 --> 00:00:34,000
+Let's also enable Output Window. In Output Window, we can see it has returned us 200 rows.
+
+6
+00:00:34,000 --> 00:00:41,000
+Now, let's execute this entire query with WHERE condition where ‘actor_id = 100'. Select this row and click
+
+7
+00:00:41,000 --> 00:00:48,000
+on Execute. You can see in Output Window it has retrieved only one row and the row is ‘actor_id = 100'.
+
+8
+00:00:48,000 --> 00:00:53,000
+Instead of selecting entire table, we should be passing WHERE condition and select the row, which is needed.
+
+9
+00:00:53,000 --> 00:01:00,000
+Here, we are comparing column name with string operator. As mentioned earlier, for integer you do not need a
+
+10
+00:01:00,000 --> 00:01:05,000
+single code around it; however, for string, you need a single code around your parameter.
+
+11
+00:01:05,000 --> 00:01:10,000
+Now let's select this query and execute it. You can see in result pane it has retrieved us three rows and
+
+12
+00:01:10,000 --> 00:01:15,000
+similar results are also reflected in our Output Window. This query has returned us every single actor where
+
+13
+00:01:15,000 --> 00:01:20,000
+first_name = ‘Nick'. The implementation of comparison operators ‘equal to' is pretty straightforward.
+
+14
+00:01:20,000 --> 00:01:26,000
+Now we will see how operator ‘less than' works. Instead of using equal, in the WHERE clause I have used ‘less than'.
+
+15
+00:01:26,000 --> 00:01:34,000
+What it means is that now we will get all the actors who have ‘actor_id &lt; 100'. Let's select this query and Execute.
+
+16
+00:01:34,000 --> 00:01:41,000
+Now we have 99 rows and when we take the actor_id in resultset, you can clearly see that it is less than 99.
+
+17
+00:01:41,000 --> 00:01:47,000
+None of the actor_id is over 100. This is how we can use in our WHERE condition ‘less than' operator.
+
+18
+00:01:47,000 --> 00:01:52,000
+Let's execute this query and understand the result. Please pay special attention to the first_name when I
+
+19
+00:01:52,000 --> 00:01:58,000
+scroll over here. Very quickly, you will see the pattern that there is not a single name, which is starting with
+
+20
+00:01:58,000 --> 00:02:05,000
+any letter which comes after N in alphabet. Now let's understand ‘greater than' operator and we will understand
+
+21
+00:02:05,000 --> 00:02:10,000
+the same example a little bit more in depth. In our SELECT statement, in the WHERE condition, we have
+
+22
+00:02:10,000 --> 00:02:16,000
+‘actor_id &gt; 100'. Let's execute this and see the resultset. The query has returned 100 rows.
+
+23
+00:02:16,000 --> 00:02:21,000
+When we see the resultset, we can see actor_id starts at 100 and it goes all the way to 200.
+
+24
+00:02:21,000 --> 00:02:27,000
+Any record with actor_id less than 100 is no more included in this resultset. In case of the second query,
+
+25
+00:02:27,000 --> 00:02:34,000
+where we have first_name &gt; ‘Nick", select the statement and click on Execute. Now let's go to the resultset.
+
+26
+00:02:34,000 --> 00:02:40,000
+In this resultset, you can notice that every single name in the column first_name will be after NICK if
+
+27
+00:02:40,000 --> 00:02:45,000
+they're ordered alphabetically. However, in both the cases of ‘greater than' and ‘less than', we have noticed
+
+28
+00:02:45,000 --> 00:02:53,000
+that the actor_id 100 and first_name NICK was never included in the resultset. There can be a scenario where we
+
+29
+00:02:53,000 --> 00:03:00,000
+need actor_id 100, as well as first_name NICK also included as a part of the resultset. We can do that if we use
+
+30
+00:03:00,000 --> 00:03:06,000
+‘less than or equal to' operator. Let's see that in this case. In the result pane, let's scroll down all the way
+
+31
+00:03:06,000 --> 00:03:13,000
+and you can notice the very last_name is actor_id goes to 100. What it means is that this query has included 100
+
+32
+00:03:13,000 --> 00:03:21,000
+and every value which is less than 100 for actor_id. Similar logic also applies to first_name &lt;= ‘Nick'.
+
+33
+00:03:21,000 --> 00:03:27,000
+Let's select the statement and click on Execute. Now you can see that actor_id is equal to NICK is also included
+
+34
+00:03:27,000 --> 00:03:33,000
+in the resultset right away. Same logic also applies if you are going to use ‘greater than or equal to' operator.
+
+35
+00:03:33,000 --> 00:03:40,000
+Now, let's execute this query. You can see that we have now actor_id 100, as well as every actor_id over 100.
+
+36
+00:03:40,000 --> 00:03:46,000
+When I execute this query, any name alphabetically after NICK, as well as it includes first_name NICK.
+
+37
+00:03:46,000 --> 00:03:52,000
+Well, now you know how most of the comparison operators works. However, there is one more comparison operator,
+
+38
+00:03:52,000 --> 00:03:58,000
+which is very important to learn -- not equal to. Not equal to negates the condition, which we have provided into
+
+39
+00:03:58,000 --> 00:04:04,000
+WHERE clause. Let's understand that with an example. In this case, we have a condition where actor_id does not
+
+40
+00:04:04,000 --> 00:04:12,000
+equal to 100. What it means is that we'll get every single result ‘WHERE actor_id &lt;&gt; 100'. Let's execute this query
+
+41
+00:04:12,000 --> 00:04:21,000
+and we can see that now we have 199 rows in the resultset. If you scroll down and try to see between 99 and 101,
+
+42
+00:04:21,000 --> 00:04:27,000
+there is now row 100 because ‘actor_id = 100' should not be included in the resultset.
+
+43
+00:04:27,000 --> 00:04:35,000
+Similar case with ‘first_name != ‘Nick' as well. Let's execute this query and you can see NICK was actor_id 2.
+
+44
+00:04:35,000 --> 00:04:40,000
+It's not included in this query. If you scroll down all the way, you will not find names equal to NICK.
+
+45
+00:04:40,000 --> 00:04:47,000
+You will find resultset containing every other name besides NICK. Well, with this we complete our understanding
+
+46
+00:04:47,000 --> 00:59:00,000
+of comparison operators. Let's go to our next concept of logical operators.
+

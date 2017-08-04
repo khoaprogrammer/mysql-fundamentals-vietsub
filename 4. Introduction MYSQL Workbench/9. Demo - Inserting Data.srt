@@ -1,0 +1,44 @@
+1
+00:00:03,000 --> 00:00:10,000
+Now we will learn how we can insert a new row using SQL Editor. Go to Schema or database sakila, click on Tables,
+
+2
+00:00:10,000 --> 00:00:16,000
+right-click on Actors, and select ‘Select Rows'. It has written us rows from table, actor.
+
+3
+00:00:16,000 --> 00:00:22,000
+Now on the Visual Tab, you can see on the top bar there is a menu. The first menu states ‘Edit current row',
+
+4
+00:00:22,000 --> 00:00:28,000
+which we have seen it earlier, and now go to the next one. There's a small plus sign on table grid there.
+
+5
+00:00:28,000 --> 00:00:34,000
+The pop states ‘Insert new row'. Click over here. At the end of the table it has given us a new row.
+
+6
+00:00:34,000 --> 00:00:45,000
+Here I'll insert a new id, 1000, name is Pinal, last name is Dave, and last updated date, let's put any date.
+
+7
+00:00:45,000 --> 00:00:50,000
+Now the logical Apply and Cancel is still there. Click on Apply if you want to insert this row.
+
+8
+00:00:50,000 --> 00:00:56,000
+I'll click on Apply and it has automatically generated INSERT script for us. Now you can see the INSERT script
+
+9
+00:00:56,000 --> 00:01:02,000
+has been generated. You can see the values when you scroll down the right side. Now click on Apply and
+
+10
+00:01:02,000 --> 00:01:09,000
+click on Finish. Now you can see Apply and Cancel at this table. If you go to the end of it, you can see
+
+11
+00:01:09,000 --> 00:59:00,000
+the new row has been inserted. In the next clip, we will see how we can delete the newly inserted row.
+

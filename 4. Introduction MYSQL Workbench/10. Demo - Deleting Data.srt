@@ -1,0 +1,28 @@
+1
+00:00:03,000 --> 00:00:09,000
+In this clip, we will see how we can delete any row using SQL Editor. We'll be deleting the row, which we have
+
+2
+00:00:09,000 --> 00:00:15,000
+just inserted in the previous clip. Click on the row which you want to delete and once, again, you go to the
+
+3
+00:00:15,000 --> 00:00:22,000
+menu of the Visual Pane. Beside the ‘Insert new row', there is a minus sign over the grid. Click on this menu icon
+
+4
+00:00:22,000 --> 00:00:28,000
+and you can see the row has disappeared. Click on Apply. You can see the SQL for DELETE is generated.
+
+5
+00:00:28,000 --> 00:00:35,000
+Click on Apply again and it has applied the SQL script to the database. Click on Finish and let's scroll down
+
+6
+00:00:35,000 --> 00:00:43,000
+and this time Apply and Cancel are visible. Now you can see how easy it is to select, insert, update, and delete rows
+
+7
+00:00:43,000 --> 00:59:00,000
+in my SQL Workbench.
+

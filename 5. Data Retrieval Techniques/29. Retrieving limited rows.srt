@@ -1,0 +1,40 @@
+1
+00:00:02,000 --> 00:00:07,000
+Now we have reached to very last concept, which we want to learn in this module, which is LIMIT clause.
+
+2
+00:00:07,000 --> 00:00:11,000
+We can use LIMIT clause to limit the number of the rows that are returned by SELECT statement.
+
+3
+00:00:11,000 --> 00:00:17,000
+This clause usually has one or two arguments. Each of them has different meaning and we will understand them
+
+4
+00:00:17,000 --> 00:00:23,000
+while we do demonstration. It's always recommended that we use ORDER BY along with LIMIT because there is no
+
+5
+00:00:23,000 --> 00:00:30,000
+guarantee when we use LIMIT that we are going to get the data in the same order in every subsequent execution
+
+6
+00:00:30,000 --> 00:00:35,000
+of the same SELECT statement. The frequent use of this LIMIT clause is when we are doing paging.
+
+7
+00:00:35,000 --> 00:00:41,000
+Think about it this way. If there are 1000 rows in one table and now you want to retrieve only row, which is
+
+8
+00:00:41,000 --> 00:00:48,000
+between 500 and 510, how would you go about retrieving them? Well, this is the time that you use the LIMIT clause
+
+9
+00:00:48,000 --> 00:00:54,000
+because LIMIT clause has a two-argument, one is number of the rows and second one is offset.
+
+10
+00:00:54,000 --> 00:59:00,000
+Let's quickly understand both of them in demonstration.
+

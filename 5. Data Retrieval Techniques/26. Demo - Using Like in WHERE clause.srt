@@ -1,0 +1,184 @@
+1
+00:00:01,000 --> 00:00:05,000
+Now we will see how LIKE operator works.
+
+2
+00:00:05,000 --> 00:00:12,000
+LIKE is very powerful and interesting because it works with patterns. Using pattern logic and Wildcard, you can
+
+3
+00:00:12,000 --> 00:00:19,000
+pretty much build infinite combinations of the logic to use in a WHERE condition and let's start a few of
+
+4
+00:00:19,000 --> 00:00:21,000
+them over here. Here are some of the examples.
+
+5
+00:00:21,000 --> 00:00:30,000
+The first one is ‘SELECT * FROM sakila.actor WHERE first_name LIKE ‘A%'. This one pretty much will list every
+
+6
+00:00:30,000 --> 00:00:36,000
+single actor whose first_name starts with A. Percentage means there's just one or more characters.
+
+7
+00:00:36,000 --> 00:00:43,000
+Let's execute this one and you can see in our resultset, we have every single actor whose first_name starts with A.
+
+8
+00:00:43,000 --> 00:00:48,000
+However, if you want to make it a little bit more interesting, we can select only actor whose first_name starts
+
+9
+00:00:48,000 --> 00:00:57,000
+with A and L, which means we should get ALEC, ALBERT. ALBERT is here two times, which means actor_id 125 and
+
+10
+00:00:57,000 --> 00:01:02,000
+actor_id 146 should be also part of our result. Let's execute this one and we will see.
+
+11
+00:01:02,000 --> 00:01:09,000
+Here, we have WHERE condition ‘WHERE first_name LIKE ‘AL%'. In resultset, we have all the actors whose
+
+12
+00:01:09,000 --> 00:01:14,000
+first_name now starts with AL. Well, we can make it more clarity as well. Here is an example.
+
+13
+00:01:14,000 --> 00:01:19,000
+Here, we have used two underscores. Underscore stands for a single character. The pattern, which we have
+
+14
+00:01:19,000 --> 00:01:26,000
+returned here, is the first character is A, second and third can be any other character; however, the fourth
+
+15
+00:01:26,000 --> 00:01:33,000
+character has to be E. Let's exhibit this one and see how many records qualify for this pattern.
+
+16
+00:01:33,000 --> 00:01:40,000
+When we execute this, we can only find one actor who qualifies for this kind of pattern, that is ANNE, because the
+
+17
+00:01:40,000 --> 00:01:46,000
+first character is A, we do not get about second and third character, however, the fourth character has to be E.
+
+18
+00:01:46,000 --> 00:01:53,000
+Additionally, when we write this kind of pattern, it means we are looking for a four-character string only.
+
+19
+00:01:53,000 --> 00:02:00,000
+However, if we just put percentage right after it, now what it means is that we can have first character A,
+
+20
+00:02:00,000 --> 00:02:06,000
+second and third we don't get; however, the fourth character must be E. When we put percentage right after E,
+
+21
+00:02:06,000 --> 00:02:14,000
+it means now we don't care how long this particular string is. Well, let's execute this one and see if we find
+
+22
+00:02:14,000 --> 00:02:22,000
+any actor with such a name. You can find there are many, ANGELA, ANGELINA, ALBERT, ANGELA, and ALBERT again,
+
+23
+00:02:22,000 --> 00:02:28,000
+along with our original record of ANNE. You can see in all of these there is a single pattern.
+
+24
+00:02:28,000 --> 00:02:34,000
+First character is A, fourth character is E; however, we do not get the length of them, as well as we do not get
+
+25
+00:02:34,000 --> 00:02:40,000
+what is the second and third character is. Let's further continue to modify the same pattern.
+
+26
+00:02:40,000 --> 00:02:45,000
+Here, instead of putting two underscores, now we have replaced two underscores with single percentage.
+
+27
+00:02:45,000 --> 00:02:51,000
+Now what it means is that the first character is A and there is a percentage between A and E.
+
+28
+00:02:51,000 --> 00:02:57,000
+What it means is that E doesn't have to be anymore the fourth character, E can be any character after A,
+
+29
+00:02:57,000 --> 00:03:02,000
+and there can be any number of the characters between A and E and we do not care about them.
+
+30
+00:03:02,000 --> 00:03:08,000
+Additionally, E does not have to be the fourth and last character, there can be more characters right after
+
+31
+00:03:08,000 --> 00:03:14,000
+percentage as well. What it means is that, find the name, but start with A and has E anywhere in the name
+
+32
+00:03:14,000 --> 00:03:20,000
+except for splits. Let's execute this one and you can find many of the records. Now we can see the position
+
+33
+00:03:20,000 --> 00:03:26,000
+of E is not fixed, in this case it's third and in this case it's second to last. Again, in the case of ANNE,
+
+34
+00:03:26,000 --> 00:03:33,000
+it's the fourth and in the case of ANGELA, it is also fourth. Well, now there is no real logic where the E is
+
+35
+00:03:33,000 --> 00:03:39,000
+going to be; however, you can notice that A is always the first character. Now let's go to our next concept,
+
+36
+00:03:39,000 --> 00:03:44,000
+which about NULL. As we said, NULL is very interesting and it's very important to understand how NULL's behave.
+
+37
+00:03:44,000 --> 00:03:51,000
+We cannot use any arithmetic or logical operators over NULL. To compare NULL, you just have to use special keyword,
+
+38
+00:03:51,000 --> 00:03:57,000
+which is IS NULL or IS NOT NULL. Let's go to our address table and select every single record from it.
+
+39
+00:03:57,000 --> 00:04:03,000
+You can see in column address2, there are four records which are NULL and other records have empty string.
+
+40
+00:04:03,000 --> 00:04:10,000
+Let's go to our second query and run it. Please pay special attention here, the WHERE condition is address2 IS NULL.
+
+41
+00:04:10,000 --> 00:04:15,000
+What it means is that every record where address 2 IS NULL, should be part of the resultset.
+
+42
+00:04:15,000 --> 00:04:21,000
+Select the query and execute it and you can see that our four records over here where address2 IS NULL.
+
+43
+00:04:21,000 --> 00:04:27,000
+If you want to make it this condition, select the query and execute and now you will get every single row where
+
+44
+00:04:27,000 --> 00:04:33,000
+address2 IS NOT NULL. Well, logical to NULL is very interesting and now starts playing a very crucial role when
+
+45
+00:04:33,000 --> 00:04:38,000
+we start using outer joins. With this, we finish our demonstration regarding WHERE clause.
+
+46
+00:04:38,000 --> 00:59:00,000
+Now we will go to our next concept of ORDER BY clause.
+

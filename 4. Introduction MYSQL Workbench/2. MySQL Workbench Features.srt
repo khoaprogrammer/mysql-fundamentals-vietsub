@@ -1,0 +1,60 @@
+1
+00:00:03,000 --> 00:00:11,000
+MySQL Workbench feature list is very long. It will be impossible to cover every single feature in this module.
+
+2
+00:00:11,000 --> 00:00:16,000
+We will be covering the features which we are going to use in this course, as well as the essential feature,
+
+3
+00:00:16,000 --> 00:00:24,000
+which is important to do any task in your daily job. MySQL Workbench features can be divided in following areas:
+
+4
+00:00:24,000 --> 00:00:30,000
+Database Development, Database Designing, Database Administration, Database Migration, and Miscellaneous.
+
+5
+00:00:30,000 --> 00:00:36,000
+You can see that MySQL Workbench is very feature-rich and pretty much you can do every single task,
+
+6
+00:00:36,000 --> 00:00:42,000
+which you need to do with MySQL Database. In Database Development Area, you can do schema browsing,
+
+7
+00:00:42,000 --> 00:00:50,000
+syntax highlighting, addition or update to the result set, as well as it contains efficiency tool of snippets.
+
+8
+00:00:50,000 --> 00:00:56,000
+Database Designing, it is a very critical task for any database developer. MySQL Workbench offers visual
+
+9
+00:00:56,000 --> 00:01:03,000
+Drag'n'Drop modeling. It also helps to reverse engineering from SQL Scripts, as well as from live database.
+
+10
+00:01:03,000 --> 00:01:09,000
+Schema synchronization and printing of models are also very popular Database Designing features of
+
+11
+00:01:09,000 --> 00:01:17,000
+MySQL Workbench. In Database Administration, one can configure any instance, as well as do account management.
+
+12
+00:01:17,000 --> 00:01:22,000
+You can turn on or turn off any database instance, as well as do log file browsing.
+
+13
+00:01:22,000 --> 00:01:30,000
+Additionally, you can use MySQL Workbench for Database Migration, but you can use any ODBC compliant database
+
+14
+00:01:30,000 --> 00:01:36,000
+to migrate from one database to another database. Well, this was just a list of MySQL Workbench features.
+
+15
+00:01:36,000 --> 00:59:00,000
+Let's see MySQL Workbench into action next.
+

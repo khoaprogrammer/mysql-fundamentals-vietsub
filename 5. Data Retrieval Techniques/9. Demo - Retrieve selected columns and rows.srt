@@ -1,0 +1,92 @@
+1
+00:00:01,000 --> 00:00:09,000
+In the real example, we filter columns; in this example, we will filter rows.
+
+2
+00:00:09,000 --> 00:00:16,000
+‘SELECT * FROM table name' retrieves every single row and column from table. You can see that in this example where
+
+3
+00:00:16,000 --> 00:00:24,000
+I'm retrieving all the data from sakila.actor table. Here, let me introduce a new clause, which is WHERE clause.
+
+4
+00:00:24,000 --> 00:00:30,000
+WHERE clause is nothing but condition. In later part of this module only, we will understand WHERE clause in
+
+5
+00:00:30,000 --> 00:00:36,000
+detail; however, this is a simple example. Let's write the statement from the start.
+
+6
+00:00:36,000 --> 00:00:43,000
+SELECT * FROM sakila.actor; what it means is that now we are going to get every single row and every single column
+
+7
+00:00:43,000 --> 00:00:51,000
+from sakila.actor table. Now, let's read the next line, ‘WHERE actor_id &gt; 100'. What it means is that now we will
+
+8
+00:00:51,000 --> 00:00:58,000
+only retrieve from sakila.actor table, those rows where actor_id is greater than 100.
+
+9
+00:00:58,000 --> 00:01:05,000
+Currently, our sakila.actor table has 200 rows. Now we are talking about retrieving rows only where actor_id
+
+10
+00:01:05,000 --> 00:01:11,000
+is greater than 100. Let's select this statement and execute it. You can see that in the result, our data
+
+11
+00:01:11,000 --> 00:01:18,000
+starts from actor_id 101. Let's quickly scroll down and see if there are any data which is less than 100.
+
+12
+00:01:18,000 --> 00:01:26,000
+A quick inspection demonstrates that there are no rows which has actor_id greater than 100. What it means is that
+
+13
+00:01:26,000 --> 00:01:33,000
+this WHERE condition has filtered out row where actor_id is 100 or less. Now let's change this greater than to
+
+14
+00:01:33,000 --> 00:01:41,000
+less than and see what result it brings to us. After executing, we can see that we have actor_id 1; however, let's
+
+15
+00:01:41,000 --> 00:01:49,000
+see what is our maximum actor_id. The maximum is 99 because here, we have WHERE condition where we have specified
+
+16
+00:01:49,000 --> 00:01:58,000
+that ‘WHERE actor_id &lt; 100'. You can notice that writing WHERE condition is very simple and it's very intuitive.
+
+17
+00:01:58,000 --> 00:02:05,000
+Let's see the next example. In this example, now we are filtering out fourth column, which is last_update.
+
+18
+00:02:05,000 --> 00:02:10,000
+We are only selecting actor_id, first_name, and last_name. We have changed here the WHERE condition, now I'm
+
+19
+00:02:10,000 --> 00:02:16,000
+mentioning WHERE first_name = ‘Nick'. What it means is that now we will enter only those rows,
+
+20
+00:02:16,000 --> 00:02:25,000
+WHERE first_name = ‘Nick' from the table sakila.actor. Let's select this statement and execute it.
+
+21
+00:02:25,000 --> 00:02:30,000
+We can see there are three records over here. All three records have first_name as ‘Nick'; however, last_name
+
+22
+00:02:30,000 --> 00:02:36,000
+is different. Additionally, the fourth column of last_updated is also not visible over here.
+
+23
+00:02:36,000 --> 00:59:00,000
+It was very easy to see how we can filter rows and columns. (Typing)
+

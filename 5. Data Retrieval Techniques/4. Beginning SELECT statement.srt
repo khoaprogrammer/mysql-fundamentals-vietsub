@@ -1,0 +1,40 @@
+1
+00:00:03,000 --> 00:00:09,000
+Now, let's see some of the SELECT statement into action. We will go over some of the basic and simple
+
+2
+00:00:09,000 --> 00:00:15,000
+SELECT statements in the beginning, later we will see more complicated examples. First, we will see how we can
+
+3
+00:00:15,000 --> 00:00:21,000
+use SELECT statement to retrieve static values. Later, we will use SELECT statement to retrieve all the data from
+
+4
+00:00:21,000 --> 00:00:28,000
+table using star. The same retrieved data, we will order by single column. Later, we will only select
+
+5
+00:00:28,000 --> 00:00:33,000
+selected columns instead of all the column from the table. Right after that, we will make sure the data,
+
+6
+00:00:33,000 --> 00:00:40,000
+which we will retrieve, is not all the data. We will write a filter condition on the top of the SELECT statement
+
+7
+00:00:40,000 --> 00:00:46,000
+and retrieve only selected rows. After that, we will combine all of our learning and retrieve data for
+
+8
+00:00:46,000 --> 00:00:53,000
+selected column using filter condition and with order by multiple columns. Finally, we will see a simple trick
+
+9
+00:00:53,000 --> 00:01:00,000
+where we will retrieve empty resultset using SELECT statement. Now let's see a demonstration where we will see
+
+10
+00:01:00,000 --> 00:59:00,000
+each of them in action. Now let's open MySQL Workbench.
+

@@ -1,0 +1,136 @@
+1
+00:00:04,000 --> 00:00:11,000
+Here you can see I have already downloaded MySQL Installer. Let's double-click it and it brings up Welcome screen.
+
+2
+00:00:11,000 --> 00:00:18,000
+Now we'll follow a Standard MySQL installation. Click on Install MySQL Products, read and agree to license terms,
+
+3
+00:00:18,000 --> 00:00:25,000
+click on Next, and it will ask you if you want to check for latest updates. As I've just downloaded my package,
+
+4
+00:00:25,000 --> 00:00:30,000
+there won't be any update, even though it does not harm to check it one more time.
+
+5
+00:00:30,000 --> 00:00:36,000
+Let's click on Execute, it will connect to the internet and fetch product update information.
+
+6
+00:00:36,000 --> 00:00:43,000
+Over here, it gives us various options for setup types. Developer options, it installs all products needed for
+
+7
+00:00:43,000 --> 00:00:49,000
+MySQL development purposes. This is one which we'll be selecting. However, it's worth noting there are other
+
+8
+00:00:49,000 --> 00:00:58,000
+options like server only, client only, a full installation, and custom installation. Two more things to note
+
+9
+00:00:58,000 --> 00:01:06,000
+before we click on Next, first is Installation Path and second is Data Path. Installation Path is where MySQL
+
+10
+00:01:06,000 --> 00:01:14,000
+will install MySQL and Data Path is where MySQL will install data files. Click on Next.
+
+11
+00:01:14,000 --> 00:01:20,000
+On the prerequisite screen, it will give us a list of all the prerequisites. In my case, all the prerequisites
+
+12
+00:01:20,000 --> 00:01:28,000
+are met, hence, we are seeing all green checkmarks. Let's click on Next. Now we'll be installing MySQL and
+
+13
+00:01:28,000 --> 00:01:33,000
+all the related product. I would like you to pay close attention to the time it takes to install MySQL Server.
+
+14
+00:01:33,000 --> 00:01:39,000
+The reason is that, after I click on Execute, you'll notice that installing MySQL Server and all the
+
+15
+00:01:39,000 --> 00:01:54,000
+related product is a very fast and efficient process. Let's click on Execute. (Music)
+
+16
+00:01:54,000 --> 00:02:00,000
+And we're done. You can see in very few seconds, we installed MySQL Server and all the related products.
+
+17
+00:02:00,000 --> 00:02:06,000
+Isn't it easy and efficient? Let's click on Next. Here it will ask us to do configuration.
+
+18
+00:02:06,000 --> 00:02:14,000
+After installation, configuration is a very important task. However, MySQL configuration is very simple to do.
+
+19
+00:02:14,000 --> 00:02:20,000
+Click on Next. Here, you are to select your server configuration type. We have Development Machine so
+
+20
+00:02:20,000 --> 00:02:26,000
+we'll leave the Development Machine as a default option. Alternatively, you can also select Server Machine or
+
+21
+00:02:26,000 --> 00:02:32,000
+Dedicated Machine as well. In the Server Machine, you'll have other applications also running with
+
+22
+00:02:32,000 --> 00:02:39,000
+MySQL installation; however, in case of the Dedicated Machine, only MySQL product will be running on this machine.
+
+23
+00:02:39,000 --> 00:02:45,000
+My machine is Development Machine, hence, click Development Machine and click on Next.
+
+24
+00:02:45,000 --> 00:02:53,000
+Here, you can enable or disable TCP/IP Networking. Let's not change any setting over here and click on Next.
+
+25
+00:02:53,000 --> 00:02:59,000
+MySQL Server Configuration will ask us to enter Root Password and you can see password strength is medium.
+
+26
+00:02:59,000 --> 00:03:07,000
+Let me create another admin user over here. I'll give the name Pinal Dave. I left the role ‘DB Admin'.
+
+27
+00:03:07,000 --> 00:03:13,000
+I'll provide a complex password. Click OK and now we are ready to go to next screen. Click on Next.
+
+28
+00:03:13,000 --> 00:03:19,000
+On this screen, MySQL will allow us to configure Windows Service Details. Here, we will change the
+
+29
+00:03:19,000 --> 00:03:27,000
+Windows Service Name so we can easily identify our MySQL installation. We will give it the name as SQLAuthority.
+
+30
+00:03:27,000 --> 00:03:34,000
+Now click on Next. Here you can see now Server Configuration is complete. We can click Next one more time and
+
+31
+00:03:34,000 --> 00:03:42,000
+Samples and Examples will be configured. Click on Next and now, along with MySQL Server Samples and Examples,
+
+32
+00:03:42,000 --> 00:03:49,000
+we are ready to go. Click on Next. On the very next screen it will ask us if you want to start MySQL Workbench
+
+33
+00:03:49,000 --> 00:03:55,000
+after Setup, yes or no. I'll leave this one on because that's the next thing which we are going to discuss.
+
+34
+00:03:55,000 --> 00:59:00,000
+Click Finish and immediately you can see MySQL Workbench is open.
+

@@ -1,0 +1,116 @@
+1
+00:00:04,000 --> 00:00:09,000
+Now let's understand the concept of aliases with example. Let's first retrieve a few columns from
+
+2
+00:00:09,000 --> 00:00:16,000
+sakila.rental table. Select the statement and click on Execute. You can see we have retrieved three columns --
+
+3
+00:00:16,000 --> 00:00:22,000
+rental_date, inventory_id, and return_date. Due to any reason, if you do not like these column names, we can just
+
+4
+00:00:22,000 --> 00:00:28,000
+change them. For changing column names, we just have to alias them. For example, in this SELECT statement,
+
+5
+00:00:28,000 --> 00:00:35,000
+rental_date is original column name. We can just say ‘rental_date AS RentalDate' in the CamelCase and now,
+
+6
+00:00:35,000 --> 00:00:43,000
+this is our alias. Similarly for inventory_id, we are also aliasing it as FilmListID. For return_date, the alias
+
+7
+00:00:43,000 --> 00:00:49,000
+is ReturnDate in CamelCase. Let's select this statement and execute it. You can see in the resultset that
+
+8
+00:00:49,000 --> 00:00:55,000
+original column names are now replaced with column aliases. However, the data which is being displayed right
+
+9
+00:00:55,000 --> 00:01:01,000
+after the header title, it's the same and there is no difference at all. So in other words, aliases is just
+
+10
+00:01:01,000 --> 00:01:07,000
+another name for any of the columns. Well there is not much of the importance of alias at this point of time;
+
+11
+00:01:07,000 --> 00:01:12,000
+however, alias becomes very very important when we are dealing with arithmetic expressions.
+
+12
+00:01:12,000 --> 00:01:19,000
+For example, ‘FROM sakila.film' table, we are retrieving three different columns and two of them have arithmetic
+
+13
+00:01:19,000 --> 00:01:25,000
+operations. Let's select the statement and execute it. You can see the column names are very wide.
+
+14
+00:01:25,000 --> 00:01:31,000
+The most easy way to fix this problem is to just alias a column. Let's see that now. You can see in this example,
+
+15
+00:01:31,000 --> 00:01:40,000
+I have aliased ‘replacement cost -- rental_rate AS CostDiff', length/60 is now alias ‘AS TimeinHour'.
+
+16
+00:01:40,000 --> 00:01:46,000
+Let's execute this statement and you can see that column width is much lesser and it's very easy to read.
+
+17
+00:01:46,000 --> 00:01:52,000
+You can see in this SELECT statement we have used various different arithmetic operators.
+
+18
+00:01:52,000 --> 00:01:59,000
+For example, we have +, *, and -; however, to make this more interesting, I have used parentheses that are
+
+19
+00:01:59,000 --> 00:02:05,000
+in different places. Select this entire statement and now click on Execute. You can see that arithmetic
+
+20
+00:02:05,000 --> 00:02:12,000
+operation on original column changes the complete meaning of the column. Now let's see one more example.
+
+21
+00:02:12,000 --> 00:02:18,000
+Let's select this particular statement and click on Execute. Here, you can see each column has a different value.
+
+22
+00:02:18,000 --> 00:02:25,000
+You can see the original column, replacement_cost, is now aliased with ReplacementCost in CamelCase.
+
+23
+00:02:25,000 --> 00:02:31,000
+Right after that, it is divided by 5. Our result will be decimal. However, if you don't want decimal result,
+
+24
+00:02:31,000 --> 00:02:39,000
+we can just use the word DIV, it will give us integer results. We can also find very quickly, modulo or remainder
+
+25
+00:02:39,000 --> 00:02:47,000
+of any value. For example, here we have value 20.99. When it is divided by 5, we are getting the value as 4.198.
+
+26
+00:02:47,000 --> 00:02:54,000
+When we use the DIV function, it will only give us integer part of this decimal value. In this case, it's a 4;
+
+27
+00:02:54,000 --> 00:03:03,000
+in this case, it's 2; in this case, it's 3. Here, there is a 12.99. When we divide that with 5, our remainder is 2.99.
+
+28
+00:03:03,000 --> 00:03:09,000
+Now you can see how various arithmetic operations come together with the regular SELECT statement and start
+
+29
+00:03:09,000 --> 00:59:00,000
+building intelligent data.
+

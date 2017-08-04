@@ -1,0 +1,28 @@
+1
+00:00:03,000 --> 00:00:05,000
+Summary in Sixty Seconds
+
+2
+00:00:05,000 --> 00:00:11,000
+MySQL Workbench is divided into three major sections: i)SQL Development, ii)Data Modeling, and
+
+3
+00:00:11,000 --> 00:00:17,000
+iii)Server Administration. We can retrieve, view, edit or delete data from SQL Editor of SQL Development section.
+
+4
+00:00:17,000 --> 00:00:24,000
+We can create database model, as well as reverse engineer database from Data Modeling section.
+
+5
+00:00:24,000 --> 00:00:29,000
+We can start, stop, and manage MySQL instance from Server Administration section.
+
+6
+00:00:29,000 --> 00:00:35,000
+Remember, we can use MySQL Command Line Editor if we have no access to MySQL Workbench.
+
+7
+00:00:35,000 --> 00:59:00,000
+You can download MySQL Workbench from the URL displayed on the screen.
+

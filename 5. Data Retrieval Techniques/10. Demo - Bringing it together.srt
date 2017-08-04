@@ -1,0 +1,112 @@
+1
+00:00:04,000 --> 00:00:11,000
+Now we will further continue our same example and see how we can filter columns, filter rows, as well as
+
+2
+00:00:11,000 --> 00:00:16,000
+order record set with multiple columns. Let's start with a very simple example.
+
+3
+00:00:16,000 --> 00:00:24,000
+Here, we have SELECT * FROM sakila.actor WHERE first_name = ‘Nick'. As we have seen, we are going to get four
+
+4
+00:00:24,000 --> 00:00:30,000
+columns because there is * and three rows because we have first_name = ‘Nick'. Let's execute it and, as expected,
+
+5
+00:00:30,000 --> 00:00:37,000
+we can see now four columns and three rows. Let's assume that we don't need last_update column. Well remove that.
+
+6
+00:00:37,000 --> 00:00:44,000
+Now we will not use *, instead of that we'll specify actor_id, first_name, and last_name. While we do that, we'll
+
+7
+00:00:44,000 --> 00:00:51,000
+also add one more twist. Currently, we are getting our data, which is this spot, actor_id ascending.
+
+8
+00:00:51,000 --> 00:00:57,000
+Let's change the sequence and we want now data, which is ‘ORDER BY actor_id DESC'. What it means is that we want
+
+9
+00:00:57,000 --> 00:01:05,000
+our very first record to be 166 and very last record to be 2. We can easily do that if we specify only three columns
+
+10
+00:01:05,000 --> 00:01:12,000
+in a SELECT statement and additionally we provide ‘ORDER BY actor_id (sequences) DESC'.
+
+11
+00:01:12,000 --> 00:01:19,000
+Let's select this and execute. You can see now we are getting 166 as the top record and 2 as bottom record.
+
+12
+00:01:19,000 --> 00:01:26,000
+Currently our result is ORDER BY only one column, which is actor_id. Let's make it more complicated.
+
+13
+00:01:26,000 --> 00:01:33,000
+I'll change the WHERE condition and I'm retrieving, once again, actor_id &gt; 100. Here we have ORDER BY first_name,
+
+14
+00:01:33,000 --> 00:01:38,000
+which is ascending, and last_name, which is descending. Additionally, we have three columns, which is actor_id,
+
+15
+00:01:38,000 --> 00:01:44,000
+first_name, and last_name. What it means is that we have all the elements which we have learned together in this
+
+16
+00:01:44,000 --> 00:01:52,000
+single query. We are filtering by columns; additionally, we are filtering by rows. Also, we are ordering this
+
+17
+00:01:52,000 --> 00:01:59,000
+complete resultset by multiple columns, which is first_name and last_name. Let's execute this and now we have
+
+18
+00:01:59,000 --> 00:02:05,000
+resultset. We can clearly see that every single record in first column actor_id is over 100.
+
+19
+00:02:05,000 --> 00:02:10,000
+Additionally, let's pay attention to the first name. You can see that first_name ‘ADAM' is on the top and
+
+20
+00:02:10,000 --> 00:02:16,000
+‘WILLIAM' is on the bottom. What it means is that first_name is order ascending alphabetically.
+
+21
+00:02:16,000 --> 00:02:22,000
+However, there is also last_name, which is order descending. What it means is that after the first_name column
+
+22
+00:02:22,000 --> 00:02:29,000
+is order alphabetically ascending, MySQL will pay attention to last_name column. Let's see an example.
+
+23
+00:02:29,000 --> 00:02:34,000
+Look at these two lines. We have first_name ‘GORDON' and last_name is ‘NOLTE' and ‘JACKMAN'.
+
+24
+00:02:34,000 --> 00:02:42,000
+You can see last_name is now order descending because N comes first and J is now coming later on.
+
+25
+00:02:42,000 --> 00:02:49,000
+Here is the example where we have our cell. If you think of alphabets, you can see the B should come first; however,
+
+26
+00:02:49,000 --> 00:02:56,000
+we have ordered last_name descending. What it means is that now D is coming first and later, C and B.
+
+27
+00:02:56,000 --> 00:03:04,000
+So, MySQL has first order complete data as per first_name ascending and later order complete resultset by
+
+28
+00:03:04,000 --> 00:59:00,000
+last_name descending. Let's see a tricky concept next where we retrieve empty resultset.
+

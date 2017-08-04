@@ -1,0 +1,28 @@
+1
+00:00:04,000 --> 00:00:10,000
+Now we have seen how we can manage connection, let's see how quickly we can retrieve data using MySQL Workbench
+
+2
+00:00:10,000 --> 00:00:19,000
+from MySQL. Double-click on SQLAuthority. It will open SQL Editor. On the left side, we have Object Browser,
+
+3
+00:00:19,000 --> 00:00:26,000
+right below it we have Information tab. Let's explore schemas. Click on the arrow beside sakila and you can see
+
+4
+00:00:26,000 --> 00:00:33,000
+it lists down Tables, Views, and Routines. Click on Tables and we have various tables listed over here.
+
+5
+00:00:33,000 --> 00:00:38,000
+Right-click on Actors and select first option, which states Select Rows and it will spell out
+
+6
+00:00:38,000 --> 00:00:45,000
+SELECT * FROM sakila.actor in Query Editor and on the Visual Pane we can see the select data.
+
+7
+00:00:45,000 --> 00:59:00,000
+You can see how easy it is to retrieve data from MySQL Database using MySQL Workbench.
+

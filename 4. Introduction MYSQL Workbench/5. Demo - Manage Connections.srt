@@ -1,0 +1,92 @@
+1
+00:00:03,000 --> 00:00:10,000
+Well, we just noticed that we have created a new connection, which is SQLAuthority. As you keep on using MySQL
+
+2
+00:00:10,000 --> 00:00:15,000
+in your production environment and development environment, you will notice that the number of the connections
+
+3
+00:00:15,000 --> 00:00:22,000
+you work with keep on increasing. At one point, you may want to delete, create or modify your existing connection.
+
+4
+00:00:22,000 --> 00:00:29,000
+You can easily manage all of the connections from your MySQL Workbench. Under SQL Development Area, go to
+
+5
+00:00:29,000 --> 00:00:36,000
+Manage Connections and click over here. It will bring up this screen. You can see on the left side there is a
+
+6
+00:00:36,000 --> 00:00:42,000
+SQLAuthority connection. This is the only connection we have created so far. Let's click over here.
+
+7
+00:00:42,000 --> 00:00:48,000
+Once we clicked, you can see all the information from this connection is filled up on the right side.
+
+8
+00:00:48,000 --> 00:00:53,000
+You can also configure a few of the advanced connections over here by clicking over Advanced Tab.
+
+9
+00:00:53,000 --> 00:01:01,000
+As this is a fundamental course, we will be not spending much of the time on this tab. Let's go back on Parameters.
+
+10
+00:01:01,000 --> 00:01:07,000
+Also on the bottom of the screen, you can see there are a few options -- New creates new connection,
+
+11
+00:01:07,000 --> 00:01:14,000
+Delete deletes existing connection. Let's create one more connection. I'll click on New and new connection is
+
+12
+00:01:14,000 --> 00:01:20,000
+isolated on the left side, as well as it has populated few of the default value on the right side of the screen.
+
+13
+00:01:20,000 --> 00:01:26,000
+Let's give Connection Name as Pluralsight. We'll give Connection Method as a Standard (TCP/IP).
+
+14
+00:01:26,000 --> 00:01:32,000
+In the Host Name, I would reckon leave this one as it is or we can provide Local Host as a Host Name.
+
+15
+00:01:32,000 --> 00:01:40,000
+We'll keep Username, Root, and the Password. Click OK and in this case, we'll also give a Default Schema.
+
+16
+00:01:40,000 --> 00:01:48,000
+We will use Default Schema as sakila. Now, let's click on Test Connection and our test is successful.
+
+17
+00:01:48,000 --> 00:01:54,000
+Click OK and now you can close this one. On the main screen, you can see that now we have two databases,
+
+18
+00:01:54,000 --> 00:02:00,000
+one is SQLAuthority and second one is Pluralsight. Let's change the order of SQLAuthority and Pluralsight in
+
+19
+00:02:00,000 --> 00:02:06,000
+Manage Connection. Click on Manage Connection and now let's click on Pluralsight on the left side in
+
+20
+00:02:06,000 --> 00:02:13,000
+Stored Connection area and click on Move Up. You can see that Pluralsight is now on the top and SQLAuthority
+
+21
+00:02:13,000 --> 00:02:21,000
+is on bottom. Click Close and on the main screen, the order is also changed. Now double-click on newly created
+
+22
+00:02:21,000 --> 00:02:29,000
+Pluralsight connection and you can notice that sakila is highlighted. What it means is that sakila database is
+
+23
+00:02:29,000 --> 00:59:00,000
+now by default selected. Now let's go back to home screen.
+

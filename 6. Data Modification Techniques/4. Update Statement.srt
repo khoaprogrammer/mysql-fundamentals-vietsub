@@ -1,0 +1,28 @@
+1
+00:00:04,000 --> 00:00:09,000
+We can use UPDATE statement to update one or more rows in a table. The SET clause in UPDATE statement will
+
+2
+00:00:09,000 --> 00:00:15,000
+contain name of the column and its new value, whereas WHERE clause will have a condition, which qualifies rows
+
+3
+00:00:15,000 --> 00:00:22,000
+to be updated to a new value. Just like INSERT, we have a concept of default and NULL here as well and they work
+
+4
+00:00:22,000 --> 00:00:29,000
+almost exactly the same. Let's see UPDATE in action. UPDATE has many variations. For example, update single row
+
+5
+00:00:29,000 --> 00:00:36,000
+and single column, update single row and multiple columns, we can also update multiple rows in single column or
+
+6
+00:00:36,000 --> 00:00:43,000
+update multiple rows in multiple columns. We can use SELECT subquery in UPDATE statement as well.
+
+7
+00:00:43,000 --> 00:59:00,000
+Let's see all of this into action now.
+

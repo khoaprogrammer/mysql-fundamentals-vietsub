@@ -1,0 +1,80 @@
+1
+00:00:02,000 --> 00:00:11,000
+Well, open MySQL Workbench and let's start with simple examples. As discussed in an earlier set of clip,
+
+2
+00:00:11,000 --> 00:00:18,000
+you just need sakila Sample Database, MySQL Workbench, and MySQL Server. Let's start coding together.
+
+3
+00:00:18,000 --> 00:00:25,000
+Let's type ‘SELECT MyFirstValue'. MyFirstValue is a string and let's select that and see what result comes up.
+
+4
+00:00:25,000 --> 00:00:32,000
+Click on Execute and you can see MyFirstValue is now displayed over here. The name of the column is same as the
+
+5
+00:00:32,000 --> 00:00:40,000
+value as we have not specified any alias. Let's type alias ‘AS SomeValue'. Now let's execute the same thing
+
+6
+00:00:40,000 --> 00:00:47,000
+again and you can see name of the column is now SomeValue and value is MyFirstValue. Similar thing you can do with
+
+7
+00:00:47,000 --> 00:00:56,000
+arithmetic operations over here. SELECT 1+1 and let's see the fun. You can see that value is now 2 because 1+1 is 2;
+
+8
+00:00:56,000 --> 00:01:04,000
+however, name of the column is 1+1. Let's give it alias over here ‘AS TWO'. Now let's execute it one more time
+
+9
+00:01:04,000 --> 00:01:11,000
+and you can see now name of the column is TWO and the value is also TWO. In MySQL, you can also get current date/time
+
+10
+00:01:11,000 --> 00:01:18,000
+by using function NOW. Let's learn SELECT NOW. The result displays with current date and time.
+
+11
+00:01:18,000 --> 00:01:23,000
+If you just want only date part and not the time part, you can just write ‘SELECT CURDATE'.
+
+12
+00:01:23,000 --> 00:01:30,000
+Let's execute this and you can see only date part is displayed and time part is not displayed anymore.
+
+13
+00:01:30,000 --> 00:01:36,000
+If you want only time, similar way you can write ‘SELECT CURTIME' and it will display as current time and
+
+14
+00:01:36,000 --> 00:01:43,000
+date part is not displayed. You can also display the value of pi by using ‘SELECT PI' files in BUILD function.
+
+15
+00:01:43,000 --> 00:01:50,000
+Let's execute it and you can see the value of pi is displayed here, 3.141593. Well, you can do other mathematical
+
+16
+00:01:50,000 --> 00:01:55,000
+functions as well, like finding remainder. When you divide 45 by 7, what will be the remainder?
+
+17
+00:01:55,000 --> 00:02:02,000
+Well, let's learn ‘SELECT MOD(45,7)' and it gives us remainder as 3. Another interesting function would be to
+
+18
+00:02:02,000 --> 00:02:08,000
+just find square root of any value. Here, we have specified 25 and square root of 25 is 5.
+
+19
+00:02:08,000 --> 00:02:15,000
+Let's execute this and you can see it has found square root of 25, it is 5. You do not need FROM, WHERE,
+
+20
+00:02:15,000 --> 00:59:00,000
+ORDER BY clauses if you are just doing some simple operations.
+

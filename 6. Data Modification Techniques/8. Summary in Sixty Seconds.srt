@@ -1,0 +1,20 @@
+1
+00:00:05,000 --> 00:00:07,000
+Summary in Sixty Seconds
+
+2
+00:00:07,000 --> 00:00:14,000
+Use SELECT statement in subquery when inserting, updating or deleting multiple rows at the same time.
+
+3
+00:00:14,000 --> 00:00:20,000
+Do not forget to specify WHERE clause in DELETE or UPDATE statement or it will modify your entire table.
+
+4
+00:00:20,000 --> 00:00:26,000
+By default, MySQL Workbench runs in a safe update mode preventing users to make accidental updates.
+
+5
+00:00:26,000 --> 00:59:00,000
+Disable safe mode only when required.
+

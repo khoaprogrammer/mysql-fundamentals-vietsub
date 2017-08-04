@@ -1,0 +1,24 @@
+1
+00:00:02,000 --> 00:00:08,000
+MySQL Workbench is a great tool to work with MySQL and you'll be using that throughout this course.
+
+2
+00:00:08,000 --> 00:00:15,000
+However, if you ever face a situation where you come across the workstation without MySQL Workbench,
+
+3
+00:00:15,000 --> 00:00:22,000
+you would have to find an alternative to it. In place of MySQL Workbench, you can use MySQL Command Line Editor
+
+4
+00:00:22,000 --> 00:00:29,000
+through the same task, which you want to do using MySQL Workbench. You can start MySQL Command Line Editor from
+
+5
+00:00:29,000 --> 00:00:34,000
+Start &gt;&gt; All Programs &gt;&gt; MySQL &gt;&gt; MySQL Server &gt;&gt; MySQL Command Line Editor.
+
+6
+00:00:34,000 --> 00:59:00,000
+Now let's see MySQL Command Line Editor in action.
+

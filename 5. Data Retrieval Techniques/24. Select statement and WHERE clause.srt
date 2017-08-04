@@ -1,0 +1,64 @@
+1
+00:00:03,000 --> 00:00:08,000
+WHERE clause is one of the most powerful clauses in entire SELECT statement. There are lots of interesting
+
+2
+00:00:08,000 --> 00:00:14,000
+elements, which we can use in the WHERE clause to make it interesting to learn. For example, IN phrase.
+
+3
+00:00:14,000 --> 00:00:21,000
+We can use IN phrase to test whether expression is equal to the value in the least. The order of element in
+
+4
+00:00:21,000 --> 00:00:27,000
+the least does not influence the final resultset. Additionally, we can use subquery in the IN clause as well.
+
+5
+00:00:27,000 --> 00:00:32,000
+During demonstration, we will quickly see an example of the same. In the advanced course, we will cover this
+
+6
+00:00:32,000 --> 00:00:39,000
+concept in detail. We can use NOT operator to negate the logic of IN phrase. BETWEEN phrase qualifies the row of
+
+7
+00:00:39,000 --> 00:00:45,000
+a resultset when an expression falls within the range. The lower and the upper limit range expressions are also
+
+8
+00:00:45,000 --> 00:00:51,000
+part of the range. Just like any other operator or phrase, we can use NOT to negate the resultset.
+
+9
+00:00:51,000 --> 00:00:58,000
+We can use LIKE operator to retrieve rows that matches a string pattern. A string pattern is called a mask.
+
+10
+00:00:58,000 --> 00:01:04,000
+We will also understand how Wildcard - % (percentage) and _ (underscore) helps to build this string pattern
+
+11
+00:01:04,000 --> 00:01:10,000
+using demonstration. Additionally, we can use NOT keyword before LIKE and negate the entire logic.
+
+12
+00:01:10,000 --> 00:01:15,000
+NULL is one of the most interesting concepts within Database. I have seen developers often getting confused
+
+13
+00:01:15,000 --> 00:01:22,000
+with NULL. Incorrect implementation of NULL brings unexpected results. NULL value stands for value that is
+
+14
+00:01:22,000 --> 00:01:31,000
+unknown or unavailable. It is not a 0 or not an infinite. In SQL, we can't compare NULL by using ‘equal to' operator.
+
+15
+00:01:31,000 --> 00:01:38,000
+We are to use special clause of IS NULL and IS NOT NULL. When we use this clause, our resultset contains value
+
+16
+00:01:38,000 --> 00:59:00,000
+based on this logic. Let's quickly jump to a demonstration and understand these concepts.
+

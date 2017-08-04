@@ -1,0 +1,28 @@
+1
+00:00:02,000 --> 00:00:09,000
+Now we will see one more feature of MySQL Workbench, which is Output Tab. In the SQL Editor, go on the top and
+
+2
+00:00:09,000 --> 00:00:17,000
+select on second-most, which you see over here. You can see it has brought up Output Tab without any data over here.
+
+3
+00:00:17,000 --> 00:00:24,000
+Let's go to sakila database and right-click over actor table and Select few Rows. Output Tab displays us any
+
+4
+00:00:24,000 --> 00:00:30,000
+query which we have executed along with any message. If you have done any syntax error, we can also see that in
+
+5
+00:00:30,000 --> 00:00:38,000
+our Output Window. For example, here insert a FROM, I will write FROMs. Now let's execute the whole query again.
+
+6
+00:00:38,000 --> 00:00:43,000
+You can see that the query is not correct anymore and an error is displayed over here.
+
+7
+00:00:43,000 --> 00:59:00,000
+Error Code 1064: You have an error in your SQL. Now let's go back to Home Page.
+

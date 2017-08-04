@@ -1,0 +1,56 @@
+1
+00:00:01,000 --> 00:00:10,000
+Hi, this is Pinal Dave for Pluralsight. In this module, we will talk about Summary and Resources.
+
+2
+00:00:10,000 --> 00:00:17,000
+So far, we have learned Installation of MySQL Server, MySQL Workbench, and MySQL Sample Databases.
+
+3
+00:00:17,000 --> 00:00:22,000
+All of these components and all other components are installed by default.
+
+4
+00:00:22,000 --> 00:00:30,000
+Later, we learned MySQL Workbench and three of its major sections -- SQL Development, where we connected to
+
+5
+00:00:30,000 --> 00:00:37,000
+existing database and ran SQL queries; Data Modeling, where we created and managed EER models;
+
+6
+00:00:37,000 --> 00:00:41,000
+Server Administration, where we configured Database Server and set up user accounts.
+
+7
+00:00:41,000 --> 00:00:48,000
+Later, we spent time on Relational Database Management System and Database Design Concepts.
+
+8
+00:00:48,000 --> 00:00:54,000
+We also learned in depth various techniques for data retrieval. In Data Retrieval Techniques, we focused on
+
+9
+00:00:54,000 --> 00:01:02,000
+SELECT, WHERE, ORDER BY, and LIMIT clauses. Finally, we spent a lot of time on Data Modification Techniques.
+
+10
+00:01:02,000 --> 00:01:07,000
+We learned how we can modify our data using INSERT, UPDATE, and DELETE.
+
+11
+00:01:07,000 --> 00:01:10,000
+Well, here are a few of the important resources.
+
+12
+00:01:10,000 --> 00:01:16,000
+Well, I thank you very, very much for spending time learning with me, MySQL Fundamentals Part 1.
+
+13
+00:01:16,000 --> 00:01:23,000
+In Part 2 of MySQL Introduction, we will learn Joins, Functions, Views, Transactions, Stored Procedures,
+
+14
+00:01:23,000 --> 00:59:00,000
+Stored Functions, Triggers and Events. Thank you and we will meet in MySQL Introduction Part 2.
+

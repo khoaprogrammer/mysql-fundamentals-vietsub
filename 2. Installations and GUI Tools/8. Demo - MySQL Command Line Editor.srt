@@ -1,0 +1,52 @@
+1
+00:00:02,000 --> 00:00:08,000
+Now let's see a simple example how we'll use MySQL Command Line Client when we don't have access to
+
+2
+00:00:08,000 --> 00:00:15,000
+MySQL Workbench. When you open MySQL Command Line Client, the very first thing it will ask is Password.
+
+3
+00:00:15,000 --> 00:00:21,000
+Enter your password, hit Enter, and it will bring you to a command prompt. If you want further help over here,
+
+4
+00:00:21,000 --> 00:00:30,000
+you can type ‘help;' and it will give you pretty much every single help available for this command prompt.
+
+5
+00:00:30,000 --> 00:00:34,000
+Now let's try to see what are the different databases installed on this server.
+
+6
+00:00:34,000 --> 00:00:40,000
+For that, we will be using a command called show. Type ‘show databases' and click on Enter.
+
+7
+00:00:40,000 --> 00:00:47,000
+It will list all the databases which we have. Let's use the word ‘database'. Type ‘use world' and hit Enter.
+
+8
+00:00:47,000 --> 00:00:53,000
+You can see the message displayed ‘Database changed'. Now let's try to see, what are the different tables
+
+9
+00:00:53,000 --> 00:01:02,000
+world database has. You'll use, once again, show command, show ‘show tables;'. Let's hit Enter and it will list
+
+10
+00:01:02,000 --> 00:01:09,000
+every single table that belongs to this database. If you remember in MySQL Workbench, we retrieved a few data
+
+11
+00:01:09,000 --> 00:01:16,000
+from City Table. Let's try to do the same over here. Let's retrieve 10 rows from City Tables.
+
+12
+00:01:16,000 --> 00:01:24,000
+So type ‘SELECT * FROM City LIMIT 10' and hit Enter and it will display you top 10 rows from City Table.
+
+13
+00:01:24,000 --> 00:59:00,000
+When you don't have access to the MySQL Workbench, you can quickly use this as a replacement.
+

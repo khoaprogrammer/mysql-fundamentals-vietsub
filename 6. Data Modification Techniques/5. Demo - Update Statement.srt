@@ -1,0 +1,184 @@
+1
+00:00:03,000 --> 00:00:10,000
+Now, let's see UPDATE statement into action. We'll be using sakila database and we'll be creating our
+
+2
+00:00:10,000 --> 00:00:17,000
+custom table. We want to make sure the table, which we use, does not modify any of the live or production system.
+
+3
+00:00:17,000 --> 00:00:22,000
+The table, which we are going to create, is almost the same table which we have created in our INSERT script.
+
+4
+00:00:22,000 --> 00:00:27,000
+Click on Create Table script and click on Execute. This script is very similar to the script, which we have
+
+5
+00:00:27,000 --> 00:00:34,000
+used in our INSERT statement demonstrations. Click on Execute and now, new table, which is sakila.actorsample,
+
+6
+00:00:34,000 --> 00:00:42,000
+is populated with the same data of sakila.actor. First, we will learn about Update Single Row Using Single Column.
+
+7
+00:00:42,000 --> 00:00:48,000
+Here is the UPDATE statement where we are updating sakila.actorsample. SET keyword has first_name.
+
+8
+00:00:48,000 --> 00:00:53,000
+Every single row in the first column will be now populated with Pinal. What we want to do is that we only want
+
+9
+00:00:53,000 --> 00:01:00,000
+to update the value of the first record where ‘actor_id = 1'. Now we are limiting our update to only one column
+
+10
+00:01:00,000 --> 00:01:06,000
+and one row and now, before we check our data, we'll do the same operation with the last_name as well.
+
+11
+00:01:06,000 --> 00:01:12,000
+What it means is that we'll now update the last_name column to value Dave where actor_id is also 1.
+
+12
+00:01:12,000 --> 00:01:18,000
+Let's select this one and click on Execute. Now let's go back and check our data. The value of the first_name is
+
+13
+00:01:18,000 --> 00:01:25,000
+Pinal and the value of the last_name is Dave. Now, let's move further. In an earlier example, we have updated
+
+14
+00:01:25,000 --> 00:01:30,000
+first_name and last_name separately. We do not have to do that. We can update first_name and last_name of
+
+15
+00:01:30,000 --> 00:01:37,000
+single row or together. For example, over here, I'm going to update the row where ‘actor_id = 2' with first_name
+
+16
+00:01:37,000 --> 00:01:43,000
+Pinal and last_name Dave. Please note, the current value are NICK and WAHLBERG. Now, let's execute this script
+
+17
+00:01:43,000 --> 00:01:50,000
+and do select on the table. You can see the OR value is now replaced with Pinal and Dave. This time, we did not
+
+18
+00:01:50,000 --> 00:01:56,000
+have to write two separate UPDATE statements to update a single row. We can update a single row with multiple
+
+19
+00:01:56,000 --> 00:02:02,000
+columns by specifying all the columns into SET clause. Let's take this one into next level.
+
+20
+00:02:02,000 --> 00:02:09,000
+Carefully observe the WHERE clause. WHERE clause has actor_id and list of the actor_id. What it means is that
+
+21
+00:02:09,000 --> 00:02:17,000
+every actor_id with value 3, 4 or 5 will be now updated with the value Pinal. Let's execute this and check our data.
+
+22
+00:02:17,000 --> 00:02:24,000
+Upon checking our data, we can see this change also happened over here. Well, what we did is that we specified
+
+23
+00:02:24,000 --> 00:02:30,000
+a list and multiple rows were updated for a single column. We can take it to the further next level where we
+
+24
+00:02:30,000 --> 00:02:36,000
+update multiple columns and multiple rows. Here is the example. Here, we have WHERE condition where actor_id in
+
+25
+00:02:36,000 --> 00:02:43,000
+6, 7 or 8, which means these are the three rows which we are discussing over here. We are updating first_name
+
+26
+00:02:43,000 --> 00:02:49,000
+with Pinal, last_name with Dave, and last_update with DEFAULT value. DEFAULT value will populate current
+
+27
+00:02:49,000 --> 00:02:55,000
+date/time of the Server in the column. Let's select this one and click on Execute and now, check the data.
+
+28
+00:02:55,000 --> 00:03:02,000
+In resultset, we can clearly see that 6, 7, and 8 row has now Pinal Dave value everywhere and last_update date
+
+29
+00:03:02,000 --> 00:03:09,000
+is updated to current date/time. Let's see one more concept. Here is the concept of using subqueries.
+
+30
+00:03:09,000 --> 00:03:15,000
+We have UPDATE statement where we are updating sakila.actorsample and setting value first_name to Nupur and
+
+31
+00:03:15,000 --> 00:03:20,000
+WHERE condition has actor_id. However, let's pay additional attention to the WHERE clause.
+
+32
+00:03:20,000 --> 00:03:26,000
+Here, we have subquery in our WHERE clause. Let's execute the subquery independently and you can see the
+
+33
+00:03:26,000 --> 00:03:33,000
+subquery is returning its value of 1, 10, 20, 40, 50, and so onwards. These are the lists of actor_id who
+
+34
+00:03:33,000 --> 00:03:41,000
+all work in the ‘film_id = 1'. What it means is that all these actors work in a single film, which has ‘film_id = 1'.
+
+35
+00:03:41,000 --> 00:03:48,000
+Now we will change the first_name of every single actor who has acted in the film 1 to Nupur. Let's execute this one.
+
+36
+00:03:48,000 --> 00:03:54,000
+Well, Execute did not happen successfully and we can see that in Error. Error Code 1175: You are using safe
+
+37
+00:03:54,000 --> 00:04:00,000
+update mode and you tried to update a table without WHERE clause. Now, we are definitely using a WHERE clause;
+
+38
+00:04:00,000 --> 00:04:07,000
+however, by default, MySQL Workbench works into safe mode. Let's change that. Let's go to Edit and go to
+
+39
+00:04:07,000 --> 00:04:15,000
+Preference, go to SQL Queries, and here uncheck Safe Update. Additionally, it also requires us to do reconnection.
+
+40
+00:04:15,000 --> 00:04:22,000
+I unchecked this option and click on OK. Now click on this icon, which suggests reconnect to DBMS.
+
+41
+00:04:22,000 --> 00:04:28,000
+Now, once again, try to run this query. This time, query is ran successfully and it has updated 10 rows.
+
+42
+00:04:28,000 --> 00:04:34,000
+Let's go to our table and check the data in it. We can see the very first row is now updated to Nupur because
+
+43
+00:04:34,000 --> 00:04:43,000
+‘actor_id = 1' was also actor in a ‘film_id = 1'. Scrolling down, we can see another value where actor_id is 10.
+
+44
+00:04:43,000 --> 00:04:50,000
+Now you can see how easy it is to update single and multiple rows in MySQL. We can use complex logic in the
+
+45
+00:04:50,000 --> 00:04:56,000
+WHERE clause, as well as subquery to update our data. Let's do cleanup and drop our table.
+
+46
+00:04:56,000 --> 00:59:00,000
+Next, we'll see another important concept of Delete.
+

@@ -1,0 +1,72 @@
+1
+00:00:04,000 --> 00:00:10,000
+Now we will try to understand how Web Application Server works with database with real life example.
+
+2
+00:00:10,000 --> 00:00:17,000
+Let's assume you want to check your email. You take your computer, open it, start it, and run your web browser.
+
+3
+00:00:17,000 --> 00:00:23,000
+In the web browser, you will type your URL address. As soon as you type your URL address, web browser will now
+
+4
+00:00:23,000 --> 00:00:30,000
+send the request. The request will go to internet by your ISP. ISP stands for Internet Service Provider.
+
+5
+00:00:30,000 --> 00:00:37,000
+Once your request goes to internet, Group Domain Server will now forward that request to Application Server.
+
+6
+00:00:37,000 --> 00:00:45,000
+This Application Server is where your email application is hosted. Application Server will process all the HTML
+
+7
+00:00:45,000 --> 00:00:52,000
+and dynamic pages. The front end of any application is pretty much the same across every single user while using
+
+8
+00:00:52,000 --> 00:01:00,000
+this application. For example, if you are using Gmail, Yahoo or Hotmail, the look and feel will be pretty much
+
+9
+00:01:00,000 --> 00:01:08,000
+the same across every single user of Gmail, Yahoo or Hotmail. However, their emails will be different,
+
+10
+00:01:08,000 --> 00:01:14,000
+the data will be different. You will have data from your friend and other users will have data from their
+
+11
+00:01:14,000 --> 00:01:21,000
+friends and relatives. Data will differ, but the page will look the same. That's exactly what will happen in
+
+12
+00:01:21,000 --> 00:01:28,000
+Application Server. It will pass the static HTML's and will pass back the dynamic pages through the
+
+13
+00:01:28,000 --> 00:01:34,000
+Application Server. However, every request for data will now go to Database Server.
+
+14
+00:01:34,000 --> 00:01:42,000
+Database Server will have DBMS or Database Management System. Management System will query user data and
+
+15
+00:01:42,000 --> 00:01:49,000
+will give it back to Database Server. Database Server will later pass back the data to Application Server,
+
+16
+00:01:49,000 --> 00:01:58,000
+along with HTML and dynamic page will be returned to internet and at the end will go to web browser of user.
+
+17
+00:01:58,000 --> 00:02:04,000
+It's hard to imagine that there will be any application without any kind of database on the back end.
+
+18
+00:02:04,000 --> 00:59:00,000
+As of 2008, MySQL is the most popular Database Management System on planet earth.
+

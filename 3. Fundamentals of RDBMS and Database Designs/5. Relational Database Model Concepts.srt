@@ -1,0 +1,88 @@
+1
+00:00:03,000 --> 00:00:10,000
+For any relational database model, there are four very important concepts. A model for relational database states
+
+2
+00:00:10,000 --> 00:00:17,000
+the data is storing one or more tables. It also states that each table is two-dimensional.
+
+3
+00:00:17,000 --> 00:00:24,000
+Each dimensions are columns and rows. Intersection of the columns and rows are cells.
+
+4
+00:00:24,000 --> 00:00:31,000
+Let's see them a little bit more in detail. A table: Any relational database consists of one or more tables.
+
+5
+00:00:31,000 --> 00:00:37,000
+Tables are usually modeled after real world entities. For example, an address table would have
+
+6
+00:00:37,000 --> 00:00:46,000
+Address 1, Address 2, City, State, Country, and Zip code or Postal Code. It's quite possible on a single
+
+7
+00:00:46,000 --> 00:00:53,000
+address, one or many different persons are staying. It's quite possible that there is nobody staying at
+
+8
+00:00:53,000 --> 00:01:00,000
+the address as well. Address can have different types, like Work, Home, Factory or Open Ground.
+
+9
+00:01:00,000 --> 00:01:08,000
+Well, all of them can be tables. A column: A column represents some attribute of the entity of the table.
+
+10
+00:01:08,000 --> 00:01:15,000
+For example, in the case of the address, as we discussed, it can be Street #, Apartment #, Address 1,
+
+11
+00:01:15,000 --> 00:01:23,000
+City, Zip code or any other detail. Columns are also known as fields. A row usually contains a set of values
+
+12
+00:01:23,000 --> 00:01:29,000
+for a single instance of entity. For example, in address table it will have a single address.
+
+13
+00:01:29,000 --> 00:01:36,000
+A single address may contain multiple columns. An address can be Apartment #, followed by Street #, followed by City,
+
+14
+00:01:36,000 --> 00:01:45,000
+State, and Zip code. If the table has multiple Countries data, then there may be an additional column for Country
+
+15
+00:01:45,000 --> 00:01:53,000
+and the row will contain Name of the Country. Well, this discussion leads to our last discussion about cells.
+
+16
+00:01:53,000 --> 00:02:00,000
+Cells are nothing but intersection of row and column. One cell may contain Apartment # and another cell may
+
+17
+00:02:00,000 --> 00:02:05,000
+contain Street #. They can belong to different columns and they can belong to different rows.
+
+18
+00:02:05,000 --> 00:02:12,000
+It is just an intersection and each of the cells will have a single value. Well, think about it this way.
+
+19
+00:02:12,000 --> 00:02:20,000
+Apartment # may be a number, but street name may not be a #, but may be a string. Now we are leading to another
+
+20
+00:02:20,000 --> 00:02:27,000
+concept that cell can have different kinds of value. It can be a number or it can be a string or
+
+21
+00:02:27,000 --> 00:02:33,000
+it's quite possible it's a mix of both of them. In relational database, everything into the table has a
+
+22
+00:02:33,000 --> 00:59:00,000
+relation to each other, as well as there is a relation among the tables. Well let's see that in the next clip.
+

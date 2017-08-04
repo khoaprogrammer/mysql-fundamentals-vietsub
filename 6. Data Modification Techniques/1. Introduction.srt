@@ -1,0 +1,28 @@
+1
+00:00:01,000 --> 00:00:10,000
+Hi, this is Pinal Dave for Pluralsight and in this module, we will discuss about Data Modification Techniques.
+
+2
+00:00:10,000 --> 00:00:16,000
+Our major focus in this module will be on INSERT, UPDATE, and DELETE Statement. With UPDATE and DELETE, we will
+
+3
+00:00:16,000 --> 00:00:22,000
+be also using WHERE clause. All the operators and phrases, which we have learned in an earlier module, will apply
+
+4
+00:00:22,000 --> 00:00:29,000
+over here as it is. Each of the statements have two clear distinct areas. The first area is how to modify
+
+5
+00:00:29,000 --> 00:00:38,000
+a single row and second area is how to modify multiple rows. Also, it's not a good idea to modify your live data.
+
+6
+00:00:38,000 --> 00:00:44,000
+For the same reason, I'll be creating a sample table and will be doing all the operations on top of sample table.
+
+7
+00:00:44,000 --> 00:59:00,000
+Let's start with INSERT Statement.
+

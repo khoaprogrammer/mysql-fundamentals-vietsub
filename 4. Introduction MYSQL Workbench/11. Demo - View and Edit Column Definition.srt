@@ -1,0 +1,124 @@
+1
+00:00:02,000 --> 00:00:09,000
+Now we will see how we can view and edit column definition in SQL Editor. Go to SQL Development Area.
+
+2
+00:00:09,000 --> 00:00:16,000
+Click on your server and it will open SQL Editor. We will be using sakila simple database for this example.
+
+3
+00:00:16,000 --> 00:00:23,000
+Let's expand it and further expand Tables section. On the very first table, which is actor, right-click over it
+
+4
+00:00:23,000 --> 00:00:30,000
+and now click on Alter Table. Alter Table will open up this screen where we can complete table definition.
+
+5
+00:00:30,000 --> 00:00:35,000
+We can see there are four columns over here -- the actor_id, first_name, last_name, and last_update.
+
+6
+00:00:35,000 --> 00:00:42,000
+Additionally, we can see each Column Name's Datatype as well. Actor_id is SMALLINT, first_name is VARCHAR,
+
+7
+00:00:42,000 --> 00:00:48,000
+last_name is VARCHAR, and last_update is a TIMESTAMP. If you remember, we talked about there are various
+
+8
+00:00:48,000 --> 00:00:55,000
+properties of Column. Now we can also set them over here. First column, PK stands for Primary Key.
+
+9
+00:00:55,000 --> 00:01:02,000
+Actor_id in this table is a Primary Key. The second column is Not Null column. You can see that actor_id,
+
+10
+00:01:02,000 --> 00:01:08,000
+first_name, last_name, and last_update are Not Null columns. The next column UQ stands for Unique Index.
+
+11
+00:01:08,000 --> 00:01:15,000
+There is no Unique Index in this table. BIN stands for Binary. If any of the column was binary, the checkbox
+
+12
+00:01:15,000 --> 00:01:22,000
+in front of that column would have been selected. UN stands for Unsigned Datatype. In this case, small integer is
+
+13
+00:01:22,000 --> 00:01:26,000
+Unsigned Datatype. Also, there are two additional properties, which we have talked earlier.
+
+14
+00:01:26,000 --> 00:01:33,000
+One of them was Default Value. You can also select Default Value over here. ZF -- ZF stands for ‘Fill up value
+
+15
+00:01:33,000 --> 00:01:39,000
+for that column with 0 if it is numeric'. If any of this column is numeric, we can just select this particular
+
+16
+00:01:39,000 --> 00:01:46,000
+column and it will automatically default it to 0. AI stands for Auto Increment. In this case, the first column,
+
+17
+00:01:46,000 --> 00:01:53,000
+actor_id, it is also a Primary Key and it is also auto incremented. If you remember, in a previous module
+
+18
+00:01:53,000 --> 00:01:59,000
+we talked about most of the time the column which is auto incrementing is a good candidate for Primary Key.
+
+19
+00:01:59,000 --> 00:02:05,000
+If there is any other Default Value, we can also specify them over here. For example, in the fourth column,
+
+20
+00:02:05,000 --> 00:02:12,000
+which is last_update, we have a TIMESTAMP datatype and it is Not Null and the Default Value is CURRENT_TIMESTAMP.
+
+21
+00:02:12,000 --> 00:02:18,000
+What it means is that when we insert any row in this table, if we do not specify what data goes to last_update,
+
+22
+00:02:18,000 --> 00:02:24,000
+we will automatically assume CURRENT_TIMESTAMP value, which is current date/time. You can further see
+
+23
+00:02:24,000 --> 00:02:30,000
+the translation of each of these columns in this area. If you carefully look over here, you can see there are
+
+24
+00:02:30,000 --> 00:02:37,000
+other tabs as well. The Index tab talks about what kind of index exists on this particular table.
+
+25
+00:02:37,000 --> 00:02:43,000
+We can also create new indexes, as well as delete indexes over here. We can use this Foreign Key tab to define
+
+26
+00:02:43,000 --> 00:02:48,000
+Foreign Key between this table and another table. If there are any triggers, they will be listed over here and
+
+27
+00:02:48,000 --> 00:02:54,000
+we can further modify them. If the table is partitioned, you can see the logic over here.
+
+28
+00:02:54,000 --> 00:03:01,000
+We will talk about partitioning in Administration Course and on the last tab, we can set up various different
+
+29
+00:03:01,000 --> 00:03:08,000
+values for Table. For example, here we can specify the Auto Increment Value. This is the new initial
+
+30
+00:03:08,000 --> 00:03:15,000
+Auto Increment Value for the table. If you have 1000 record in this table, the next record will be 1001
+
+31
+00:03:15,000 --> 00:59:00,000
+and remember to click on Apply if you want to commit any changes you do with table definition.
+

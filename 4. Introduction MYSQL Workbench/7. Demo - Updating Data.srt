@@ -1,0 +1,160 @@
+1
+00:00:03,000 --> 00:00:11,000
+Now we will see how we can use MySQL Workbench to edit table data. On the home screen of MySQL Workbench,
+
+2
+00:00:11,000 --> 00:00:18,000
+go to Edit Table Data. I'll select SQLAuthority as my stored connection and we'll click on Next.
+
+3
+00:00:18,000 --> 00:00:25,000
+Over here, it will give us a few dropdowns where we can select our default schema and tables.
+
+4
+00:00:25,000 --> 00:00:32,000
+I'll select default schema as sakila and table as actor. You can select other table if you prefer.
+
+5
+00:00:32,000 --> 00:00:42,000
+Now click on Finish. Immediately it has opened up table, actor. You can also see name of the table over here, actor.
+
+6
+00:00:42,000 --> 00:00:49,000
+Now let's go to the very first row and you can see the first row is edit table. You can change the value if you prefer.
+
+7
+00:00:49,000 --> 00:00:57,000
+I'll leave this actor_id as 1; however, instead of PENELOPE, I will put over here PENELOPE1. Now click on tab.
+
+8
+00:00:57,000 --> 00:01:06,000
+Instead of GUINESS, I will also put over here GUINESS1. I'll move to line #3 and over here I'll put ED2
+
+9
+00:01:06,000 --> 00:01:13,000
+and behind CHASE I'll put 2 again. You can see that now I have edited totals. Now you can see on the screen that
+
+10
+00:01:13,000 --> 00:01:19,000
+I have changed PENELOPE to PENELOPE1 and GUINESS to GUINESS1. Do you think this information is committed?
+
+11
+00:01:19,000 --> 00:01:26,000
+What I mean by that is that if I go back and select this data again, do you think I will see PENELOPE and GUINESS
+
+12
+00:01:26,000 --> 00:01:33,000
+or I will see PENELOPE1 and GUINESS1? Well, let's go back and check it in Query Editor. Now to write a new query,
+
+13
+00:01:33,000 --> 00:01:40,000
+go to SQL Editor and click on ‘Create a new SQL tab for executing queries'. It will open Code Editor Tab.
+
+14
+00:01:40,000 --> 00:01:47,000
+Now let's type in a simple query. After selecting the query, click on lightning bolt icon over here.
+
+15
+00:01:47,000 --> 00:01:54,000
+It will execute the selected portion of the script or everything if there is no selection. Click here and you can
+
+16
+00:01:54,000 --> 00:01:59,000
+see the result is now displayed in Visual Tab. On Visual Tab, let's look at the first row.
+
+17
+00:01:59,000 --> 00:02:06,000
+First row says PENELOPE and GUINESS. Remember we have changed them to PENELOPE1 and GUINESS1.
+
+18
+00:02:06,000 --> 00:02:11,000
+We expect to see the changes over here, but they are not over here. The reason is very simple.
+
+19
+00:02:11,000 --> 00:02:17,000
+Let's go back to our actor tab and over here you can still see them, PENELOPE1 and GUINESS1.
+
+20
+00:02:17,000 --> 00:02:22,000
+Though we have changed the record over here, we are not committed yet. What it means is that the
+
+21
+00:02:22,000 --> 00:02:28,000
+data which have you seen as changed is only in the Query Editor. They are still not propagated to an
+
+22
+00:02:28,000 --> 00:02:34,000
+actual database. To apply them to the actual database, you have to select on Apply.
+
+23
+00:02:34,000 --> 00:02:40,000
+You can see on the right bottom screen, there is an Apply tab, which is highlighted. Now let's click on Apply.
+
+24
+00:02:40,000 --> 00:02:47,000
+Apply asks us to give you two updates. You can see over here it has automatically generated two update scripts.
+
+25
+00:02:47,000 --> 00:02:54,000
+One is UPDATE ‘sakila'.'actor' SET where ‘first_name' is PENELOPE1 and ‘last_name' is GUINESS1.
+
+26
+00:02:54,000 --> 00:02:59,000
+When you scroll on the right, you can see it also has a rare condition where ‘actor_id' is = 1.
+
+27
+00:02:59,000 --> 00:03:06,000
+Similar thing is also there for ‘actor_id' = 3. Let's click on Apply. If you do not understand this
+
+28
+00:03:06,000 --> 00:03:11,000
+SELECT statement, don't worry about it. We are going to cover this thing in depth in later modules.
+
+29
+00:03:11,000 --> 00:03:20,000
+Click on Apply and the screen displays Success. Click on Finish. Now you can see the Apply button is disabled.
+
+30
+00:03:20,000 --> 00:03:26,000
+Once again, go to our Ad hoc query, which we have written a few minutes ago and execute it one more time.
+
+31
+00:03:26,000 --> 00:03:34,000
+When you executed over here, you can see that line #1 is now changed from PENELOPE and GUINESS to PENELOPE 1
+
+32
+00:03:34,000 --> 00:03:40,000
+and GUINESS1. Similar thing for line #3, it's also ED2 and CHASE2. We have learned that how successfully
+
+33
+00:03:40,000 --> 00:03:47,000
+we can edit the row in any table using SQL Editor. On Visual Tab, you can go to any of the cells and double-click
+
+34
+00:03:47,000 --> 00:03:56,000
+over here. It will make that cell as editable. You can edit the cell and make ED2 to ED and CHASE2 to CHASE.
+
+35
+00:03:56,000 --> 00:04:02,000
+Now you can see once again there is an Apply button and a Cancel button. Apply is highlighted and if we click on
+
+36
+00:04:02,000 --> 00:04:08,000
+Apply, the ED and CHASE will be committed and it will be communicated to the database. If you don't like the changes
+
+37
+00:04:08,000 --> 00:04:14,000
+which we have done, we can easily click on Cancel and you can see they will revert to their original value.
+
+38
+00:04:14,000 --> 00:04:24,000
+SQL Editor is very powerful. We can also edit it one more way. Click on any line and now go to Edit in the Result Tab.
+
+39
+00:04:24,000 --> 00:04:31,000
+Click over here and now that particular cell and complete row is editable. The logic of Apply and Cancel remain
+
+40
+00:04:31,000 --> 00:59:00,000
+the same in all the cases. In this clip, we have learned three different ways to edit any row in SQL Editor.
+

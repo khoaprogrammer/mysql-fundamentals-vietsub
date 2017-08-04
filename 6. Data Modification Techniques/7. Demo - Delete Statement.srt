@@ -1,0 +1,116 @@
+1
+00:00:05,000 --> 00:00:10,000
+Here, we are in MySQL Workbench in the SQL Editor and we'll see an example of DELETE statement.
+
+2
+00:00:10,000 --> 00:00:17,000
+We'll be using sakila database and now we'll create very similar table, which we have created in earlier examples.
+
+3
+00:00:17,000 --> 00:00:24,000
+Table is ActorSample and has four columns -- actor_id, first_name, last_name, and last_update. Click on Execute
+
+4
+00:00:24,000 --> 00:00:29,000
+and table is successfully created. Now we will populate the table with sakila.actor table.
+
+5
+00:00:29,000 --> 00:00:36,000
+We'll be using INSERT statement. Insert into sakila.actorsample column names and we'll be retrieving the same
+
+6
+00:00:36,000 --> 00:00:43,000
+column from sakila.actor table. Let's execute this one and now we have our sample table ready, which we will use
+
+7
+00:00:43,000 --> 00:00:50,000
+to exercise our DELETE statement. Let's see our very first example. Here, we are going to delete a single row.
+
+8
+00:00:50,000 --> 00:00:57,000
+First, let's select our data. You will see in our data that our first row is actor_id 1 and first_name is Pinal
+
+9
+00:00:57,000 --> 00:01:04,000
+and last_name is Dave. Let's execute this statement where we have ‘DELETE FROM table name WHERE actor_id = 1'.
+
+10
+00:01:04,000 --> 00:01:10,000
+If you look at this statement, the structure from FROM is very similar to SELECT, as well as UPDATE.
+
+11
+00:01:10,000 --> 00:01:17,000
+Click on Execute and now, once again, check your data. We can see that in data, the actor_id 1 row is now deleted.
+
+12
+00:01:17,000 --> 00:01:24,000
+Well, let's go further down and this time, try to delete multiple rows together. We are going to use a list in
+
+13
+00:01:24,000 --> 00:01:31,000
+WHERE clause ‘WHERE actor_id IN (3,4,5)'. Let's select this entire statement and click on Execute.
+
+14
+00:01:31,000 --> 00:01:37,000
+Upon selecting the data, we can see that we no more have row 3, 4, and 5. This is how you can use WHERE clause
+
+15
+00:01:37,000 --> 00:01:43,000
+in a SELECT statement to delete one or multiple rows. However, just like UPDATE statement, you can be creating
+
+16
+00:01:43,000 --> 00:01:48,000
+with subquery in DELETE statement as well. Here, we have a subquery where we are selecting all the actor_id
+
+17
+00:01:48,000 --> 00:01:55,000
+who work in the ‘film_id = 1'. Select the statement and click on Select. You can see various actor_id over here,
+
+18
+00:01:55,000 --> 00:02:01,000
+actor_id 10, 20, and 30 - let's remember them for a moment and our DELETE statement states
+
+19
+00:02:01,000 --> 00:02:08,000
+‘DELETE FROM table name WHERE actor_id' into this all actor_id's. Let's select the entire statement and click
+
+20
+00:02:08,000 --> 00:02:16,000
+on Execute. Upon checking the data in the table, we can see that now we do not have record id 10, 20 or 30 over here.
+
+21
+00:02:16,000 --> 00:02:23,000
+They all got deleted because we executed this DELETE statement. You can observe the DELETE statement is extremely
+
+22
+00:02:23,000 --> 00:02:29,000
+easy to do. Just missing a WHERE condition is capable to delete an entire table as well. Let's see that in our
+
+23
+00:02:29,000 --> 00:02:38,000
+next example. Here, we do not have any WHERE clause. What it means is that, now, entire table sakila.actorsample
+
+24
+00:02:38,000 --> 00:02:43,000
+will be deleted. Select the statement and click on Execute. If you are paying attention to our Output Window,
+
+25
+00:02:43,000 --> 00:02:49,000
+you can see that it displays 187 rows affected. Actually, they're all deleted.
+
+26
+00:02:49,000 --> 00:02:56,000
+Now, let's go to ‘SELECT * FROM ActorSample'. Click on Execute and we are getting no rows over here.
+
+27
+00:02:56,000 --> 00:03:03,000
+The reason was that we did not use the WHERE clause and that's why every single record from this table has been deleted.
+
+28
+00:03:03,000 --> 00:03:09,000
+Well, with this we complete our demonstration for Data Modification. Let's clean up by executing this statement.
+
+29
+00:03:09,000 --> 00:59:00,000
+And now we will see Summary in Sixty Seconds.
+

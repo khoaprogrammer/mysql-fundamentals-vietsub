@@ -1,0 +1,28 @@
+1
+00:00:01,000 --> 00:00:12,000
+Hi, this is Pinal Dave for Pluralsight. In this module, we will cover Fundamentals of RDBMS and Database Designs.
+
+2
+00:00:12,000 --> 00:00:20,000
+In the last module, we learned how to install MySQL and GUI Tool, MySQL Workbench. Before we start with MySQL
+
+3
+00:00:20,000 --> 00:00:27,000
+Database architecture design and object creation, it is a good idea to understand Fundamentals of RDBMS and
+
+4
+00:00:27,000 --> 00:00:33,000
+Database Design. In this module, we will understand what is Client/Server System architecture,
+
+5
+00:00:33,000 --> 00:00:40,000
+how Web Application Server and Database work together. Additionally, quickly we will see History of Relational
+
+6
+00:00:40,000 --> 00:00:46,000
+Database Model and right after that we will understand Key Concept of RDBMS.
+
+7
+00:00:46,000 --> 00:59:00,000
+We will understand what is table, column, rows, cells, and a few other key concepts.
+

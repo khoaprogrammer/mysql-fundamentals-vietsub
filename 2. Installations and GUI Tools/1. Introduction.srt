@@ -1,32 +1,32 @@
 1
 00:00:01,000 --> 00:00:10,000
-This is Pinal Dave for Pluralsight. In this module we'll get started with MySQL and GUI Tool.
+Tôi là Pinal Dave từ Pluralsight. Trong chương này chúng ta sẽ bắt đầu với MySQL và công cụ.
 
 2
 00:00:10,000 --> 00:00:17,000
-This is Fundamentals of MySQL Course so we are assuming that we are all beginners. The biggest issue with any
+Đây là khóa cơ bản về MySQL nên tôi giả định rằng tất cả các bạn đều mới bắt đầu. Vấn đề lớn nhất của dân mới
 
 3
 00:00:17,000 --> 00:00:23,000
-beginner is to start and get going. Similarly, the biggest issue with any developer is to install
+là không biết bắt đầu từ đâu. Tương tự, vấn đề lớn nhất với bất kì một lập trình viên nào đó là cài
 
 4
 00:00:23,000 --> 00:00:30,000
-the product, configure it, and get started with it. MySQL installation is very simple and if any developer is
+phần mềm, tùy chỉnh và bắt đầu sử dụng nó. Cài MySQL rất đơn giản và nếu một ai đó không
 
 5
 00:00:30,000 --> 00:00:38,000
-not starting learning MySQL because he or she thinks that installation is very complicated or difficult,
+chịu học MySQL thì đều là vì anh ta nghĩ rằng cài nó rất khó và phức tạp.
 
 6
 00:00:38,000 --> 00:00:44,000
-I personally do not agree with it. In this course, we will install MySQL and all related tools live.
+Cá nhân tôi thì không đồng ý. Trong khóa học này, chúng ta sẽ cài MySQL và các công cụ liên quan.
 
 7
 00:00:44,000 --> 00:00:51,000
-We will see how easy and fast the entire process is. Additionally, we will also install and get started
+Bạn sẽ thấy việc này dễ và nhanh đến thế nào. Bên cạnh đó, chúng ta cũng sẽ cài và sử dụng
 
 8
 00:00:51,000 --> 00:59:00,000
-using MySQL Workbench. It is the most popular GUI Tool to work with MySQL.
+MySQL Workbench. Nó là công cụ phổ biến nhất để làm việc với MySQL.
 

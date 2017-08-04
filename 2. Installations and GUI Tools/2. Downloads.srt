@@ -1,24 +1,24 @@
 1
 00:00:02,000 --> 00:00:07,000
-There are a few essential downloads for MySQL installation. You can download MySQL from the link
+Bạn cần phải tải một số thứ để cài MySQL. Bạn có thể tải MySQL từ link
 
 2
 00:00:07,000 --> 00:00:15,000
-displayed over here. Make sure to minimum download MySQL Community Server and MySQL Workbench.
+hiển thị ở đây. Ít nhất bạn phải cài 2 cái là MySQL Community Server và MySQL Workbench.
 
 3
 00:00:15,000 --> 00:00:21,000
-If you're using Windows platform, I suggest that you download MySQL Installer.
+Nếu bạn dùng Windows, tôi khuyên bạn tải MySQL Installer.
 
 4
 00:00:21,000 --> 00:00:29,000
-It contains almost everything you will ever need related to MySQL, for example, MySQL Server, all of the
+Nó sẽ cài cho bạn tất cả những gì cần thiết cho MySQL, ví dụ là MySQL Server, tất cả các
 
 5
 00:00:29,000 --> 00:00:37,000
-supported connectors, Workbench and sample models, MySQL Notifier, MySQL for Excel, MySQL for Visual Studio,
+hỗ trợ kết nối, Workbench và các mô hình mẫu, MySQL Notifier, MySQL cho Excel, MySQL cho Visual Studio,
 
 6
 00:00:37,000 --> 00:59:00,000
-sample databases, and documentation. Now, let us quickly download and install MySQL Server.
+CSDL mẫu, tài liệu. Bây giờ, hãy tiến hành tải và cài nhanh MySQL Server.
 

@@ -1,44 +1,44 @@
 1
 00:00:04,000 --> 00:00:12,000
-In this demonstration, we will download MySQL and install it live. In your browser, go to MySQL.com/downloads.
+Trong bài demo này, ta sẽ tải MySQL và cài nó. Trên trình duyệt, bạn truy cập MySQL.com/downloads.
 
 2
 00:00:12,000 --> 00:00:21,000
-Over here, you will be able to see various MySQL downloads, MySQL Community Server, MySQL Enterprise Edition,
+Ở đây, bạn có thể thấy rất nhiều bản MySQL để download, MySQL Community Server, MySQL Enterprise Edition,
 
 3
 00:00:21,000 --> 00:00:31,000
-my MySQL Cluster, MySQL Cluster CGE, MySQL Workbench, GUI Tool, and various other MySQL connectors,
+MySQL Cluster, MySQL Cluster CGE, MySQL Workbench, GUI Tool, và nhiều loại hỗ trợ kết nối,
 
 4
 00:00:31,000 --> 00:00:42,000
-ODBC, .Net, Java platform, Python, C++, C, and PHP. You can download each of these things and install as
+ODBC, .NET, Java, Python, C++, C, và PHP. Bạn có thể tải từng cái và cài nếu bạn thấy
 
 5
 00:00:42,000 --> 00:00:48,000
-they're needed. If you're in a Windows platform, I suggest you download MySQL Installer.
+cần thiết. Nếu bạn sử dụng Windows, tôi khuyên bạn tải MySQL Installer.
 
 6
 00:00:48,000 --> 00:00:54,000
-MySQL Installer for Windows contains all of the MySQL products in a single package.
+MySQL Installer cho Windows bao gồm tất cả những sản phẩm MySQL trong 1 gói duy nhất.
 
 7
 00:00:54,000 --> 00:00:59,000
-Let's click on Download and it will bring us to the page where we can download MySQL Installer.
+Hãy bấm vào Download và ta sẽ đến trang có thể tải MySQL Installer.
 
 8
 00:00:59,000 --> 00:01:07,000
-MySQL Installer will contain all the MySQL-related products. MySQL Installer provides an easy to use
+MySQL Installer sẽ bao gồm tất cả các sản phẩm liên quan MySQL. MySQL Installer cung cấp một giao diện
 
 9
 00:01:07,000 --> 00:01:14,000
-wizard-based installation experience for all of the MySQL software needs.
+cài đặt thiện cho tất cả các phần mềm liên quan MySQL.
 
 10
 00:01:14,000 --> 00:01:20,000
-You can click over here and download MySQL Installer. In interest of the time, I have already downloaded
+Bạn có thể bấm vào đây và tải MySQL Installer. Vào thời điểm này, tôi đã tải
 
 11
 00:01:20,000 --> 00:59:00,000
-MySQL Installer on my local drive. Next, we'll install MySQL using MySQL Installer.
+MySQL Installer về máy. Tiếp theo, ta sẽ tiến hành cài MySQL bằng MySQL Installer.
 

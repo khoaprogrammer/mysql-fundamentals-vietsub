@@ -1,136 +1,135 @@
 1
 00:00:04,000 --> 00:00:11,000
-Here you can see I have already downloaded MySQL Installer. Let's double-click it and it brings up Welcome screen.
+Ở đây bạn có thể thấy tôi đã tải về MySQL Installer. Hãy mở nó lên nhé.
 
 2
 00:00:11,000 --> 00:00:18,000
-Now we'll follow a Standard MySQL installation. Click on Install MySQL Products, read and agree to license terms,
+Chúng ta sẽ tuân theo cài đặt tiêu chuẩn. Chọn Install MySQL Products, đọc và chấp nhận các điều khoản,
 
 3
 00:00:18,000 --> 00:00:25,000
-click on Next, and it will ask you if you want to check for latest updates. As I've just downloaded my package,
+chọn Next, và nó sẽ chuyển bạn đến trang cập nhật mới nhất. Vì tôi vừa mới tải nó về,
 
 4
 00:00:25,000 --> 00:00:30,000
-there won't be any update, even though it does not harm to check it one more time.
+nên sẽ không có cập nhật nào, tuy vậy vẫn nên kiểm tra thêm lần nữa.
 
 5
 00:00:30,000 --> 00:00:36,000
-Let's click on Execute, it will connect to the internet and fetch product update information.
+Hãy bấm Execute, nó sẽ kết nối mạng và lấy về thông tin cập nhật.
 
 6
 00:00:36,000 --> 00:00:43,000
-Over here, it gives us various options for setup types. Developer options, it installs all products needed for
+Ở đây, nó sẽ hiển thị cho ta nhiều tùy chọn cài đặt. Tùy chọn nhà phát triển, nó sẽ cài tất cả các sản phẩm cần cho
 
 7
 00:00:43,000 --> 00:00:49,000
-MySQL development purposes. This is one which we'll be selecting. However, it's worth noting there are other
+mục đích phát triển MySQL, đây là cái mà ta sẽ chọn. Tuy nhiên, bạn nên biết là có những tùy chọn khác
 
 8
 00:00:49,000 --> 00:00:58,000
-options like server only, client only, a full installation, and custom installation. Two more things to note
+như server only, client only, full installation, và custom installation. Còn 2 điều phải nhớ
 
 9
 00:00:58,000 --> 00:01:06,000
-before we click on Next, first is Installation Path and second is Data Path. Installation Path is where MySQL
+trước khi click Next, đầu tiên là vị trí cài đặt và vị trí dữ liệu. Vị trí cài đặt là nơi MySQL
 
 10
 00:01:06,000 --> 00:01:14,000
-will install MySQL and Data Path is where MySQL will install data files. Click on Next.
+sẽ được cài và Vị trí dữ liệu là nơi MySQL sẽ cài các file dữ liệu. Bấm Next.
 
 11
 00:01:14,000 --> 00:01:20,000
-On the prerequisite screen, it will give us a list of all the prerequisites. In my case, all the prerequisites
+Ở trang yêu cầu, nó sẽ hiển thị cho chúng ta danh sách các yêu cầu. Ở đây, tất cả các yêu cầu
 
 12
 00:01:20,000 --> 00:01:28,000
-are met, hence, we are seeing all green checkmarks. Let's click on Next. Now we'll be installing MySQL and
+đều thỏa mãn, chúng ta thất tất cả đều check xanh. Hãy bấm Next. Giời chúng ta sẽ cài MySQL và
 
 13
 00:01:28,000 --> 00:01:33,000
-all the related product. I would like you to pay close attention to the time it takes to install MySQL Server.
+tất cả các sản phẩm khác. Tôi muốn bạn tập trung một chút vào quá trình cài đặt MySQL Server.
 
 14
 00:01:33,000 --> 00:01:39,000
-The reason is that, after I click on Execute, you'll notice that installing MySQL Server and all the
+Lý do là, sau khi bấm Execute, bạn sẽ thấy rằng việc cài MySQL Server và tất cả
 
 15
 00:01:39,000 --> 00:01:54,000
-related product is a very fast and efficient process. Let's click on Execute. (Music)
+sản phẩm là rất nhanh và thuận tiện. Hãy bấm Execute. (Music)
 
 16
 00:01:54,000 --> 00:02:00,000
-And we're done. You can see in very few seconds, we installed MySQL Server and all the related products.
+Đã xong. Hãy để ý rằng chỉ sau vài giây, chúng ta đã cài MySQL Server và tất cả sản phẩm liên quan.
 
 17
 00:02:00,000 --> 00:02:06,000
-Isn't it easy and efficient? Let's click on Next. Here it will ask us to do configuration.
+Quá dễ dàng phải không? Giờ click Next. Ở đây ta phải tiến hành cấu hình.
 
 18
 00:02:06,000 --> 00:02:14,000
-After installation, configuration is a very important task. However, MySQL configuration is very simple to do.
+Sau khi cài đặt, cấu hình là một việc rất quan trọng. Tuy nhiên, cấu hình MySQL rất đơn giản.
 
 19
 00:02:14,000 --> 00:02:20,000
-Click on Next. Here, you are to select your server configuration type. We have Development Machine so
+Chọn Next. Ở đây, bạn phải chọn loại cấu hình Server. Development Machine đang chọn nên
 
 20
 00:02:20,000 --> 00:02:26,000
-we'll leave the Development Machine as a default option. Alternatively, you can also select Server Machine or
+ta sẽ để mặc định như vậy. Ngoài ra bạn có thể chọn Server Machine hoặc
 
 21
 00:02:26,000 --> 00:02:32,000
-Dedicated Machine as well. In the Server Machine, you'll have other applications also running with
+Dedicated Machine. Ở Server Machine, bạn sẽ có thêm những ứng dụng chạy cùng với
 
 22
 00:02:32,000 --> 00:02:39,000
-MySQL installation; however, in case of the Dedicated Machine, only MySQL product will be running on this machine.
+việc cài MySQL; tuy nhiên, nếu chọn Dedicated Machine, chỉ có MySQL sẽ được chạy trên máy này.
 
 23
 00:02:39,000 --> 00:02:45,000
-My machine is Development Machine, hence, click Development Machine and click on Next.
+Máy của tôi là Development Machine, nên tôi chọn Development Machine và click Next.
 
 24
 00:02:45,000 --> 00:02:53,000
-Here, you can enable or disable TCP/IP Networking. Let's not change any setting over here and click on Next.
+Ở đây bạn có thể bật hay tắt TCP/IP Networking. Hãy đừng thay đổi gì cả và chọn Next.
 
 25
 00:02:53,000 --> 00:02:59,000
-MySQL Server Configuration will ask us to enter Root Password and you can see password strength is medium.
+Cấu hình MySQL Server sẽ yêu cầu bạn nhập mật khẩu Root và bạn sẽ thấy độ mạnh của mật khẩu là trung bình.
 
 26
 00:02:59,000 --> 00:03:07,000
-Let me create another admin user over here. I'll give the name Pinal Dave. I left the role ‘DB Admin'.
+hãy tạo thêm một tài khoản quản trị khác ở đây. Tôi sẽ đặt là Pinal Dave. Chọn vai trò là 'DB Admin'.
 
 27
 00:03:07,000 --> 00:03:13,000
-I'll provide a complex password. Click OK and now we are ready to go to next screen. Click on Next.
+Tôi sẽ đặt một mật khẩu phức tạp. Bấm OK và ta đã sẵn sàng sang trang tiếp theo. Bấm Next.
 
 28
 00:03:13,000 --> 00:03:19,000
-On this screen, MySQL will allow us to configure Windows Service Details. Here, we will change the
+Ở màn hình này, MySQL cho phép ta cấu hình chi tiết Windows Service. Ở đây ta thay đổi
 
 29
 00:03:19,000 --> 00:03:27,000
-Windows Service Name so we can easily identify our MySQL installation. We will give it the name as SQLAuthority.
+tên Windows Service để có thể dễ dàng nhận dạng MySQL của chúng ta. Tôi sẽ đặt là SQLAuthority.
 
 30
 00:03:27,000 --> 00:03:34,000
-Now click on Next. Here you can see now Server Configuration is complete. We can click Next one more time and
+Bây giờ bấm Next. Ở đây bạn có thể thấy cấu hình Server đã hoàn tất. Ta có thể bấm Next một lần nữa
 
 31
 00:03:34,000 --> 00:03:42,000
-Samples and Examples will be configured. Click on Next and now, along with MySQL Server Samples and Examples,
+để cài Samples và Examples. Hãy bấm Next, và MySQL + MySQL Server Samples và Examples
 
 32
 00:03:42,000 --> 00:03:49,000
-we are ready to go. Click on Next. On the very next screen it will ask us if you want to start MySQL Workbench
+đã được cài đặt. Bấm Next. Ở trang tiếp theo nó hỏi ta có muốn chạy MySQL Workbench
 
 33
 00:03:49,000 --> 00:03:55,000
-after Setup, yes or no. I'll leave this one on because that's the next thing which we are going to discuss.
+sau khi cài đặt hay không. Tôi sẽ để yên đó vì nó là cái ta sẽ bàn luận trong bài tiếp theo.
 
 34
 00:03:55,000 --> 00:59:00,000
-Click Finish and immediately you can see MySQL Workbench is open.
-
+Bấm Finish và ngay lập tức MySQL Workbench sẽ chạy.

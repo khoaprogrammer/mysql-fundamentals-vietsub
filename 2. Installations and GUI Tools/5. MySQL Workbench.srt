@@ -1,16 +1,16 @@
 1
 00:00:02,000 --> 00:00:08,000
-MySQL Workbench is a very powerful graphical user interface for MySQL. In this course, we'll be using MySQL
+MySQL Workbench là một công cụ tuyệt vời cho MySQL. Trong khóa này, ta sẽ dùng MySQL
 
 2
 00:00:08,000 --> 00:00:16,000
-Workbench for all of our tasks. There are three major workspaces in MySQL Workbench - SQL Development,
+Workbench cho mọi việc, Có rất nhiều các workspaces ở MySQL Workbench - Sql Development,
 
 3
 00:00:16,000 --> 00:00:22,000
-Data Modeling, and Server Administrator. Each of them performs very essential tasks for MySQL.
+Data Modeling, và Server Administrator. Mỗi workspace sẽ thực hiện một công việc cho MySQL.
 
 4
 00:00:22,000 --> 00:59:00,000
-Let us see a couple of functionalities of MySQL Workbench in action right now.
+Hãy xem thử một số tính năng của MySQL Workbench nhé.
 
